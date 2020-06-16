@@ -7,8 +7,8 @@ export default function TwoColums() {
   return (
     <>
       <Title
-        title="Portfolio"
-        message="Creative Interface Design"
+        title="Design"
+        message="Modern tendency Interface Design"
       />
 
       <div className="two__column-grid section__full">
