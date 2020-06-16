@@ -1,0 +1,214 @@
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+@media (max-width: 700px) {
+  .showcase-content {
+    text-align: center;
+  }
+  .showcase-content div {
+    width: 100%;
+  }
+  .showcase-content h1 {
+    font-size: 2em;
+  }
+  .showcase-content img {
+    display: none;
+  }
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 8px 32px;
+  margin: 3px;
+  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+          box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: #4fcbda;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #1f2732;
+  color: #fff;
+}
+
+.btn-center {
+  text-align: center;
+}
+
+.card__container {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid red;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.card__container__card {
+  padding: 24px;
+  margin: 0 32px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  width: 320px;
+  height: 500px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card__container__card__img__div {
+  text-align: center;
+}
+
+.card__container img {
+  width: 150px;
+  height: 150px;
+}
+
+.card__container h2 {
+  font-size: 1.5rem;
+  padding: 8px 0;
+  font-weight: 700;
+  color: #666666;
+}
+
+.card__container h3 {
+  color: #ae3c43;
+  padding: 8px 0;
+  font-weight: 600;
+}
+
+.card__container h6 {
+  color: #7d8693;
+  padding: 16px 0;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card__container p {
+  padding: 8px 0;
+}
+
+#rocket {
+  -webkit-animation: topBottom 5s infinite;
+          animation: topBottom 5s infinite;
+}
+
+@-webkit-keyframes topBottom {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, -200px);
+            transform: translate(0, -200px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes topBottom {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, -200px);
+            transform: translate(0, -200px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+/*# sourceMappingURL=Card.css.map */

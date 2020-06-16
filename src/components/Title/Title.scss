@@ -1,0 +1,29 @@
+
+@import "../../sass/utilities";
+@import "../../sass/config";
+
+
+.title__section {
+  margin: 0 auto;
+  max-width: 1140px;
+
+
+  &__title {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: $light-gray;
+  }
+  &__subtitle {
+    text-align: center;
+    font-size: 3rem;
+    color: $secondary-color;
+  }
+  &__line {
+    text-align: center;
+    font-size: 2rem;
+    color: $secondary-color;
+    margin-bottom: 40px;
+  }
+
+}

@@ -1,0 +1,205 @@
+@import "../../sass/config";
+@import "../../sass/mobile";
+@import "../../sass/utilities";
+@import "../../sass/buttons";
+
+
+
+.grid__billboard {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+  grid-template-rows: 1fr;
+  grid-template-areas: "billboard-box1 billboard-box2 ";
+  margin: 0 auto;
+  padding: 0 $default-padding20;
+  h1 {
+    font-weight: bold;
+    color: $dark-blue;
+    font-size: 3.8em;
+    line-height: 1.2;
+  }
+  h2 {
+    color: $lighter-black;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: $default-padding16 0;
+  }
+
+  &-email {
+    input[type="text"],
+    input[type="submit"] {
+      width: 60%;
+      padding: 12px;
+      display: inline-block;
+
+    }
+    input[type="submit"] {
+      background-color: $dark-blue;
+      color: white;
+      border: none;
+      width: 30%;
+      margin-left: 8px;
+      cursor: pointer;
+
+    }
+    input[type="submit"]:hover {
+      opacity: 0.8;
+    }
+  }
+  .billboard-box1 {
+    grid-area: billboard-box1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .billboard-box2 {
+    grid-area: billboard-box2;
+    padding: $default-padding20;
+  }
+}
+
+
+
+//animation
+#red__circle {
+  animation: change-color 3s linear 2s infinite alternate;
+}
+
+@keyframes change-color {
+  0% {
+    fill: #e7515c;
+  }
+  100% {
+    fill: #ae3c43;
+  }
+}
+
+#blue__circle {
+  animation: change-color-blue 1s linear 2s infinite alternate;
+}
+
+@keyframes change-color-blue {
+  0% {
+    fill: #508ebc;
+  }
+  100% {
+    fill: #67c1ef;
+  }
+}
+
+#light__blue__circle {
+  animation: change-color-blue-light 1s linear 2s infinite alternate;
+}
+
+@keyframes change-color-blue-light {
+  0% {
+    fill: #67c1ef;
+  }
+  100% {
+    fill: #508ebc;
+  }
+}
+
+#text1,
+#text6 {
+  animation: change-color-paragraph 1s linear 2s infinite alternate;
+}
+
+#text2,
+#text3 {
+  animation: change-color-paragraph 3s linear 2s infinite alternate;
+}
+
+#text4,
+#text5 {
+  animation: change-color-paragraph 3s linear 2s infinite alternate;
+}
+
+@keyframes change-color-paragraph {
+  0% {
+    fill: #dce6f4;
+  }
+  100% {
+    fill: #508ebc;
+  }
+}
+
+#graph__column__one {
+  animation: change-color-graph 3s linear 2s infinite alternate;
+}
+
+@keyframes change-color-graph {
+  0% {
+    fill: #dce6f4;
+  }
+  100% {
+    fill: #ae3c43;
+  }
+}
+
+#graph__column__two {
+  animation: change-color-graph-two 3s linear 3s infinite alternate;
+}
+
+@keyframes change-color-graph-two {
+  0% {
+    fill: #dce6f4;
+  }
+  100% {
+    fill: #e7515c;
+  }
+}
+
+#graph__column__three,
+#graph__column__four,
+#graph__column__five {
+  animation: change-color-graph-three 3s linear 1s infinite alternate;
+}
+#graph__column__four {
+  animation: change-color-graph-three 4s linear 2s infinite alternate;
+}
+#graph__column__five {
+  animation: change-color-graph-three 6s linear 1s infinite alternate;
+}
+
+@keyframes change-color-graph-three {
+  0% {
+    fill: #dce6f4;
+  }
+  100% {
+    fill: rgb(241, 177, 125);
+  }
+}
+
+#graph__column__six,
+#graph__column__seven {
+  animation: change-color-graph-four 6s linear 1s infinite alternate;
+}
+
+@keyframes change-color-graph-four {
+  0% {
+    fill: #dce6f4;
+  }
+  100% {
+    fill: #508ebc;
+  }
+}
+
+#light__bulb {
+  animation: change-color-bulb 3s linear 1s infinite alternate;
+}
+
+@keyframes change-color-bulb {
+  0% {
+    fill: #ff7f8e;
+  }
+  25% {
+    fill: #ff7f8e;
+  }
+  50% {
+    fill: #fff174;
+  }
+  100% {
+    fill: #fff174;
+  }
+}

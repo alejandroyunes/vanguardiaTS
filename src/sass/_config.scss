@@ -1,0 +1,51 @@
+$primary-color: #2bbacb;
+$secondary-color: #1f2732;
+$light-red: #E7515C;
+$dark-red: #AE3C43;
+$light-blue: #67C1EF;
+$dark-blue: #508EBC;
+$light-white:#f4f4f4;
+$light-gray: #7d8693;
+$main-white: #fff;
+//$primary-color: #cb61a0;
+//$secondary-color: #78428d;
+$dark-black: #151618;
+$light-black: #1c1d3e;
+$lighter-black: #5f5f5f;
+
+$font-family: 'Nunito', sans-serif;
+
+//set text color based on bg
+
+@function set-text-color($color){
+    @if(lightness($color) > 70){
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}
+
+// set background & text color
+@mixin set-background($color){
+    background-color: $color;
+    color: set-text-color($color)
+}
+
+//margin & padding classes
+$space-amounts:(1,2,3,4,5);
+
+@each $space in $space-amounts{
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+
+}

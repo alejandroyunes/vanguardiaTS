@@ -1,0 +1,36 @@
+
+@import "../../sass/config";
+@import "../../sass/mobile";
+@import "../../sass/utilities";
+@import "../../sass/buttons";
+
+
+
+.cards__container {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+
+    margin: 0 auto;
+   
+    padding: 10px 0 26px 0;
+ 
+  
+  }
+
+
+
+#rocket {
+  animation: topBottom 5s infinite;
+}
+
+@keyframes topBottom {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -200px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

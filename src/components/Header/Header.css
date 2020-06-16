@@ -1,0 +1,337 @@
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+@media (max-width: 700px) {
+  .showcase-content {
+    text-align: center;
+  }
+  .showcase-content div {
+    width: 100%;
+  }
+  .showcase-content h1 {
+    font-size: 2em;
+  }
+  .showcase-content img {
+    display: none;
+  }
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 8px 32px;
+  margin: 3px;
+  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+          box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: #4fcbda;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #1f2732;
+  color: #fff;
+}
+
+.btn-center {
+  text-align: center;
+}
+
+.header {
+  height: 70px;
+}
+
+.header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 2000px;
+  width: 100%;
+  background-color: transparent;
+  height: 70px;
+  color: #1f2732;
+  z-index: 3;
+  margin: 0 auto;
+}
+
+.header__slide__down {
+  position: fixed;
+  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 2000px;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  color: #151618;
+  z-index: 2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  -webkit-animation: navbar-slice-down 1s;
+          animation: navbar-slice-down 1s;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.header__slide__down li:hover::before {
+  content: "[";
+  -webkit-animation: left-bracket;
+          animation: left-bracket;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  position: absolute;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: #151618;
+}
+
+.header__slide__down li:hover::after {
+  content: "]";
+  color: #151618;
+  -webkit-animation: right-bracket;
+          animation: right-bracket;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  position: absolute;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: #151618;
+}
+
+.header__logo {
+  margin: 0 24px;
+  width: 48px;
+}
+
+.header__links {
+  margin: 0 24px;
+}
+
+.header__link__item {
+  display: inline-block;
+  padding: 8px;
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.header li {
+  position: relative;
+}
+
+.header li:hover::before {
+  content: "[";
+  color: #1f2732;
+  -webkit-animation: left-bracket;
+          animation: left-bracket;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  position: absolute;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.header li:hover::after {
+  content: "]";
+  color: #1f2732;
+  -webkit-animation: right-bracket;
+          animation: right-bracket;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  position: absolute;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes navbar-slice-down {
+  0% {
+    top: -70px;
+  }
+  35% {
+    background-color: #fff;
+    color: #fff;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+
+@keyframes navbar-slice-down {
+  0% {
+    top: -70px;
+  }
+  35% {
+    background-color: #fff;
+    color: #fff;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+
+@-webkit-keyframes left-bracket {
+  0% {
+    left: -4px;
+    opacity: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    left: -4px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes left-bracket {
+  0% {
+    left: -4px;
+    opacity: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    left: -4px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes right-bracket {
+  from {
+    right: -4px;
+    opacity: 0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  to {
+    right: -4px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes right-bracket {
+  from {
+    right: -4px;
+    opacity: 0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  to {
+    right: -4px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+/*# sourceMappingURL=Header.css.map */

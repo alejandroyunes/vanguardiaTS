@@ -1,0 +1,20 @@
+@import "../../sass/config";
+@import "../../sass/utilities";
+@import "../../sass/config";
+
+.two__column-grid {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(2, 500px);
+  justify-content: space-evenly;
+  grid-template-rows: 1fr;
+  gap: 4px 4px;
+  grid-template-areas: "box11 box22 ";
+  .box11 {
+    grid-area: box11;
+  }
+
+  .box22 {
+    grid-area: box22;
+  }
+}

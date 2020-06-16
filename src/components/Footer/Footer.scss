@@ -1,0 +1,119 @@
+@import "../../sass/config";
+
+@import "../../sass/utilities";
+
+.footer {
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 2000px;
+  height: 480px;
+  background-color: $secondary-color;
+}
+
+.footer__grid {
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "boxf1 boxf2";
+ 
+  .boxf1 {
+    grid-area: boxf1;
+    padding: 40px 0 0 00px;
+    h1 {
+      font-weight: bold;
+      color: white;
+      font-size: 3.8em;
+      line-height: 1.2;
+
+    }
+    h2 {
+      color: white;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      padding: $default-padding16 0;
+    }
+    input[type="submit"] {
+      background-color: transparent;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      line-height: 1rem;
+      width: 30%;
+      padding: 12px;
+      margin-right: 16px;
+      border-radius: 100px;
+      cursor: pointer;
+      font-family: $font-family;
+      border: 2px solid $dark-blue;
+    }
+    input[type="submit"]:hover {
+      opacity: 0.8;
+    }
+    .footer__icon{
+      color: white;
+      display: flex;
+      padding: $default-padding8 0;
+      
+      p{
+        padding-left: 16px;
+        color: #7f7f7f;
+      }
+      p:hover{
+        color: $primary-color;
+        cursor: pointer;
+      }
+      
+    }
+
+    .footer__social{
+      color: white;
+      display: flex;
+      padding: $default-padding8 0;
+      :nth-child(1) {
+        margin-right: 16px;
+      }
+      :nth-child(2) {
+        margin-right: 16px;
+      }
+      :nth-child(3) {
+        margin-right: 16px;
+      }
+      :hover{
+        color: $primary-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  .boxf2 {
+    grid-area: boxf2;
+    display: flex;
+    justify-content: center;
+
+  }
+}
+.map{
+  padding-top: 40px;
+  stroke: #1f2732;
+  #co{
+    fill: $primary-color;
+    &:hover {
+      fill: $secondary-color;
+  }
+}
+  path {
+    fill: #363d47;
+    cursor: pointer;
+    outline: none;
+
+    // When a layer is hovered
+    &:hover {
+      fill: $primary-color;
+}
+  }
+}
+
+
+.footer__button{
+  padding: 16px  0;
+}

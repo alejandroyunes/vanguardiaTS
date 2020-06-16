@@ -1,0 +1,19 @@
+.image__column {
+  align-items: center;
+  width: 500px;
+  &-img {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    padding: 12px;
+  }
+  h3 {
+    color: #ae3c43;
+    font-weight: 600;
+    padding-top: 8px;
+    text-align: center;
+  }
+}
+
+
