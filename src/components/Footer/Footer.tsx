@@ -41,7 +41,7 @@ export default function Footer() {
               <div className="footer__icon">
                 <LocationOnIcon />
                 <p>
-                  2231 Sycamore, Green Bay, WI 54304
+                  2231 seymour, Futurama, WI 58304
                 </p>
               </div>
               <div className="footer__icon">
