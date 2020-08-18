@@ -1,10 +1,12 @@
 @import "../../sass/config";
 @import "../../sass/mobile";
 @import "../../sass/utilities";
-@import "../../sass/buttons";
+@import "../../sass/mixins";
+
 
 .header {
   height: 70px;
+  position: relative;
   &__main {
     display: flex;
     align-items: center;
@@ -13,19 +15,18 @@
     width: 100%;
     background-color: transparent;
     height: 70px;
-    color: $secondary-color;
     z-index: 3;
     margin: 0 auto;
   }
   &__slide__down {
     position: fixed;
+    height: 70px;
     top: 0%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 2000px;
     width: 100%;
-    height: 70px;
     background-color: #fff;
     color: $dark-black;
     z-index: 2;
@@ -34,32 +35,11 @@
     animation: navbar-slice-down 1s;
     left: 50%;
     transform: translate(-50%, 0);
-
-    li:hover::before {
-      content: "[";
-      animation: left-bracket;
-      animation-duration: 0.5s;
-      animation-timing-function: ease-out;
-      position: absolute;
-      animation-fill-mode: forwards;
-      color: $dark-black;
-    }
-    li:hover::after {
-      content: "]";
-      color: $dark-black;
-      animation: right-bracket;
-      animation-duration: 0.5s;
-      animation-timing-function: ease-out;
-      position: absolute;
-      animation-fill-mode: forwards;
-      color: $dark-black;
-    }
   }
   &__logo {
     margin: 0 24px;
     width: 48px;
   }
-
   &__links {
     margin: 0 24px;
   }
@@ -68,13 +48,19 @@
     padding: 8px;
     margin: 0 12px;
     cursor: pointer;
+    color: $primary-color;
+
+  }
+  &__link__item__hamburger {
+    display: inline-block;
+    display: none;
   }
   li {
     position: relative;
   }
   li:hover::before {
     content: "[";
-    color: $secondary-color;
+    color: $primary-color;
     animation: left-bracket;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
@@ -83,7 +69,7 @@
   }
   li:hover::after {
     content: "]";
-    color: $secondary-color;
+    color: $primary-color;
     animation: right-bracket;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
@@ -129,4 +115,39 @@
       transform: rotate(0deg);
     }
   }
+}
+
+@include mq($screen-mobile) {
+	 .header__link__item {
+		display: none;
+  }
+  .header__link__item__hamburger {
+    display: block;
+    color: $primary-color;
+    padding: 0;
+    margin-top: 6px;
+    cursor: pointer;
+  }
+  .header__logo{
+      min-width: 38px;
+      width: 38px;
+      margin: 6px 0 0 16px;
+  }
+  .header {
+    &__main {
+      height: 50px;
+    }
+    &__slide__down{
+      height: 50px;
+    }
+    li:hover::before {
+ 
+     display: none;
+    }
+    li:hover::after {
+ 
+      display: none;
+}
+}
+
 }

@@ -1,23 +1,46 @@
-
 @import "../../sass/config";
 @import "../../sass/mobile";
 @import "../../sass/utilities";
-@import "../../sass/buttons";
-
-
+@import "../../sass/mixins";
 
 .cards__container {
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 10px 0 26px 0;
 
-    margin: 0 auto;
-   
-    padding: 10px 0 26px 0;
- 
-  
+  @include mq($screen-desktop-1100) {
+    margin: 0 20px;
   }
 
+  @include mq($screen-mobile) {
+    grid-template-columns: repeat(1, 1fr);
+    // > :first-child {
+    //   display: none;
+    // }
+    // > :last-child {
+    //   display: none;
+    // }
+    .card__child__one {
+      display: none;
+    }
 
+    .card__child__two {
+      display: none;
+    }
+    .card__child__three {
+      display: none;
+    }
+ 
+    .card__child__active {
+      display: block;
+    }
+  }
+}
+
+.card__child__two__swap {
+  padding-left: 500px;
+}
 
 #rocket {
   animation: topBottom 5s infinite;
@@ -32,5 +55,73 @@
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+
+.button__div {
+  position: relative;
+  button {
+    -webkit-appearance: none;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+
+  svg {
+    padding: 6px;
+  }
+
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    margin-top: -325px;
+    width: 70px;
+    height: 90px;
+  }
+
+  .left{
+    visibility: hidden;
+    @include mq($screen-mobile) {
+      visibility: visible;
+      left: 20px;
+    }
+        @include mq($screen-small) {
+      left: 0px;
+    }
+  }
+  .right{
+    visibility: hidden;
+    @include mq($screen-mobile) {
+      visibility: visible;
+      right: 20px;
+    }
+    @include mq($screen-small) {
+      right: 0px;
+    }
+  }
+
+  .left:hover polyline,
+  .left:focus polyline {
+    stroke-width: 3;
+  }
+
+  .left:active polyline {
+    stroke-width: 6;
+    transition: all 100ms ease-in-out;
+  }
+
+  .right:hover polyline,
+  .right:focus polyline {
+    stroke-width: 3;
+  }
+
+  .right:active polyline {
+    stroke-width: 6;
+    transition: all 100ms ease-in-out;
+  }
+
+  polyline {
+    transition: all 250ms ease-in-out;
   }
 }

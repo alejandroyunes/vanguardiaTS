@@ -93,34 +93,6 @@
   }
 }
 
-.btn-primary, .btn-secondary {
-  display: inline-block;
-  border-radius: 6px;
-  padding: 8px 32px;
-  margin: 3px;
-  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-          box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-}
-
-.btn-primary:hover, .btn-secondary:hover {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-}
-
-.btn-primary {
-  background-color: #4fcbda;
-  color: #fff;
-}
-
-.btn-secondary {
-  background-color: #1f2732;
-  color: #fff;
-}
-
-.btn-center {
-  text-align: center;
-}
-
 html,
 body,
 div,
@@ -137,7 +109,6 @@ h6,
 p,
 blockquote,
 pre,
-a,
 abbr,
 acronym,
 address,
@@ -226,10 +197,6 @@ body {
   background: #fbfbfb;
   font-family: "Nunito", sans-serif;
   line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
 }
 
 .section__grid {

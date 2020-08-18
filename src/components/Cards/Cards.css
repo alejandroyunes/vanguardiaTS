@@ -93,34 +93,6 @@
   }
 }
 
-.btn-primary, .btn-secondary {
-  display: inline-block;
-  border-radius: 6px;
-  padding: 8px 32px;
-  margin: 3px;
-  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-          box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-}
-
-.btn-primary:hover, .btn-secondary:hover {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-}
-
-.btn-primary {
-  background-color: #4fcbda;
-  color: #fff;
-}
-
-.btn-secondary {
-  background-color: #1f2732;
-  color: #fff;
-}
-
-.btn-center {
-  text-align: center;
-}
-
 .cards__container {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
@@ -129,6 +101,35 @@
           justify-content: space-evenly;
   margin: 0 auto;
   padding: 10px 0 26px 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  .cards__container {
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .cards__container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .cards__container .card__child__one {
+    display: none;
+  }
+  .cards__container .card__child__two {
+    display: none;
+  }
+  .cards__container .card__child__three {
+    display: none;
+  }
+  .cards__container .card__child__active {
+    display: block;
+  }
+}
+
+.card__child__two__swap {
+  padding-left: 500px;
 }
 
 #rocket {
@@ -164,5 +165,90 @@
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
+}
+
+.button__div {
+  position: relative;
+}
+
+.button__div button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.button__div svg {
+  padding: 6px;
+}
+
+.button__div .arrow {
+  cursor: pointer;
+  position: absolute;
+  margin-top: -325px;
+  width: 70px;
+  height: 90px;
+}
+
+.button__div .left {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+  .button__div .left {
+    visibility: visible;
+    left: 20px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .button__div .left {
+    left: 0px;
+  }
+}
+
+.button__div .right {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+  .button__div .right {
+    visibility: visible;
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .button__div .right {
+    right: 0px;
+  }
+}
+
+.button__div .left:hover polyline,
+.button__div .left:focus polyline {
+  stroke-width: 3;
+}
+
+.button__div .left:active polyline {
+  stroke-width: 6;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+.button__div .right:hover polyline,
+.button__div .right:focus polyline {
+  stroke-width: 3;
+}
+
+.button__div .right:active polyline {
+  stroke-width: 6;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+.button__div polyline {
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 /*# sourceMappingURL=Cards.css.map */

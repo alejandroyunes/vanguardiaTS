@@ -1,21 +1,21 @@
 @import "../../sass/config";
 @import "../../sass/mobile";
 @import "../../sass/utilities";
-@import "../../sass/buttons";
-
+@import "../../sass/mixins";
 
 
 .grid__billboard {
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-evenly;
-  grid-template-rows: 1fr;
-  grid-template-areas: "billboard-box1 billboard-box2 ";
-  margin: 0 auto;
-  padding: 0 $default-padding20;
+    max-width: 1140px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "billboard-box1 billboard-box2";
   h1 {
     font-weight: bold;
     color: $dark-blue;
-    font-size: 3.8em;
+    font-size: 3.8rem;
     line-height: 1.2;
   }
   h2 {
@@ -24,43 +24,63 @@
     line-height: 2rem;
     padding: $default-padding16 0;
   }
-
-  &-email {
-    input[type="text"],
-    input[type="submit"] {
-      width: 60%;
-      padding: 12px;
-      display: inline-block;
-
-    }
-    input[type="submit"] {
-      background-color: $dark-blue;
-      color: white;
-      border: none;
-      width: 30%;
-      margin-left: 8px;
-      cursor: pointer;
-
-    }
-    input[type="submit"]:hover {
-      opacity: 0.8;
-    }
   }
+
   .billboard-box1 {
     grid-area: billboard-box1;
-    display: flex;
-    align-items: center;
+    padding-left: 24px;
+    margin: auto 0;
   }
   
   .billboard-box2 {
     grid-area: billboard-box2;
-    padding: $default-padding20;
+    padding-right: 24px;
+    margin: auto 0;
+  }
+   .buttons{
+      display: flex;
+    margin-top: 16px;
+   }
+
+
+@include mq($screen-mobile) {
+  
+  .grid__billboard{
+   grid-template-columns: repeat(1, 1fr);
+   grid-template-rows: repeat(1, auto);
+   grid-template-areas: "billboard-box1";
+   margin-bottom: 24px;
+   margin-top: 0px;
+    
+  h1 {
+    font-size: 3.0rem;
+    line-height: 1.2;
+  }
+
+  .billboard-box1 {
+    grid-area: billboard-box1;
+    padding: 0 16px;
   }
 }
+   .billboard-box2{
+     display: none;
+   }
 
+   .buttons{
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 16px;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "button-one,
+                          button-two";
+   
+   }
 
+}
 
-//animation
+//Animations of the billboard -----------------//
 #red__circle {
   animation: change-color 3s linear 2s infinite alternate;
 }
@@ -203,3 +223,5 @@
     fill: #fff174;
   }
 }
+
+

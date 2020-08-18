@@ -6,6 +6,7 @@ interface CardProps {
   subtitle?: string
   message?: string
   image?: string
+
 }
 
 const Card: FC<CardProps> = ({
@@ -16,7 +17,9 @@ const Card: FC<CardProps> = ({
 
 }) => {
 
+
   return (
+    <>
     <div className="card__container">
               
                   <div className="card__container__img">
@@ -31,6 +34,8 @@ const Card: FC<CardProps> = ({
                   <h6>view more</h6>        
 
           </div>
+           </>
   )
 }
 export default Card
+

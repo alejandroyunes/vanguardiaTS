@@ -102,4 +102,13 @@
   color: #1f2732;
   margin-bottom: 40px;
 }
+
+@media only screen and (max-width: 900px) {
+  .title__section__line {
+    display: none;
+  }
+  .title__section__subtitle {
+    margin-bottom: 20px;
+  }
+}
 /*# sourceMappingURL=Title.css.map */

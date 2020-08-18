@@ -147,7 +147,7 @@
 }
 
 .footer__grid .boxf1 .footer__icon p:hover {
-  color: #2bbacb;
+  color: #508EBC;
   cursor: pointer;
 }
 
@@ -172,7 +172,7 @@
 }
 
 .footer__grid .boxf1 .footer__social :hover {
-  color: #2bbacb;
+  color: #508EBC;
   cursor: pointer;
 }
 
@@ -194,7 +194,7 @@
 }
 
 .map #co {
-  fill: #2bbacb;
+  fill: #508EBC;
 }
 
 .map #co:hover {
@@ -208,7 +208,7 @@
 }
 
 .map path:hover {
-  fill: #2bbacb;
+  fill: #508EBC;
 }
 
 .footer__button {

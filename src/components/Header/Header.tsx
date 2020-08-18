@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from '../../assets/logo.svg';
 import './Header.scss'
-
+import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 function Header() {
   const [header, setHeader] = useState("header__main");
 
@@ -19,12 +19,11 @@ function Header() {
   }, []);
 
   return (
-   
+
         <div className="header">
         <header className={header}>
           <div className="header__logo">
-              <img src={logo} />
-              
+                <img src={logo} />
             </div>
             
             <ul className="header__links">
@@ -32,12 +31,14 @@ function Header() {
               <li className="header__link__item">about</li>
               <li className="header__link__item">blog</li>
               <li className="header__link__item">contact</li>
+              <li className="header__link__item__hamburger"><MenuRoundedIcon /></li>
             </ul>
-
+            
+              
+            
             
         </header>
         </div>
-      
   );
 }
 

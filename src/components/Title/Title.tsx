@@ -2,13 +2,16 @@ import React, { FC, ReactNode } from 'react';
 import './Title.scss'
 
 interface TitleProps {
-  title?: string
-  message?: string
+  title: string
+  message: string
+
 }
 
 const Title: FC<TitleProps> = ({
   title,
   message,
+
+
 }) => {
 
   return (
@@ -20,7 +23,7 @@ const Title: FC<TitleProps> = ({
         <h6>{message}</h6>
       </div>
       <div className="title__section__line">
-        <h6>- - -</h6>
+        <h6>---</h6>
       </div>
     </div>
   )
