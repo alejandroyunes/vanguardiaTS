@@ -114,13 +114,7 @@
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
-  .cards__container .card__child__one {
-    display: none;
-  }
-  .cards__container .card__child__two {
-    display: none;
-  }
-  .cards__container .card__child__three {
+  .cards__container .card__child__hide {
     display: none;
   }
   .cards__container .card__child__active {
@@ -204,7 +198,7 @@
 
 @media only screen and (max-width: 440px) {
   .button__div .left {
-    left: 0px;
+    left: -10px;
   }
 }
 
@@ -221,12 +215,15 @@
 
 @media only screen and (max-width: 440px) {
   .button__div .right {
-    right: 0px;
+    right: -10px;
   }
 }
 
-.button__div .left:hover polyline,
-.button__div .left:focus polyline {
+.button__div .arrow-active polyline {
+  stroke-width: 3;
+}
+
+.button__div .left:hover polyline {
   stroke-width: 3;
 }
 
@@ -236,8 +233,7 @@
   transition: all 100ms ease-in-out;
 }
 
-.button__div .right:hover polyline,
-.button__div .right:focus polyline {
+.button__div .right:hover polyline {
   stroke-width: 3;
 }
 

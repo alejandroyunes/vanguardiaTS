@@ -40,9 +40,8 @@ export default function Cards() {
       />
       <div className="cards__container section__grid">
         <div className={
-            classNames('card__child__one',
-                     {'card__child__active ' : currentCard == 1}, 
-                     
+            classNames('card__child__hide',
+                     {'card__child__active'  : currentCard == 1}, 
                      )}>
           <Card
             image={ResponsiveDesignIcon}
@@ -54,9 +53,9 @@ export default function Cards() {
           />
         </div>
         <div className={
-          classNames('card__child__two', 
+          classNames('card__child__hide', 
           {'card__child__active ' : currentCard == 2},
-          {'card__child__one ' : currentCard == 1} )}>
+          )}>
           <Card
             image={MobileDesignIcon}
             title="Responsive Middle"
@@ -67,7 +66,7 @@ export default function Cards() {
           />
         </div>
         <div className={
-          classNames('card__child__three', 
+          classNames('card__child__hide', 
           {'card__child__active ' : currentCard == 3} )}>
           <Card
             image={MobileDesignIcon}
@@ -80,9 +79,13 @@ export default function Cards() {
         </div>
       </div>
       <div className="button__div">
-
-
-        <button className="arrow left" onClick={changeLeft}>
+        <button 
+                className={
+                  classNames('arrow left', 
+                  {'arrow-active polyline' : currentCard == 2},
+                  {'arrow-active polyline ' : currentCard == 3}
+                 )}
+                onClick={changeLeft}>
           <svg width="40px" height="60px" viewBox="0 0 50 80">
             <polyline 
             fill="none" 
@@ -93,10 +96,14 @@ export default function Cards() {
             points="45.63,75.8 0.375,38.087 45.63,0.375 "/>
           </svg>
         </button>
-        
-        
+  
         <div className="right__arrow_div">
-        <button className="arrow right" onClick={changeRight}>
+        <button className={
+                  classNames('arrow right', 
+                  {'arrow-active polyline' : currentCard == 2},
+                  {'arrow-active polyline ' : currentCard == 1} )}
+          
+                onClick={changeRight}>
           <svg width="40px" height="60px" viewBox="0 0 50 80" >
             <polyline 
             fill="none" 

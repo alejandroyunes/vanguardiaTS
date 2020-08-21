@@ -15,26 +15,15 @@
 
   @include mq($screen-mobile) {
     grid-template-columns: repeat(1, 1fr);
-    // > :first-child {
-    //   display: none;
-    // }
-    // > :last-child {
-    //   display: none;
-    // }
-    .card__child__one {
-      display: none;
-    }
 
-    .card__child__two {
+    .card__child__hide {
       display: none;
     }
-    .card__child__three {
-      display: none;
-    }
- 
     .card__child__active {
       display: block;
+
     }
+
   }
 }
 
@@ -87,7 +76,7 @@
       left: 20px;
     }
         @include mq($screen-small) {
-      left: 0px;
+      left: -10px;
     }
   }
   .right{
@@ -97,12 +86,15 @@
       right: 20px;
     }
     @include mq($screen-small) {
-      right: 0px;
+      right: -10px;
     }
   }
 
-  .left:hover polyline,
-  .left:focus polyline {
+  .arrow-active polyline {
+    stroke-width: 3;
+  }
+  
+  .left:hover polyline {
     stroke-width: 3;
   }
 
@@ -111,8 +103,7 @@
     transition: all 100ms ease-in-out;
   }
 
-  .right:hover polyline,
-  .right:focus polyline {
+  .right:hover polyline {
     stroke-width: 3;
   }
 
