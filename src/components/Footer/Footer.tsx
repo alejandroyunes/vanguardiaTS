@@ -8,9 +8,10 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-
-
-
+import Animation from './Animation'
+import $ from "jquery";
+import { VectorMap } from '@south-paw/react-vector-maps';
+import worldLowRes from './worldLowRes.json'
 
 export default function Footer() {
   return (
@@ -65,7 +66,7 @@ export default function Footer() {
 
           <div className="boxf2">
           <div className="map">
-         
+          <VectorMap {...worldLowRes} />
           </div>
          
           </div>
