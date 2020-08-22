@@ -7,28 +7,49 @@ import Title from '../Title/Title'
 import Card from '../Card/Card'
 import classNames from 'classnames'
 
+
 export default function Cards() {
 
   const [ currentCard, setCard ] = useState(2);
+  const [ previousCard, setPreviousCard ] = useState(0);
+
+  const [ fromLeftToRight, setfromLeftToRight] = useState(false);
+
+  const [ fromRightToLeft, setfromRightToLeft] = useState(true);
+  const [ defaultValue, setDefaultValue] = useState(true);
 
   const changeLeft = ( ) => {
+
     if (currentCard == 3){
+      setfromRightToLeft(false)
+      setfromLeftToRight(true)
+     
+      setDefaultValue(true)
       setCard(currentCard - 1)
+     
     }
     if (currentCard == 2){
+      setDefaultValue(true)
       setCard(currentCard - 1)
+     
     }
-
   }
+  console.log(previousCard)
 
   const changeRight = ( ) => {
 
-  if (currentCard == 1){
+
+  if (currentCard == 1 ){
+    setfromRightToLeft(true)
+    setDefaultValue(false)
+    setCard(currentCard + 1)
+
+  }
+  if (currentCard == 2  ){
+
     setCard(currentCard + 1)
   }
-  if (currentCard == 2){
-    setCard(currentCard + 1)
-  }
+
   }
 
 
@@ -39,9 +60,10 @@ export default function Cards() {
         message="Mobile first world"
       />
       <div className="cards__container section__grid">
+     
         <div className={
             classNames('card__child__hide',
-                     {'card__child__active'  : currentCard == 1}, 
+                     {'card__child__active animated bounceInLeft'  : currentCard == 1}, 
                      )}>
           <Card
             image={ResponsiveDesignIcon}
@@ -52,22 +74,51 @@ export default function Cards() {
           design intricate trading platforms."
           />
         </div>
+      
+      
+
+
+{(fromRightToLeft  )&& (
+
+<div className={
+  classNames('card__child__hide', 
+  {'card__child__active animated bounceInRight' : currentCard == 2},
+  )}>
+  <Card
+    image={MobileDesignIcon}
+    title="Responsive Middle"
+    subtitle="Illustration Gallery"
+    message="Leading2 digital agency with solid design and development
+  expertise. We build mobile and web products for startups and
+  design intricate trading platforms."
+  />
+</div>
+
+)}
+
+
+{(fromLeftToRight && defaultValue)  && (
+
+<div className={
+  classNames('card__child__hide', 
+  {'card__child__active animated bounceInLeft' : currentCard == 2},
+  )}>
+  <Card
+    image={MobileDesignIcon}
+    title="Responsive Middle"
+    subtitle="Illustration Gallery"
+    message="Leading2 digital agency with solid design and development
+  expertise. We build mobile and web products for startups and
+  design intricate trading platforms."
+  />
+</div>
+
+)}
+
+
         <div className={
           classNames('card__child__hide', 
-          {'card__child__active ' : currentCard == 2},
-          )}>
-          <Card
-            image={MobileDesignIcon}
-            title="Responsive Middle"
-            subtitle="Illustration Gallery"
-            message="Leading2 digital agency with solid design and development
-          expertise. We build mobile and web products for startups and
-          design intricate trading platforms."
-          />
-        </div>
-        <div className={
-          classNames('card__child__hide', 
-          {'card__child__active ' : currentCard == 3} )}>
+          {'card__child__active animated bounceInRight' : currentCard == 3} )}>
           <Card
             image={MobileDesignIcon}
             title="SEO & Last"

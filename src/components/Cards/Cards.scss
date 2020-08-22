@@ -21,8 +21,61 @@
     }
     .card__child__active {
       display: block;
-
     }
+
+
+    .animated {
+      background-repeat: no-repeat;
+      background-position: left top; 
+      animation-duration: 1s; 
+      animation-fill-mode: both; 
+   }
+   
+   
+   @keyframes bounceInLeft {
+      0% {
+         opacity: 0;
+         transform: translateX(-200px);
+      }
+      60% {
+         opacity: 1;
+         transform: translateX(0px);
+      }
+      80% {
+         transform: translateX(-10px);
+      }
+      100% {
+         transform: translateX(0);
+      }
+   }
+   
+   .bounceInLeft {
+      animation-name: bounceInLeft;
+   }
+
+   @keyframes bounceInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(200px);
+    }
+    60% {
+       opacity: 1;
+       transform: translateX(0px);
+    }
+    80% {
+       transform: translateX(10px);
+    }
+    100% {
+       transform: translateX(0);
+    }
+ }
+ 
+ .bounceInRight {
+    animation-name: bounceInRight;
+ }
+
+
+
 
   }
 }
