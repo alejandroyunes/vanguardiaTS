@@ -13,7 +13,7 @@
       height: 490px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
-    @include mq($screen-desktop-1100) {
+    @include mq($screen-desktop) {
       padding: $default-padding20;
       margin: 0 auto;
       width: 260px;
@@ -48,12 +48,6 @@
       padding: $default-padding8 0;
     }
 
-    
-  
-
-  }
-  .section__grid_tablet {
-    
   }
   
     .card__container_tablet {
@@ -98,7 +92,6 @@
   
   .card__mobile {
     padding: $default-padding24;
-  
     margin: 0 $default-padding32;
     background-color: #fff;
     border-radius: 0.5rem;

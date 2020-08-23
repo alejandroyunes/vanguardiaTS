@@ -117,7 +117,7 @@
   }
 }
 
-@include mq($screen-mobile) {
+@include mq($screen-tablet) {
 	 .header__link__item {
 		display: none;
   }

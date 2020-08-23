@@ -103,7 +103,7 @@
   padding: 10px 0 26px 0;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
   .cards__container {
     margin: 0 20px;
   }
@@ -218,10 +218,6 @@
   }
 }
 
-.card__child__two__swap {
-  padding-left: 500px;
-}
-
 #rocket {
   -webkit-animation: topBottom 5s infinite;
           animation: topBottom 5s infinite;
@@ -262,11 +258,9 @@
 }
 
 .button__div button {
-  -webkit-appearance: none;
   background: transparent;
   border: 0;
   outline: 0;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .button__div svg {
@@ -288,13 +282,7 @@
 @media only screen and (max-width: 900px) {
   .button__div .left {
     visibility: visible;
-    left: 20px;
-  }
-}
-
-@media only screen and (max-width: 440px) {
-  .button__div .left {
-    left: -10px;
+    left: 0px;
   }
 }
 
@@ -305,13 +293,7 @@
 @media only screen and (max-width: 900px) {
   .button__div .right {
     visibility: visible;
-    right: 20px;
-  }
-}
-
-@media only screen and (max-width: 440px) {
-  .button__div .right {
-    right: -10px;
+    right: 0px;
   }
 }
 

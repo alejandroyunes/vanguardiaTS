@@ -17,7 +17,7 @@ export const ImageGallery = () => {
         message="Creative Interface Design"
         />
 
-      <div className="design__section section__full" >
+      <div className=" section__full" >
        
         <div className="grid__image__gallery">
           <div className="box11">

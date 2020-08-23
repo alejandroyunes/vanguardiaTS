@@ -11,7 +11,6 @@ import classNames from 'classnames'
 export default function Cards() {
 
   const [ currentCard, setCard ] = useState(2);
-  const [ previousCard, setPreviousCard ] = useState(0);
 
   const [ fromLeftToRight, setfromLeftToRight] = useState(false);
 
@@ -34,7 +33,7 @@ export default function Cards() {
      
     }
   }
-  console.log(previousCard)
+
 
   const changeRight = ( ) => {
 
@@ -114,8 +113,6 @@ export default function Cards() {
 </div>
 
 )}
-
-
         <div className={
           classNames('card__child__hide', 
           {'card__child__active animated bounceInRight' : currentCard == 3} )}>

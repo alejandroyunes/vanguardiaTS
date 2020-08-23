@@ -1,0 +1,59 @@
+.image__column {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image__column-img {
+  text-align: center;
+  width: 100%;
+}
+
+.image__column img {
+  width: 480px;
+}
+
+.image__column p {
+  text-align: center;
+  padding: 12px;
+}
+
+.image__column h3 {
+  color: #ae3c43;
+  font-weight: 600;
+  padding-top: 8px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .image__column img {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .image__column img {
+    width: 100%;
+  }
+}
+
+.image__column .grid__title {
+  margin-top: 8px;
+}
+
+.grid__paragraph {
+  width: 600px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid__paragraph {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .grid__paragraph {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=OneColumnImageCard.css.map */

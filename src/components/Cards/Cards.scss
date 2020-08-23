@@ -9,11 +9,11 @@
   margin: 0 auto;
   padding: 10px 0 26px 0;
 
-  @include mq($screen-desktop-1100) {
+  @include mq($screen-desktop) {
     margin: 0 20px;
   }
 
-  @include mq($screen-mobile) {
+  @include mq($screen-tablet) {
     grid-template-columns: repeat(1, 1fr);
 
     .card__child__hide {
@@ -73,16 +73,10 @@
  .bounceInRight {
     animation-name: bounceInRight;
  }
-
-
-
-
   }
 }
 
-.card__child__two__swap {
-  padding-left: 500px;
-}
+
 
 #rocket {
   animation: topBottom 5s infinite;
@@ -103,11 +97,9 @@
 .button__div {
   position: relative;
   button {
-    -webkit-appearance: none;
     background: transparent;
     border: 0;
     outline: 0;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
 
   svg {
@@ -124,22 +116,22 @@
 
   .left{
     visibility: hidden;
-    @include mq($screen-mobile) {
+    @include mq($screen-tablet) {
       visibility: visible;
-      left: 20px;
+      left: 0px;
     }
         @include mq($screen-small) {
-      left: -10px;
+      // left: -10px;
     }
   }
   .right{
     visibility: hidden;
-    @include mq($screen-mobile) {
+    @include mq($screen-tablet) {
       visibility: visible;
-      right: 20px;
+      right: 0px;
     }
     @include mq($screen-small) {
-      right: -10px;
+      // right: -10px;
     }
   }
 

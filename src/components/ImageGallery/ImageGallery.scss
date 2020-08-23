@@ -1,32 +1,11 @@
 @import "../../sass/utilities";
 @import "../../sass/config";
+@import "../../sass/mixins";
 
-.design__section {
-
-  margin: 0 auto;
-
-  &__title {
-    margin-top: 32px;
-    text-align: center;
-    font-size: 1.2rem;
-    color: $light-gray;
-  }
-  &__subtitle {
-    text-align: center;
-    font-size: 3rem;
-    color: $secondary-color;
-  }
-  &__line {
-    text-align: center;
-    font-size: 2rem;
-    color: $secondary-color;
-  }
-
-}
 
 .grid__image__gallery {
   display: grid;
-  margin: 0 $default-padding32;
+  margin: 0 ;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 16px 16px;
@@ -52,6 +31,21 @@
   }
   .box55 {
     grid-area: box55;
+  }
+  @include mq($screen-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px 8px;
+    grid-template-areas:
+    "box11 box11"
+    "box11 box11"
+    "box22 box33"
+    "box44 box55";
+  }
+
+
+  @include mq($screen-small) {
+    gap: 4px 4px;
   }
 
 }

@@ -1,6 +1,7 @@
 
 import React, { FC, ReactNode } from 'react';
-import './ImageColumn.scss'
+import './OneColumnImageCard.scss'
+
 
 interface ImageColumnProps {
   image?: string
@@ -8,15 +9,16 @@ interface ImageColumnProps {
   message?: string
 }
 
-const ImageColumn: FC<ImageColumnProps> = ({
+const OneColumnImageCard: FC<ImageColumnProps> = ({
   title,
   message,
+  image
 }) => {
 
   return (
     <div className="image__column">
       <div className="image__column-img">
-        <img src="https://picsum.photos/500/300?random=2" />
+        <img src={image} />
       </div>
       <div className="grid__title">
         <h3>{title}</h3>
@@ -30,6 +32,6 @@ const ImageColumn: FC<ImageColumnProps> = ({
     </div>
   )
 }
-export default ImageColumn
+export default OneColumnImageCard
 
 

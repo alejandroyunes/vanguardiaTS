@@ -30,13 +30,17 @@
 
 }
 
-@include mq($screen-mobile) {
+@include mq($screen-tablet) {
   .title__section {
     &__line {
       display: none;
     }
     &__subtitle {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+
+    }
+    &__subtitle {
+      line-height: 1.2;
     }
 }
 }

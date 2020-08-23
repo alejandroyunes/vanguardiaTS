@@ -1,0 +1,49 @@
+@import "../../sass/mixins";
+
+.image__column {
+  align-items: center;
+  &-img {
+    text-align: center;
+    width: 100%;
+  }
+  img {
+    width: 480px;
+  }
+  p {
+    text-align: center;
+    padding: 12px;
+  }
+  h3 {
+    color: #ae3c43;
+    font-weight: 600;
+    padding-top: 8px;
+    text-align: center;
+  }
+  @include mq($screen-desktop) {
+    img {
+      width: 380px;
+    }
+  }
+  @include mq($screen-small) {
+    img {
+      width: 100%;
+    }
+  }
+  .grid__title{
+    margin-top: 8px;
+  }
+
+ 
+}
+
+.grid__paragraph {
+  width: 600px;
+
+  @include mq($screen-desktop) {
+    width: 400px;
+  }
+  @include mq($screen-small) {
+    width: 100%;
+  }
+
+}

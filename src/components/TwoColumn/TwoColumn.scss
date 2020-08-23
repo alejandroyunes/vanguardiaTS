@@ -1,20 +1,46 @@
 @import "../../sass/config";
 @import "../../sass/utilities";
 @import "../../sass/config";
+@import "../../sass/mixins";
 
+.design__section {
+display: flex;
+justify-content: center;
+ 
+}
 .two__column-grid {
   display: grid;
-  overflow: hidden;
-  grid-template-columns: repeat(2, 500px);
-  justify-content: space-evenly;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  gap: 4px 4px;
+  gap: 16px 16px;
   grid-template-areas: "box11 box22 ";
   .box11 {
     grid-area: box11;
+    margin-bottom: 16px;
   }
-
   .box22 {
     grid-area: box22;
+    margin-bottom: 16px;
   }
+  @include mq($screen-desktop) {
+    margin: 0 16px;
+  }
+
+  @include mq($screen-tablet) {
+    margin: 0 $default-padding16;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 8px 8px;
+    grid-template-areas:
+    "box11"
+    "box22";
+  }
+
+
+  @include mq($screen-small) {
+    margin: 0 ;
+    gap: 4px 4px;
+  }
+  
 }

@@ -108,7 +108,10 @@
     display: none;
   }
   .title__section__subtitle {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .title__section__subtitle {
+    line-height: 1.2;
   }
 }
 /*# sourceMappingURL=Title.css.map */

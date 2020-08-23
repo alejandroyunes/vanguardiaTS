@@ -89,6 +89,10 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+button {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-appearance: none;
+}
 
 html {
   box-sizing: border-box;

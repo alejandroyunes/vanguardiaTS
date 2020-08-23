@@ -1,7 +1,9 @@
 import React from "react";
 import "./TwoColumn.scss";
 import Title from '../Title/Title'
-import ImageColumn from '../ImageColumn/ImageColumn'
+import OneColumnImageCard from '../OneColumnImageCard/OneColumnImageCard'
+import WhiteMountains from "../../components/ImageGallery/Assets/white-mountains.jpg";
+import GreenDesign from "../../components/ImageGallery/Assets/green-design-mockup.jpg";
 
 export default function TwoColums() {
   return (
@@ -10,29 +12,32 @@ export default function TwoColums() {
         title="Design"
         message="Modern tendency Interface Design"
       />
+      <div className="design__section section__full" >
 
-      <div className="two__column-grid section__full">
-        <div className="box11">
-          <ImageColumn
-            title="Illustration Gallery"
-            message=" Leading digital agency with solid design and development
+        <div className="two__column-grid">
+          <div className="box11">
+            <OneColumnImageCard
+              image={WhiteMountains}
+              title="Illustration Gallery"
+              message=" Leading digital agency with solid design and development
         expertise. We build mobile and web products for startups and
         design intricate trading platforms."
-          />
-        </div>
+            />
+          </div>
 
-        <div className="box22">
-          <ImageColumn
-            title="Illustration Gallery"
-            message=" Leading digital agency with solid design and development
+          <div className="box22">
+            <OneColumnImageCard
+            image={GreenDesign}
+              title="Illustration Gallery"
+              message=" Leading digital agency with solid design and development
         expertise. We build mobile and web products for startups and
         design intricate trading platforms."
-          />
+            />
+          </div>
+
         </div>
 
       </div>
-
-
     </>
   );
 }

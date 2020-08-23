@@ -43,7 +43,7 @@
    }
 
 
-@include mq($screen-mobile) {
+@include mq($screen-tablet) {
   
   .grid__billboard{
    grid-template-columns: repeat(1, 1fr);
