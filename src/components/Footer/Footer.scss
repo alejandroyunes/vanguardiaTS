@@ -1,7 +1,6 @@
 @import "../../sass/config";
-
 @import "../../sass/utilities";
-
+@import "../../sass/mixins";
 .footer {
   margin: 0 auto;
   margin-top: 80px;
@@ -14,10 +13,16 @@
   margin: 0 auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "boxf1 boxf2";
+
+  @include mq($screen-card_special) {
+     
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: "boxf1";
+    }
  
   .boxf1 {
     grid-area: boxf1;
-    padding: 40px 0 0 00px;
+    padding-top: 40px;
     h1 {
       font-weight: bold;
       color: white;
@@ -63,7 +68,6 @@
       }
       
     }
-
     .footer__social{
       color: white;
       display: flex;
@@ -82,19 +86,36 @@
         cursor: pointer;
       }
     }
+    @include mq($screen-card_special) {
+      .boxf1 {
+        display: none;
+      }
+    
   }
+
+
 
 
   .boxf2 {
     grid-area: boxf2;
     display: flex;
     justify-content: center;
-
   }
+  @include mq($screen-desktop) {
+    margin: 0 32px;
+  }
+  @include mq($screen-card_special) {
+    .boxf2 {
+      display: none;
+    }
+
 }
+
+
 .map{
   padding-top: 40px;
   stroke: #1f2732;
+  align-self: center;
   #co{
     fill: $primary-color;
     &:hover {
@@ -105,15 +126,14 @@
     fill: #363d47;
     cursor: pointer;
     outline: none;
-
-    // When a layer is hovered
     &:hover {
       fill: $primary-color;
 }
   }
 }
 
-
-.footer__button{
+.footer__button {
   padding: 16px  0;
+}
+}
 }

@@ -150,7 +150,14 @@
 }
 
 .header__links {
+  position: relative;
   margin: 0 24px;
+}
+
+.header__toggle__dark_mode {
+  position: absolute;
+  left: -60px;
+  top: 10px;
 }
 
 .header__link__item {

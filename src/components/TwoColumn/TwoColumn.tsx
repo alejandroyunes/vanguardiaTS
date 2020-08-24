@@ -5,6 +5,11 @@ import OneColumnImageCard from '../OneColumnImageCard/OneColumnImageCard'
 import WhiteMountains from "../../components/ImageGallery/Assets/white-mountains.jpg";
 import GreenDesign from "../../components/ImageGallery/Assets/green-design-mockup.jpg";
 
+import Forecast from '../../components/Forecast/Forecast';
+import Weather from '../../components/Weather/Weather';
+import Search from '../../components/Search/Search';
+
+
 export default function TwoColums() {
   return (
     <>
@@ -38,6 +43,12 @@ export default function TwoColums() {
         </div>
 
       </div>
+
+
+      <Search />
+      <Weather />
+      <Forecast />
+
     </>
   );
 }

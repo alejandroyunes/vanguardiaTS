@@ -1,4 +1,4 @@
-import React, {FC, useEffect} from "react";
+import React, {FC, useEffect, useState} from "react";
 import "./Footer.scss";
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
@@ -13,7 +13,17 @@ import $ from "jquery";
 import { VectorMap } from '@south-paw/react-vector-maps';
 import worldLowRes from './worldLowRes.json'
 
-export default function Footer() {
+
+
+
+const Footer: FC = ({
+
+
+
+}) => {
+
+
+
   return (
     <>
 
@@ -32,12 +42,7 @@ export default function Footer() {
               <div className="footer__button">
                 <input type="submit" value="Medellín" />
                 <input type="submit" value="Colombia" />
-              </div>
-              
-            
-                
-              
-
+              </div>             
               <div className="footer__icon">
                 <LocationOnIcon />
                 <p>
@@ -57,13 +62,9 @@ export default function Footer() {
                 <TwitterIcon  fontSize="large"/> 
                 <GitHubIcon  fontSize="large"/> 
               </div>
-
-              
-
             </div>
 
           </div>
-
           <div className="boxf2">
           <div className="map">
           <VectorMap {...worldLowRes} />
@@ -77,11 +78,11 @@ export default function Footer() {
       </div>
 
 
-
-
-
+ 
+       
 
 
     </>
   );
 }
+export default Footer

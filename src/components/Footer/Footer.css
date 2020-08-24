@@ -93,11 +93,19 @@
       grid-template-areas: "boxf1 boxf2";
 }
 
+@media only screen and (max-width: 700px) {
+  .footer__grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "boxf1";
+  }
+}
+
 .footer__grid .boxf1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: boxf1;
-  padding: 40px 0 0 00px;
+  padding-top: 40px;
 }
 
 .footer__grid .boxf1 h1 {
@@ -176,7 +184,13 @@
   cursor: pointer;
 }
 
-.footer__grid .boxf2 {
+@media only screen and (max-width: 700px) {
+  .footer__grid .boxf1 .boxf1 {
+    display: none;
+  }
+}
+
+.footer__grid .boxf1 .boxf2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: boxf2;
@@ -188,30 +202,45 @@
           justify-content: center;
 }
 
-.map {
-  padding-top: 40px;
-  stroke: #1f2732;
+@media only screen and (max-width: 1200px) {
+  .footer__grid .boxf1 {
+    margin: 0 32px;
+  }
 }
 
-.map #co {
+@media only screen and (max-width: 700px) {
+  .footer__grid .boxf1 .boxf2 {
+    display: none;
+  }
+}
+
+.footer__grid .boxf1 .map {
+  padding-top: 40px;
+  stroke: #1f2732;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer__grid .boxf1 .map #co {
   fill: #508EBC;
 }
 
-.map #co:hover {
+.footer__grid .boxf1 .map #co:hover {
   fill: #1f2732;
 }
 
-.map path {
+.footer__grid .boxf1 .map path {
   fill: #363d47;
   cursor: pointer;
   outline: none;
 }
 
-.map path:hover {
+.footer__grid .boxf1 .map path:hover {
   fill: #508EBC;
 }
 
-.footer__button {
+.footer__grid .boxf1 .footer__button {
   padding: 16px  0;
 }
 /*# sourceMappingURL=Footer.css.map */
