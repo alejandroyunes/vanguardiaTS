@@ -120,18 +120,13 @@
       visibility: visible;
       left: 0px;
     }
-        @include mq($screen-small) {
-      // left: -10px;
-    }
+ 
   }
   .right{
     visibility: hidden;
     @include mq($screen-tablet) {
       visibility: visible;
       right: 0px;
-    }
-    @include mq($screen-small) {
-      // right: -10px;
     }
   }
 

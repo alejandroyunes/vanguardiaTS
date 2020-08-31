@@ -37,7 +37,6 @@ export default function Cards() {
 
   const changeRight = ( ) => {
 
-
   if (currentCard == 1 ){
     setfromRightToLeft(true)
     setDefaultValue(false)
@@ -73,9 +72,6 @@ export default function Cards() {
           design intricate trading platforms."
           />
         </div>
-      
-      
-
 
 {(fromRightToLeft  )&& (
 

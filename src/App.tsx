@@ -3,7 +3,6 @@ import { BrowserRouter, Switch } from "react-router-dom";
 import HomeRouter from "./containers/HomeRouter/HomeRouter";
 import PublicRoute from './core/PublicRoute/PublicRoute';
 
-
 import { useSelector } from 'react-redux';
 import { AppStore } from './store/appStore';
 
