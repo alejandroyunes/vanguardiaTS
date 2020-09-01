@@ -4,9 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import './Header.scss'
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import { toggleDarkMode } from '../../store/actions/app';
-import DarkModeToggle from 'react-dark-mode-toggle';
 import { AppStore } from '../../store/appStore';
-import classNames from 'classnames'
+
 
 function Header() {
   const [header, setHeader] = useState("header__main");
@@ -34,13 +33,11 @@ function Header() {
         <div className="header__logo">
           <img src={logo} />
         </div>
-
         <ul className="header__links">
           <div className="header__toggle__dark_mode">
             <div className="container">
               <input type="checkbox" 
               defaultChecked={isDarkMode}
-            
               className="chk" id="chk" 
               onChange={ () => dispatch(toggleDarkMode())}/>
               <label htmlFor="chk" className="toggle">

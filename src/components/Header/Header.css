@@ -322,12 +322,6 @@
   }
 }
 
-body {
-  background-color: #A8FFFF;
-  -webkit-transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-
 .container {
   overflow: hidden;
   padding: 28px 0 0 12px;

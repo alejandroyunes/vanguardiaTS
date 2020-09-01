@@ -7,7 +7,7 @@
   max-width: 2000px;
   height: 480px;
   background-color: $secondary-color;
-}
+
 
 .footer__grid {
   margin: 0 auto;
@@ -15,7 +15,6 @@
   grid-template-areas: "boxf1 boxf2";
 
   @include mq($screen-card_special) {
-     
       grid-template-columns: repeat(1, 1fr);
       grid-template-areas: "boxf1";
     }
@@ -86,54 +85,85 @@
         cursor: pointer;
       }
     }
-    @include mq($screen-card_special) {
-      .boxf1 {
-        display: none;
-      }
-    
-  }
+  //   @include mq($screen-card_special) {
+  //     .boxf1 {
+  //       display: none;
+  //     }
+  // }
 
 
-
-
-  .boxf2 {
-    grid-area: boxf2;
-    display: flex;
-    justify-content: center;
-  }
   @include mq($screen-desktop) {
     margin: 0 32px;
   }
-  @include mq($screen-card_special) {
-    .boxf2 {
-      display: none;
-    }
+//   @include mq($screen-card_special) {
+//     .boxf2 {
+//       display: none;
+//     }
 
-}
-
-
-.map{
-  padding-top: 40px;
-  stroke: #1f2732;
-  align-self: center;
-  #co{
-    fill: $primary-color;
-    &:hover {
-      fill: $secondary-color;
-  }
-}
-  path {
-    fill: #363d47;
-    cursor: pointer;
-    outline: none;
-    &:hover {
-      fill: $primary-color;
-}
-  }
-}
+// }
 
 .footer__button {
   padding: 16px  0;
 }
+
+
 }
+
+
+.boxf2 {
+  grid-area: boxf2;
 }
+  .contact__form__container {
+    display: flex;
+    margin: 50px 0;
+    outline: 1px solid red;
+  }
+  
+  form { 
+    max-width:420px; 
+  }
+  
+  .feedback-input {
+    color:white;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid $primary-color;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus { border:2px solid $dark-red; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    width: 100%;
+    background:$primary-color;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:$dark-red; }
+}
+
+
+}
+
