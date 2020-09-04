@@ -43,9 +43,8 @@
     "box44 box55";
   }
 
-
   @include mq($screen-small) {
-    gap: 4px 4px;
+    gap: 8px 8px;
   }
 
 }
