@@ -463,11 +463,11 @@ input:checked {
       padding: 30px;
       padding-top: 100px;
       right: 0px;
-      background: #ededed;
+      background: white;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
       /* to stop flickering of text in safari */
-
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
       transform-origin: 0% 0%;
       transform: translate(100%, 0);
 
