@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
-import logo from '../../assets/logo.svg';
-import { useDispatch, useSelector } from 'react-redux';
-import './Header.scss'
-import { toggleDarkMode } from '../../store/actions/app';
-import { AppStore } from '../../store/appStore';
-
+import logo from "../../assets/logo.svg";
+import { useDispatch, useSelector } from "react-redux";
+import "./Header.scss";
+import { toggleDarkMode } from "../../store/actions/app";
+import { AppStore } from "../../store/appStore";
 
 function Header() {
   const [header, setHeader] = useState("header__main");
 
   const listenScrollEvent = () => {
     if (window.scrollY < 70) {
+      console.log("less than 70");
       return setHeader("header__main");
-    } else if (window.scrollY > 70) {
+    } else if (window.scrollY >= 70) {
       return setHeader("header__slide__down");
     }
   };
@@ -27,7 +27,7 @@ function Header() {
 
   return (
     <div className="header">
-      <header className="header__slide__down">
+      <header className={header}>
         <div className="header__logo">
           <img src={logo} />
         </div>
@@ -63,6 +63,7 @@ function Header() {
           <li className="header__link__item">blog</li>
           <li className="header__link__item">contact</li>
         </ul>
+
         <div className="hamburger-menu-mobile">
           <div id="toggleMenu">
             <input type="checkbox" />
@@ -85,6 +86,8 @@ function Header() {
             </ul>
           </div>
         </div>
+
+       
       </header>
     </div>
   );

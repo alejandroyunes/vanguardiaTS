@@ -18,11 +18,11 @@
     height: 70px;
     z-index: 3;
     margin: 0 auto;
-    @include mq($screen-tablet) {
-      width: 100%;
-      position: fixed;
-      background-color: #fff;
-    }
+    // @include mq($screen-tablet) {
+    //   width: 100%;
+    //   position: fixed;
+    //   background-color: #fff;
+    // }
   }
   &__slide__down {
     position: fixed;
@@ -49,7 +49,6 @@
     margin: 0 24px;
     width: 48px;
   }
-
   &__links {
     position: relative;
     margin: 0 24px;
@@ -167,7 +166,7 @@
     left: -99em;
   }
   @include mq($screen-tablet) {
-    padding: 24px 0 0 30px;
+    padding: 16px 0 0 30px;
   }
 }
 
@@ -373,14 +372,15 @@ input:checked {
   }
 }
 
+
+
+
 .hamburger-menu-mobile {
   display: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   @include mq($screen-tablet) {
     display: block;
     #toggleMenu {
-      display: block;
-      position: fixed;
       top: 16px;
       right: 0px;
       z-index: 2;
@@ -400,8 +400,8 @@ input:checked {
 
     #toggleMenu input {
       display: block;
-      width: 40px;
-      height: 32px;
+      width: 44px;
+      height: 36px;
       position: absolute;
       top: -7px;
       right: 14px;
@@ -443,7 +443,7 @@ input:checked {
 
     #toggleMenu input:checked ~ span {
       opacity: 1;
-      transform: rotate(45deg) translate(-2px, -1px);
+      transform: rotate(45deg) translate(6px, -5px);
       background: $primary-color;
     }
 
@@ -453,7 +453,7 @@ input:checked {
     }
 
     #toggleMenu input:checked ~ span:nth-last-child(2) {
-      transform: rotate(-45deg) translate(0, -1px);
+      transform: rotate(-45deg) translate(4px, 7px);
     }
 
     #menu {
@@ -467,9 +467,9 @@ input:checked {
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
       /* to stop flickering of text in safari */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      transform-origin: 0% 0%;
-      transform: translate(100%, 0);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      transform-origin: 10px;
+      transform: translate(0, -100%);
 
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     }
@@ -478,10 +478,6 @@ input:checked {
       padding: 10px 0;
       font-size: 22px;
     }
-
-    /*
- * And let's slide it in from the left
- */
     #toggleMenu input:checked ~ ul {
       transform: none;
     }
