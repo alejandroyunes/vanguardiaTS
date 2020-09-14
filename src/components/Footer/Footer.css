@@ -108,7 +108,7 @@
         grid-template-rows: repeat(2, 1fr);
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "boxf1" "boxf2";
+        grid-template-areas: "boxf1" "boxf2";
   }
 }
 

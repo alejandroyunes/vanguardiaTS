@@ -209,7 +209,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     gap: 8px 8px;
-        grid-template-areas: "box11" "box22";
+        grid-template-areas: "box11" "box22";
   }
 }
 

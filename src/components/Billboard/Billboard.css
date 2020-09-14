@@ -176,7 +176,7 @@
         grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "button-one, button-two";
+        grid-template-areas: "button-one, button-two";
   }
 }
 

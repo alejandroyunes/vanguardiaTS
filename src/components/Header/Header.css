@@ -351,8 +351,8 @@
   border-right-color: #2a9df4;
   border-bottom-color: #2a9df4;
   border-left-color: #2a9df4;
-  -webkit-transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.015s, border-bottom-color 0.15s linear 0.03s, border-left-color 0.15s linear 0.045s;
-  transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.015s, border-bottom-color 0.15s linear 0.03s, border-left-color 0.15s linear 0.045s;
+  -webkit-transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.015s, border-bottom-color 0.15s linear 0.03s, border-left-color 0.15s linear 0.045s;
+  transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.015s, border-bottom-color 0.15s linear 0.03s, border-left-color 0.15s linear 0.045s;
 }
 
 .toggle:before {
@@ -493,8 +493,8 @@ input:checked + .toggle {
   border-right-color: #605885;
   border-bottom-color: #605885;
   border-left-color: #605885;
-  -webkit-transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.015s, border-bottom-color 0.15s linear 0.03s, border-left-color 0.15s linear 0.045s;
-  transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.015s, border-bottom-color 0.15s linear 0.03s, border-left-color 0.15s linear 0.045s;
+  -webkit-transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.015s, border-bottom-color 0.15s linear 0.03s, border-left-color 0.15s linear 0.045s;
+  transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.015s, border-bottom-color 0.15s linear 0.03s, border-left-color 0.15s linear 0.045s;
 }
 
 input:checked + .toggle .handler {

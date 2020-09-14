@@ -325,4 +325,27 @@
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
 }
+
+.dot {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.current {
+  background: #AE3C43;
+}
+
+.dots-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 80px;
+}
 /*# sourceMappingURL=Cards.css.map */
