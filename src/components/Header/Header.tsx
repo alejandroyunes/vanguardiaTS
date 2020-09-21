@@ -4,15 +4,19 @@ import { useDispatch, useSelector } from "react-redux";
 import "./Header.scss";
 import { toggleDarkMode } from "../../store/actions/app";
 import { AppStore } from "../../store/appStore";
-
+import { Link } from "react-router-dom";
 function Header() {
   const [header, setHeader] = useState("header__main");
+const [isMenuOpen, setIsMenuOpen] = useState(false);
+const [isMenuOpenTwo, setIsMenuOpenTwo] = useState();
 
   const listenScrollEvent = () => {
     if (window.scrollY < 70) {
       console.log("less than 70");
+      setIsMenuOpenTwo(false);
       return setHeader("header__main");
     } else if (window.scrollY >= 70) {
+      setIsMenuOpenTwo(false);
       return setHeader("header__slide__down");
     }
   };
@@ -24,6 +28,10 @@ function Header() {
 
   const dispatch = useDispatch();
   const isDarkMode = useSelector((state: AppStore) => state.app.darkMode);
+
+  const toggleDropdown = () => {
+    setIsMenuOpenTwo(!isMenuOpenTwo);
+  };
 
   return (
     <div className="header">
@@ -58,25 +66,41 @@ function Header() {
         </div>
 
         <ul className="header__links">
-          <li className="header__link__item">home</li>
-          <li className="header__link__item">about</li>
+          <Link to={{ pathname: "/" }}>
+            <li className="header__link__item">home</li>
+          </Link>
+          <Link to={{ pathname: "/about" }}>
+            <li className="header__link__item">about</li>
+          </Link>
+
           <li className="header__link__item">blog</li>
           <li className="header__link__item">contact</li>
         </ul>
 
-        <div className="hamburger-menu-mobile">
-          <div id="toggleMenu">
-            <input type="checkbox" />
+        <div className={"hamburger-menu-mobile"}
+         >
+          <div id="toggleMenu"
+           onBlur={() => setIsMenuOpenTwo(false)}
+                       >
+            <input
+              type="checkbox"
+              // defaultChecked={isMenuOpen}
+              checked={isMenuOpenTwo}
+              onClick={()=> toggleDropdown()}
+            />
             <span></span>
             <span></span>
             <span></span>
             <ul id="menu">
-              <a href="#">
+              <Link
+               to={{ pathname: "/" }}>
                 <li>Home</li>
-              </a>
-              <a href="#">
-                <li>About</li>
-              </a>
+              </Link>
+              <Link to={{ pathname: "/about" }}>
+                <a href="#">
+                  <li>About</li>
+                </a>
+              </Link>
               <a href="#">
                 <li>Portfolio</li>
               </a>
@@ -86,8 +110,6 @@ function Header() {
             </ul>
           </div>
         </div>
-
-       
       </header>
     </div>
   );

@@ -405,12 +405,9 @@ input:checked {
       position: absolute;
       top: -7px;
       right: 14px;
-
       cursor: pointer;
-
       opacity: 0; /*  hide this */
       z-index: 2; /* and place it over the hamburger */
-
       -webkit-touch-callout: none;
     }
 
@@ -421,16 +418,12 @@ input:checked {
       right: 20px;
       margin-bottom: 5px;
       position: relative;
-
       background: $primary-color;
       border-radius: 3px;
-
       z-index: 1;
-
       transform-origin: 4px 0px;
-
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
     }
 
     #toggleMenu span:first-child {
@@ -440,22 +433,18 @@ input:checked {
     #toggleMenu span:nth-last-child(2) {
       transform-origin: 0% 100%;
     }
-
     #toggleMenu input:checked ~ span {
       opacity: 1;
       transform: rotate(45deg) translate(6px, -5px);
       background: $primary-color;
     }
-
     #toggleMenu input:checked ~ span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
-
     #toggleMenu input:checked ~ span:nth-last-child(2) {
       transform: rotate(-45deg) translate(4px, 7px);
     }
-
     #menu {
       position: absolute;
       width: 200px;
@@ -470,7 +459,6 @@ input:checked {
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
       transform-origin: 10px;
       transform: translate(0, -100%);
-
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     }
 
@@ -478,8 +466,13 @@ input:checked {
       padding: 10px 0;
       font-size: 22px;
     }
+    
     #toggleMenu input:checked ~ ul {
       transform: none;
     }
   }
+}
+
+.display-none{
+  display: none;
 }
