@@ -4,14 +4,14 @@
 @import "../../sass/mixins";
 
 
-.grid__billboard {
+.main__billboard {
     max-width: 1140px;
     margin: 20px auto;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, auto);
-    grid-template-areas: "billboard-box1 billboard-box2";
+    grid-template-areas: "child-one child-two";
   h1 {
     font-weight: bold;
     color: $dark-blue;
@@ -24,19 +24,18 @@
     line-height: 2rem;
     padding: $default-padding16 0;
   }
-  }
-
-  .billboard-box1 {
-    grid-area: billboard-box1;
+  .child-one {
+    grid-area: child-one;
     padding-left: 24px;
     margin: auto 0;
   }
-  
-  .billboard-box2 {
-    grid-area: billboard-box2;
+  .child-two {
+    grid-area: child-two;
     padding-right: 24px;
     margin: auto 0;
   }
+  }
+
    .buttons{
       display: flex;
     margin-top: 16px;
@@ -45,24 +44,25 @@
 
 @include mq($screen-tablet) {
   
-  .grid__billboard{
+  .main__billboard{
    grid-template-columns: repeat(1, 1fr);
    grid-template-rows: repeat(1, auto);
-   grid-template-areas: "billboard-box1";
+   grid-template-areas: "child-one";
    margin-bottom: 24px;
    margin-top: 0px;
     
   h1 {
     font-size: 3.0rem;
     line-height: 1.2;
+    
   }
 
-  .billboard-box1 {
-    grid-area: billboard-box1;
+  .child-one {
+    grid-area: child-one;
     padding: 0 16px;
   }
 }
-   .billboard-box2{
+   .child-two{
      display: none;
    }
 

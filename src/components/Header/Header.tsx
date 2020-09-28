@@ -4,19 +4,20 @@ import { useDispatch, useSelector } from "react-redux";
 import "./Header.scss";
 import { toggleDarkMode } from "../../store/actions/app";
 import { AppStore } from "../../store/appStore";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import classNames from "classnames";
 function Header() {
   const [header, setHeader] = useState("header__main");
-const [isMenuOpen, setIsMenuOpen] = useState(false);
-const [isMenuOpenTwo, setIsMenuOpenTwo] = useState();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState("");
 
   const listenScrollEvent = () => {
     if (window.scrollY < 70) {
       console.log("less than 70");
-      setIsMenuOpenTwo(false);
+      setIsMenuOpen(false);
       return setHeader("header__main");
     } else if (window.scrollY >= 70) {
-      setIsMenuOpenTwo(false);
+      setIsMenuOpen(false);
       return setHeader("header__slide__down");
     }
   };
@@ -30,7 +31,7 @@ const [isMenuOpenTwo, setIsMenuOpenTwo] = useState();
   const isDarkMode = useSelector((state: AppStore) => state.app.darkMode);
 
   const toggleDropdown = () => {
-    setIsMenuOpenTwo(!isMenuOpenTwo);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -66,47 +67,127 @@ const [isMenuOpenTwo, setIsMenuOpenTwo] = useState();
         </div>
 
         <ul className="header__links">
-          <Link to={{ pathname: "/" }}>
-            <li className="header__link__item">home</li>
+          {/* <Link to={{ pathname: "/" }} >
+            <li className='header__link__item active' >home</li>
           </Link>
-          <Link to={{ pathname: "/about" }}>
-            <li className="header__link__item">about</li>
+          <Link to={{ pathname: "/about" }} >
+            <li className="header__link__item ">about</li>
+          </Link>
+          <Link to={{ pathname: "/services" }}>
+            <li className="header__link__item">services</li>
+          </Link> */}
+
+          <Link to={{ pathname: "/" }}>
+            <li
+              id="home-nav"
+              onClick={() => {
+                setActiveMenu("home-nav");
+              }}
+              className={
+                activeMenu == "home-nav"
+                  ? "header__link__item active"
+                  : "header__link__item"
+              }
+            >
+              home
+            </li>
           </Link>
 
-          <li className="header__link__item">blog</li>
-          <li className="header__link__item">contact</li>
+          <Link to={{ pathname: "/about" }}>
+            <li
+              id="about-nav"
+              onClick={() => {
+                setActiveMenu("about-nav");
+              }}
+              className={
+                activeMenu == "about-nav"
+                  ? "header__link__item active"
+                  : "header__link__item"
+              }
+            >
+              about
+            </li>
+          </Link>
+          <Link to={{ pathname: "/services" }}>
+            <li
+              id="services-nav"
+              onClick={() => {
+                setActiveMenu("services-nav");
+              }}
+              className={
+                activeMenu == "services-nav"
+                  ? "header__link__item active"
+                  : "header__link__item"
+              }
+            >
+              Services
+            </li>
+          </Link>
+
+          <Link to={{ pathname: "/blog" }}>
+            <li
+              id="blog-nav"
+              onClick={() => {
+                setActiveMenu("blog-nav");
+              }}
+              className={
+                activeMenu == "blog-nav"
+                  ? "header__link__item active"
+                  : "header__link__item"
+              }
+            >
+              blog
+            </li>
+          </Link>
+
+          <Link to={{ pathname: "/contact" }}>
+            <li
+              id="contact-nav"
+              onClick={() => {
+                setActiveMenu("contact-nav");
+              }}
+              className={
+                activeMenu == "contact-nav"
+                  ? "header__link__item active"
+                  : "header__link__item"
+              }
+            >
+              about
+            </li>
+          </Link>
+       
+
+     
+
+          {/* <li className="header__link__item">blog</li>
+          <li className="header__link__item">contact</li> */}
         </ul>
 
-        <div className={"hamburger-menu-mobile"}
-         >
-          <div id="toggleMenu"
-           onBlur={() => setIsMenuOpenTwo(false)}
-                       >
+        <div className={"hamburger-menu-mobile"}>
+          <div id="toggleMenu" onBlur={() => setIsMenuOpen(false)}>
             <input
               type="checkbox"
               // defaultChecked={isMenuOpen}
-              checked={isMenuOpenTwo}
-              onClick={()=> toggleDropdown()}
+              checked={isMenuOpen}
+              onClick={() => toggleDropdown()}
             />
             <span></span>
             <span></span>
             <span></span>
             <ul id="menu">
-              <Link
-               to={{ pathname: "/" }}>
+              <Link to={{ pathname: "/" }}>
                 <li>Home</li>
               </Link>
               <Link to={{ pathname: "/about" }}>
-                <a href="#">
-                  <li>About</li>
-                </a>
+                <li>About</li>
               </Link>
-              <a href="#">
-                <li>Portfolio</li>
-              </a>
-              <a href="#">
-                <li>Contact</li>
-              </a>
+              <Link to={{ pathname: "/services" }}>
+                <li>Services</li>
+              </Link>
+
+              <li>Portfolio</li>
+
+              <li>Contact</li>
             </ul>
           </div>
         </div>

@@ -93,7 +93,7 @@
   }
 }
 
-.grid__billboard {
+.main__billboard {
   max-width: 1140px;
   margin: 20px auto;
   display: -ms-grid;
@@ -103,35 +103,35 @@
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (auto)[1];
       grid-template-rows: repeat(1, auto);
-      grid-template-areas: "billboard-box1 billboard-box2";
+      grid-template-areas: "child-one child-two";
 }
 
-.grid__billboard h1 {
+.main__billboard h1 {
   font-weight: bold;
   color: #508EBC;
   font-size: 3.8rem;
   line-height: 1.2;
 }
 
-.grid__billboard h2 {
+.main__billboard h2 {
   color: #5f5f5f;
   font-size: 1.2rem;
   line-height: 2rem;
   padding: 16px 0;
 }
 
-.billboard-box1 {
+.main__billboard .child-one {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: billboard-box1;
+  grid-area: child-one;
   padding-left: 24px;
   margin: auto 0;
 }
 
-.billboard-box2 {
+.main__billboard .child-two {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: billboard-box2;
+  grid-area: child-two;
   padding-right: 24px;
   margin: auto 0;
 }
@@ -144,26 +144,26 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .grid__billboard {
+  .main__billboard {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: (auto)[1];
         grid-template-rows: repeat(1, auto);
-        grid-template-areas: "billboard-box1";
+        grid-template-areas: "child-one";
     margin-bottom: 24px;
     margin-top: 0px;
   }
-  .grid__billboard h1 {
+  .main__billboard h1 {
     font-size: 3.0rem;
     line-height: 1.2;
   }
-  .grid__billboard .billboard-box1 {
+  .main__billboard .child-one {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    grid-area: billboard-box1;
+    grid-area: child-one;
     padding: 0 16px;
   }
-  .billboard-box2 {
+  .child-two {
     display: none;
   }
   .buttons {

@@ -3,6 +3,7 @@ import React, { FC, useEffect } from 'react'
 
 import Index from '../Index/Index'
 import AboutUs from '../AboutUs/AboutUs'
+import Services from '../Services/Services'
 import { Route, useRouteMatch } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop'
 
@@ -16,6 +17,7 @@ const HomeRouter: FC = () => {
  <ScrollToTop />
       <Route exact path={`${match.path}`} component={Index} />
       <Route exact path={`/about`} component={AboutUs} />
+      <Route exact path={`/services`} component={Services} />
     </div>
 
   );

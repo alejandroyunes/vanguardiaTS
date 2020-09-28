@@ -157,7 +157,7 @@
 
 .header__toggle__dark_mode_container {
   position: absolute;
-  right: 330px;
+  right: 420px;
   top: 24px;
 }
 
@@ -195,6 +195,34 @@
 }
 
 .header li:hover::after {
+  content: "]";
+  color: #508EBC;
+  -webkit-animation: right-bracket;
+          animation: right-bracket;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  position: absolute;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.header li.active::before {
+  content: "[";
+  color: #508EBC;
+  -webkit-animation: left-bracket;
+          animation: left-bracket;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  position: absolute;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.header li.active::after {
   content: "]";
   color: #508EBC;
   -webkit-animation: right-bracket;
@@ -660,5 +688,9 @@ input:checked + .toggle .star6 {
     -webkit-transform: none;
             transform: none;
   }
+}
+
+.display-none {
+  display: none;
 }
 /*# sourceMappingURL=Header.css.map */

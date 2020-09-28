@@ -26,7 +26,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="about-us-icons">
+      <div className="about-us-icons-column">
         <div className="child-one">
           <img className="about-logo" src={aboutMarketing} />
           <h4>It can be a fuss to collect images from websites</h4>

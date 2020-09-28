@@ -152,10 +152,10 @@
   line-height: 1.5;
   margin: 0 auto 48px;
   max-width: 432px;
-  padding: 0 16px;
+  padding: 32px 16px 0;
 }
 
-.about-us-icons {
+.about-us-icons-column {
   max-width: 1140px;
   margin: 20px auto;
   display: -ms-grid;
@@ -169,7 +169,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .about-us-icons {
+  .about-us-icons-column {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: (auto)[3];
@@ -177,7 +177,7 @@
   }
 }
 
-.about-us-icons h4 {
+.about-us-icons-column h4 {
   font-size: 24px;
   font-weight: 600;
   margin: 0 0 16px;
@@ -189,12 +189,12 @@
 }
 
 @media only screen and (max-width: 440px) {
-  .about-us-icons h4 {
+  .about-us-icons-column h4 {
     padding: 0 16px;
   }
 }
 
-.about-us-icons p {
+.about-us-icons-column p {
   font-size: 1.125rem;
   line-height: 1.5;
   max-width: 660px;
@@ -204,24 +204,24 @@
 }
 
 @media only screen and (max-width: 440px) {
-  .about-us-icons p {
+  .about-us-icons-column p {
     padding: 0 16px;
   }
 }
 
-.about-us-icons .child-one {
+.about-us-icons-column .child-one {
   text-align: center;
 }
 
-.about-us-icons .child-two {
+.about-us-icons-column .child-two {
   text-align: center;
 }
 
-.about-us-icons .child-three {
+.about-us-icons-column .child-three {
   text-align: center;
 }
 
-.about-us-icons img {
+.about-us-icons-column img {
   max-width: 100%;
   height: auto;
 }

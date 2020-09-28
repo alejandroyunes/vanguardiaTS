@@ -55,7 +55,7 @@
   }
   &__toggle__dark_mode_container {
     position: absolute;
-    right: 330px;
+    right: 420px;
     top: 24px;
     @include mq($screen-tablet) {
       right: 40px;
@@ -82,6 +82,25 @@
     animation-fill-mode: forwards;
   }
   li:hover::after {
+    content: "]";
+    color: $primary-color;
+    animation: right-bracket;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    position: absolute;
+    animation-fill-mode: forwards;
+  }
+
+li.active::before {
+    content: "[";
+    color: $primary-color;
+    animation: left-bracket;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    position: absolute;
+    animation-fill-mode: forwards;
+  }
+ li.active::after {
     content: "]";
     color: $primary-color;
     animation: right-bracket;
