@@ -93,7 +93,7 @@
   }
 }
 
-.about-us-icons {
+.about-us-icons-services {
   max-width: 1140px;
   margin: 20px auto;
   display: -ms-grid;
@@ -107,7 +107,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .about-us-icons {
+  .about-us-icons-services {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: (auto)[3];
@@ -115,7 +115,7 @@
   }
 }
 
-.about-us-icons h4 {
+.about-us-icons-services h4 {
   font-size: 24px;
   font-weight: 600;
   margin: 0 0 16px;
@@ -127,12 +127,12 @@
 }
 
 @media only screen and (max-width: 440px) {
-  .about-us-icons h4 {
+  .about-us-icons-services h4 {
     padding: 0 16px;
   }
 }
 
-.about-us-icons p {
+.about-us-icons-services p {
   font-size: 1.125rem;
   line-height: 1.5;
   max-width: 660px;
@@ -142,24 +142,24 @@
 }
 
 @media only screen and (max-width: 440px) {
-  .about-us-icons p {
+  .about-us-icons-services p {
     padding: 0 16px;
   }
 }
 
-.about-us-icons .child-one-icons {
+.about-us-icons-services .child-one-icons {
   text-align: center;
 }
 
-.about-us-icons .child-two-icons {
+.about-us-icons-services .child-two-icons {
   text-align: center;
 }
 
-.about-us-icons .child-three-icons {
+.about-us-icons-services .child-three-icons {
   text-align: center;
 }
 
-.about-us-icons img {
+.about-us-icons-services img {
   max-width: 100%;
   height: auto;
 }
@@ -261,7 +261,35 @@
 }
 
 .services-technologies {
-  margin-top: 80px;
+  max-width: 1140px;
+  margin: 30px auto 20px;
   outline: 1px solid red;
+}
+
+.services-technologies .services-technologies-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services-technologies .services-technologies-container .html-svg {
+  outline: 1px solid red;
+  width: 120px;
+}
+
+.services-technologies .services-technologies-container .css-svg {
+  outline: 1px solid red;
+  width: 120px;
+}
+
+.services-technologies .services-technologies-container .js-svg {
+  outline: 1px solid red;
+  width: 85px;
+}
+
+.services-technologies .services-technologies-container .react-svg {
+  outline: 1px solid red;
+  width: 120px;
+  margin: auto 0;
 }
 /*# sourceMappingURL=Services.css.map */

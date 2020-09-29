@@ -3,12 +3,16 @@ import "./Services.scss";
 import aboutMarketing from ".././../assets/deskeagle.svg";
 import aboutBox from ".././../assets/boxeagle.svg";
 import aboutIllustrator from ".././../assets/illustraeagle.svg";
-import TItle from "../../components/Title/Title";
+import Title from "../../components/Title/Title";
 
 import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
 
 import Button from "../../components/Button/Button";
 import Animation from "../../assets/development.png";
+import HtmlSvg from "../../assets/html.svg";
+import CssSvg from "../../assets/css.svg";
+import JsSvg from "../../assets/javascript.svg";
+import ReactSvg from "../../assets/react.svg";
 
 export default function Services() {
   return (
@@ -39,9 +43,28 @@ export default function Services() {
         </div>
       </div>
       <div className="services-technologies">
-        <TItle message={"Technologies"} title={""} />
+        <div>
+          <Title message={"Technologies"} title={""} />
+        </div>
+        <div className="services-technologies-container">
+          <div className="html-svg">
+            <img src={HtmlSvg} />
+          </div>
+          <div className="css-svg">
+            <img src={CssSvg} />
+          </div>
+          <div className="js-svg">
+            <img src={JsSvg} />
+          </div>
+          <div className="react-svg">
+            <img src={ReactSvg} />
+          </div>
+
+          
+        </div>
       </div>
-      <div className="about-us-icons">
+
+      <div className="about-us-icons-services">
         <div className="child-one-icons">
           <img className="about-logo" src={aboutMarketing} />
           <h4>It can be a fuss to collect images from websites</h4>

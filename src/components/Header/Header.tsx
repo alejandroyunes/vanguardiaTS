@@ -4,16 +4,15 @@ import { useDispatch, useSelector } from "react-redux";
 import "./Header.scss";
 import { toggleDarkMode } from "../../store/actions/app";
 import { AppStore } from "../../store/appStore";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import classNames from "classnames";
 function Header() {
   const [header, setHeader] = useState("header__main");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeMenu, setActiveMenu] = useState("");
+  const [activeMenu, setActiveMenu] = useState("home-nav");
 
   const listenScrollEvent = () => {
     if (window.scrollY < 70) {
-      console.log("less than 70");
       setIsMenuOpen(false);
       return setHeader("header__main");
     } else if (window.scrollY >= 70) {
@@ -22,10 +21,25 @@ function Header() {
     }
   };
 
+  const location = useLocation();
+
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
     return () => window.removeEventListener("scroll", listenScrollEvent);
   }, []);
+
+  useEffect(() => {
+    switch (location.pathname) {
+      case "/":
+        return setActiveMenu("home-nav");
+      case "/about":
+        return setActiveMenu("about-nav");
+      case "/services":
+        return setActiveMenu("services-nav");
+      case "/blog":
+        return setActiveMenu("blog-nav");
+    }
+  });
 
   const dispatch = useDispatch();
   const isDarkMode = useSelector((state: AppStore) => state.app.darkMode);
@@ -40,6 +54,7 @@ function Header() {
         <div className="header__logo">
           <img src={logo} />
         </div>
+
 
         <div className="header__toggle__dark_mode_container">
           <div className="dark-toggle-input">
@@ -66,17 +81,8 @@ function Header() {
           </div>
         </div>
 
-        <ul className="header__links">
-          {/* <Link to={{ pathname: "/" }} >
-            <li className='header__link__item active' >home</li>
-          </Link>
-          <Link to={{ pathname: "/about" }} >
-            <li className="header__link__item ">about</li>
-          </Link>
-          <Link to={{ pathname: "/services" }}>
-            <li className="header__link__item">services</li>
-          </Link> */}
 
+        <ul className="header__links">
           <Link to={{ pathname: "/" }}>
             <li
               id="home-nav"
@@ -89,7 +95,7 @@ function Header() {
                   : "header__link__item"
               }
             >
-              home
+              Home
             </li>
           </Link>
 
@@ -105,7 +111,7 @@ function Header() {
                   : "header__link__item"
               }
             >
-              about
+              About
             </li>
           </Link>
           <Link to={{ pathname: "/services" }}>
@@ -136,7 +142,7 @@ function Header() {
                   : "header__link__item"
               }
             >
-              blog
+              Blog
             </li>
           </Link>
 
@@ -152,17 +158,10 @@ function Header() {
                   : "header__link__item"
               }
             >
-              about
+              Contact
             </li>
           </Link>
-       
-
-     
-
-          {/* <li className="header__link__item">blog</li>
-          <li className="header__link__item">contact</li> */}
-        </ul>
-
+        </ul>    
         <div className={"hamburger-menu-mobile"}>
           <div id="toggleMenu" onBlur={() => setIsMenuOpen(false)}>
             <input

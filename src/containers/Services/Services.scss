@@ -3,7 +3,7 @@
 @import "../../sass/utilities";
 @import "../../sass/mixins";
 
-.about-us-icons {
+.about-us-icons-services {
   max-width: 1140px;
   margin: 20px auto;
   display: grid;
@@ -136,6 +136,34 @@
 
 
   .services-technologies {
-    margin-top: 80px;
+    max-width: 1140px;
+    margin: 30px auto 20px;
     outline: 1px solid red;
+    .services-technologies-container{
+      display: flex;
+
+      .html-svg{
+        outline: 1px solid red;
+        width: 120px;
+        
+      }
+      .css-svg{     
+        outline: 1px solid red;
+        width: 120px;
+        
+      }
+      .js-svg{     
+        outline: 1px solid red;
+        width: 85px;
+   
+      }
+      .react-svg{     
+        outline: 1px solid red;
+        width: 120px;
+        margin: auto 0;
+       
+      }
+
+    }
+    
   }
