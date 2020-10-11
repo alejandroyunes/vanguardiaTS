@@ -6,7 +6,7 @@ import AboutUs from '../AboutUs/AboutUs'
 import Services from '../Services/Services'
 import Blog from '../Blog/Blog'
 import Portfolio from '../Portfolio/Portfolio'
-
+import ScrollToTop from './ScrollToTop'
 import { Route, useRouteMatch } from 'react-router-dom'
 
 
@@ -16,7 +16,7 @@ const HomeRouter: FC = () => {
 
   return (
     <div >
-
+      <ScrollToTop />
       <Route exact path={`${match.path}`} component={Index} />
       <Route exact path={`/about`} component={AboutUs} />
       <Route exact path={`/services`} component={Services} />
