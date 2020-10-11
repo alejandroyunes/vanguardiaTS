@@ -12,7 +12,12 @@ import Animation from "../../assets/development.png";
 import HtmlSvg from "../../assets/html.svg";
 import CssSvg from "../../assets/css.svg";
 import JsSvg from "../../assets/javascript.svg";
-import ReactSvg from "../../assets/react.svg";
+import ReactSvg from "../../assets/reactsvg.svg";
+import NodeSvg from "../../assets/node-js.svg";
+import WordpressSvg from "../../assets/wordpress.svg";
+import TypescriptSvg from "../../assets/typescript.svg";
+import NginxSvg from "../../assets/nginx-n.svg";
+import ApacheSvg from "../../assets/apache.svg";
 
 export default function Services() {
   return (
@@ -42,10 +47,10 @@ export default function Services() {
           <img src={Animation} />
         </div>
       </div>
+
+        <Title message={"Technologies"} title={""} />
+
       <div className="services-technologies">
-        <div>
-          <Title message={"Technologies"} title={""} />
-        </div>
         <div className="services-technologies-container">
           <div className="html-svg">
             <img src={HtmlSvg} />
@@ -59,8 +64,21 @@ export default function Services() {
           <div className="react-svg">
             <img src={ReactSvg} />
           </div>
-
-          
+          <div className="node-svg">
+            <img src={NodeSvg} />
+          </div>
+          <div className="typescript-svg">
+            <img src={TypescriptSvg} />
+          </div>
+          <div className="apache-svg">
+            <img src={ApacheSvg} />
+          </div>
+          <div className="nginx-svg">
+            <img src={NginxSvg} />
+          </div>
+          <div className="wordpress-svg">
+            <img src={WordpressSvg} />
+          </div>
         </div>
       </div>
 

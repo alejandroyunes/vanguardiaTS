@@ -19,20 +19,20 @@ export const ImageGallery = () => {
 
       <div className=" section__full" >
        
-        <div className="grid__image__gallery">
-          <div className="box11">
+        <div className="grid__image-gallery">
+          <div className="image-gallery-box-one">
             <img src={HandsHoldingTablet} />
           </div>
-          <div className="box22">
+          <div className="image-gallery-box-two">
             <img src={OneHandHoldingCellphone} />
           </div>
-          <div className="box33">
+          <div className="image-gallery-box-three">
             <img src={WhiteMountains} />
           </div>
-          <div className="box44">
+          <div className="image-gallery-box-four">
             <img src={GreenDesign} />
           </div>
-          <div className="box55">
+          <div className="image-gallery-box-five">
             <img src={CellphoneColorful} />
           </div>
         </div>

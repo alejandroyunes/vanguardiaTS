@@ -3,6 +3,74 @@
 @import "../../sass/utilities";
 @import "../../sass/mixins";
 
+.portfolio-main-title{
+  margin: 60px 0;
+  h1 {
+    font-weight: bold;
+    color: $dark-blue;
+    font-size: 3rem;
+    line-height: 1.2;
+    max-width: 760px;
+    padding: 0 32px;
+    margin: 32px auto;
+    text-align: center;
+    @include mq($screen-small) {
+      padding: 0 16px;
+    }
+  }
+}
+
+.about-us-icons-services {
+  max-width: 1140px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-template-areas: "child-one" "child-two" "child-three";
+  @include mq($screen-tablet) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 16px;
+    line-height: 1.3;
+    padding: 0 32px;
+    max-width: 660px;
+    margin: 16px auto;
+    text-align: center;
+    @include mq($screen-small) {
+      padding: 0 16px;
+    }
+  }
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    max-width: 660px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 32px;
+    @include mq($screen-small) {
+      padding: 0 16px;
+    }
+  }
+
+  .child-one-icons {
+    text-align: center;
+  }
+  .child-two-icons {
+    text-align: center;
+  }
+  .child-three-icons {
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 .services-billboard {
   max-width: 1140px;
@@ -83,7 +151,7 @@
 
 .services-technologies {
   max-width: 1140px;
-  margin: 30px auto 40px;
+  margin: 30px auto 20px;
  
   .services-technologies-container {
     display: flex;
@@ -135,57 +203,5 @@
       margin: auto 0;
 
     }
-  }
-}
-
-.about-us-icons-services {
-  max-width: 1140px;
-  margin: 20px auto;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, auto);
-  grid-template-areas: "child-one" "child-two" "child-three";
-  @include mq($screen-tablet) {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
-  h4 {
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0 0 16px;
-    line-height: 1.3;
-    padding: 0 32px;
-    max-width: 660px;
-    margin: 16px auto;
-    text-align: center;
-    @include mq($screen-small) {
-      padding: 0 16px;
-    }
-  }
-  p {
-    font-size: 1.125rem;
-    line-height: 1.5;
-    max-width: 660px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0 32px;
-    @include mq($screen-small) {
-      padding: 0 16px;
-    }
-  }
-
-  .child-one-icons {
-    text-align: center;
-  }
-  .child-two-icons {
-    text-align: center;
-  }
-  .child-three-icons {
-    text-align: center;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
   }
 }

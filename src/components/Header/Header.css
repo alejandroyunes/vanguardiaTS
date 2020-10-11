@@ -334,8 +334,8 @@
 
 .header__toggle__dark_mode_container {
   position: absolute;
-  top: 40px;
-  right: 450px;
+  top: 36px;
+  right: 560px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -693,5 +693,62 @@ input:checked + .toggle .star6 {
 
 .display-none {
   display: none;
+}
+
+.arrow-circle {
+  position: fixed;
+  right: 32px;
+  width: 100%;
+  bottom: 24px;
+  background: #AE3C43;
+  text-decoration: none;
+  border-radius: 50%;
+  display: block;
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+  -webkit-animation: fadeIn 0.3s;
+          animation: fadeIn 0.3s;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop-arrow {
+  z-index: 10;
+  position: fixed;
+  right: 44px;
+  width: 100%;
+  bottom: 36px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.arrow-circle:hover {
+  opacity: 1;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 /*# sourceMappingURL=Header.css.map */
