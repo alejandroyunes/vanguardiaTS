@@ -103,7 +103,7 @@
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (auto)[1];
       grid-template-rows: repeat(1, auto);
-      grid-template-areas: "child-one child-two";
+      grid-template-areas: "services-billboard-child-one services-billboard-child-two";
 }
 
 .services-billboard h1 {
@@ -127,55 +127,65 @@
   margin-top: 16px;
 }
 
-.services-billboard .child-one-services {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: child-one;
+.services-billboard .services-billboard-child-one {
   padding-left: 24px;
   margin: auto 0;
 }
 
-.services-billboard .child-two-services {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: child-two;
+.services-billboard .services-billboard-child-two {
   padding-right: 24px;
   margin: auto 0;
 }
 
-.services-billboard .child-two-services img {
+.services-billboard .services-billboard-child-two img {
   max-width: 100%;
   height: auto;
 }
 
 @media only screen and (max-width: 900px) {
-  .services-billboard {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: (auto)[1];
-        grid-template-rows: repeat(1, auto);
-        grid-template-areas: "child-one";
-    margin: 0px auto;
-    outline: 1px solid red;
-  }
-  .services-billboard h1 {
-    font-size: 3rem;
-    line-height: 1.2;
-  }
-  .services-billboard h2 {
-    padding: 16px 16px;
-    text-align: center;
-  }
-  .services-billboard .child-one-services {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: child-one;
-    padding: 0 16px;
-  }
-  .services-billboard .child-two-services {
+  .services-billboard .services-billboard-child-one {
     display: none;
   }
-  .services-billboard .buttons {
+  .services-billboard .services-billboard-child-two {
+    display: none;
+  }
+}
+
+.services-billboard-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .services-billboard-mobile {
+    display: block;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "services-billboard-mobile-child-one" "services-billboard-mobile-child-two";
+    margin: 0px auto;
+  }
+  .services-billboard-mobile h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #508EBC;
+    padding-bottom: 60px;
+  }
+  .services-billboard-mobile h2 {
+    padding: 16px 0;
+    text-align: center;
+  }
+  .services-billboard-mobile .services-billboard-mobile-child-one {
+    padding: 0 16px;
+  }
+  .services-billboard-mobile .services-billboard-mobile-child-two {
+    padding: 0 16px;
+  }
+  .services-billboard-mobile .services-billboard-mobile-child-two img {
+    max-width: 100%;
+    height: auto;
+  }
+  .services-billboard-mobile .buttons {
     display: -ms-grid;
     display: grid;
     grid-gap: 10px;
@@ -189,12 +199,61 @@
   }
 }
 
-.services-technologies {
+.services-tech {
   max-width: 1140px;
   margin: 30px auto 40px;
+  padding: 0 24px;
 }
 
-.services-technologies .services-technologies-container {
+.services-tech .html-svg {
+  width: 100px;
+}
+
+.services-tech .css-svg {
+  width: 100px;
+}
+
+.services-tech .js-svg {
+  width: 72px;
+}
+
+.services-tech .react-svg {
+  width: 100px;
+  margin: auto 0;
+}
+
+.services-tech .node-svg {
+  width: 120px;
+  margin: auto 0;
+}
+
+.services-tech .wordpress-svg {
+  width: 80px;
+  margin: auto 0;
+}
+
+.services-tech .typescript-svg {
+  width: 80px;
+  margin: auto 0;
+}
+
+.services-tech .nginx-svg {
+  width: 80px;
+  margin: auto 0;
+}
+
+.services-tech .apache-svg {
+  width: 80px;
+  margin: auto 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .services-tech {
+    display: none;
+  }
+}
+
+.services-tech .services-tech-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,46 +265,84 @@
           align-items: center;
 }
 
-.services-technologies .services-technologies-container .html-svg {
-  width: 100px;
+.services-tech-mobile {
+  display: none;
 }
 
-.services-technologies .services-technologies-container .css-svg {
-  width: 100px;
-}
-
-.services-technologies .services-technologies-container .js-svg {
-  width: 72px;
-}
-
-.services-technologies .services-technologies-container .react-svg {
-  width: 100px;
-  margin: auto 0;
-}
-
-.services-technologies .services-technologies-container .node-svg {
-  width: 120px;
-  margin: auto 0;
-}
-
-.services-technologies .services-technologies-container .wordpress-svg {
-  width: 80px;
-  margin: auto 0;
-}
-
-.services-technologies .services-technologies-container .typescript-svg {
-  width: 80px;
-  margin: auto 0;
-}
-
-.services-technologies .services-technologies-container .nginx-svg {
-  width: 80px;
-  margin: auto 0;
-}
-
-.services-technologies .services-technologies-container .apache-svg {
-  width: 80px;
-  margin: auto 0;
+@media only screen and (max-width: 900px) {
+  .services-tech-mobile {
+    display: block;
+  }
+  .services-tech-mobile .services-tech-mobile-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: ()[1fr];
+        grid-template-columns: repeat(1fr);
+    -ms-grid-rows: (1fr)[1fr];
+        grid-template-rows: repeat(1fr 1fr);
+        grid-template-areas: "services-tech-mobile-child-one" "services-tech-mobile-child-two";
+    padding: 0 16px;
+    width: 100%;
+  }
+  .services-tech-mobile .services-tech-mobile-container .html-svg {
+    width: 80%;
+    padding: 0 8px;
+  }
+  .services-tech-mobile .services-tech-mobile-container .css-svg {
+    width: 80%;
+    padding: 0 8px;
+  }
+  .services-tech-mobile .services-tech-mobile-container .js-svg {
+    width: 60%;
+    padding: 0 8px;
+  }
+  .services-tech-mobile .services-tech-mobile-container .react-svg {
+    width: 80%;
+    margin: auto 0;
+    padding: 10px 8px 0;
+  }
+  .services-tech-mobile .services-tech-mobile-container .node-svg {
+    width: 40%;
+    padding: 0 8px;
+  }
+  .services-tech-mobile .services-tech-mobile-container .wordpress-svg {
+    width: 30%;
+    padding: 0 8px;
+  }
+  .services-tech-mobile .services-tech-mobile-container .typescript-svg {
+    width: 30%;
+    padding: 0 8px;
+  }
+  .services-tech-mobile .services-tech-mobile-container .nginx-svg {
+    width: 40%;
+    padding: 0 8px;
+  }
+  .services-tech-mobile .services-tech-mobile-container .apache-svg {
+    width: 30%;
+    padding: 0 8px;
+  }
+  .services-tech-mobile .services-tech-mobile-child-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services-tech-mobile .services-tech-mobile-child-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .about-us-icons-services {

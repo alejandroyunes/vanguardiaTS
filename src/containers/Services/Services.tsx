@@ -23,7 +23,7 @@ export default function Services() {
   return (
     <>
       <div className="services-billboard">
-        <div className="child-one-services">
+        <div className="services-billboard-child-one">
           <div>
             <h1>Vanguardia Digital Development</h1>
             <h2>
@@ -43,15 +43,41 @@ export default function Services() {
             </div>
           </div>
         </div>
-        <div className="child-two-services">
+        <div className="services-billboard-child-two">
           <img src={Animation} />
         </div>
       </div>
 
-        <Title message={"Technologies"} title={""} />
+      <div className="services-billboard-mobile">
+        <div className="services-billboard-mobile-child-one">
+          <div>
+            <h1>Vanguardia Digital Development</h1>
+          </div>
+        </div>
+        <div className="services-billboard-mobile-child-two">
+          <img src={Animation} />
+          <h2>
+            Get rid of spam in your application. Use our API to access
+            Akismet’s powerful spam detection. Our developer program provides
+            valuable data and feedback during development.
+            </h2>
+          <div className="buttons">
+            <div className="button-one">
+              <Button
+                label="view work"
+                category="primary"
+                size="sm"
+                icon={WorkOutlineIcon}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div className="services-technologies">
-        <div className="services-technologies-container">
+      <Title message={"Technologies"} title={""} />
+
+      <div className="services-tech">
+        <div className="services-tech-container">
           <div className="html-svg">
             <img src={HtmlSvg} />
           </div>
@@ -78,6 +104,42 @@ export default function Services() {
           </div>
           <div className="wordpress-svg">
             <img src={WordpressSvg} />
+          </div>
+        </div>
+      </div>
+
+      <div className="services-tech-mobile">
+        <div className="services-tech-mobile-container">
+          <div className="services-tech-mobile-child-one">
+            <div className="node-svg">
+              <img src={NodeSvg} />
+            </div>
+            <div className="typescript-svg">
+              <img src={TypescriptSvg} />
+            </div>
+            <div className="apache-svg">
+              <img src={ApacheSvg} />
+            </div>
+            <div className="nginx-svg">
+              <img src={NginxSvg} />
+            </div>
+            <div className="wordpress-svg">
+              <img src={WordpressSvg} />
+            </div>
+          </div>
+          <div className="services-tech-mobile-child-two">
+            <div className="html-svg">
+              <img src={HtmlSvg} />
+            </div>
+            <div className="css-svg">
+              <img src={CssSvg} />
+            </div>
+            <div className="js-svg">
+              <img src={JsSvg} />
+            </div>
+            <div className="react-svg">
+              <img src={ReactSvg} />
+            </div>
           </div>
         </div>
       </div>

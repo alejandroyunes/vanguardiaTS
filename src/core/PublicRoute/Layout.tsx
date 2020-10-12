@@ -10,15 +10,14 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
 
-
   return (
 
-        <div className="login__layout">
-        <div>  
+    <div className="login__layout">
+      <div>
         <Header />
-          {children}
-          <Footer />
-        </div>
+        {children}
+        <Footer />
+      </div>
     </div>
 
   );

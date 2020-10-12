@@ -10,10 +10,10 @@ export default function AboutUs() {
   return (
     <>
       <div className="wrapper">
-        <div className="child-one">
+        <div className="about-child-one">
           <img className="about-logo" src={aboutLogo} />
         </div>
-        <div className="child-two">
+        <div className="about-child-two">
           <h1 className="about-main-title">
             Bienvenido al nuevo Firefox Quantum: Developer Edition
           </h1>
@@ -27,7 +27,7 @@ export default function AboutUs() {
       </div>
 
       <div className="about-us-icons-column">
-        <div className="child-one">
+        <div className="about-child-one">
           <img className="about-logo" src={aboutMarketing} />
           <h4>It can be a fuss to collect images from websites</h4>
           <p>
@@ -35,7 +35,7 @@ export default function AboutUs() {
             procedures and when there are more than one.
           </p>
         </div>
-        <div className="child-two">
+        <div className="about-child-two">
           <img className="about-logo" src={aboutBox} />
           <h4>Lack of efficiency to organizing assets</h4>
           <p>
@@ -54,11 +54,11 @@ export default function AboutUs() {
       </div>
 
       <div className="about-us-info">
-        <div className="child-one">
+        <div className="about-child-one">
           <h1>Collecting images are always a nightmare, especially with all the
             procedures and when there are more than one.</h1>
         </div>
-        <div className="child-two">
+        <div className="about-child-two">
           <img className="about-logo" src={linkedin} />
         </div>
       </div>

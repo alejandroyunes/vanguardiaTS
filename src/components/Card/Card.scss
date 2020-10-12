@@ -130,20 +130,3 @@
   }
   }
 
-
-#rocket {
-  animation: topBottom 5s infinite;
-}
-
-@keyframes topBottom {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -200px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-

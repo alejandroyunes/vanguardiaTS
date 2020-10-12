@@ -94,7 +94,7 @@
 }
 
 .portfolio-main-title {
-  margin: 60px 0;
+  margin: 40px 0 0;
 }
 
 .portfolio-main-title h1 {
@@ -114,7 +114,7 @@
   }
 }
 
-.about-us-icons-services {
+.portfolio-services {
   max-width: 1140px;
   margin: 20px auto;
   display: -ms-grid;
@@ -124,11 +124,11 @@
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (auto)[1];
       grid-template-rows: repeat(1, auto);
-      grid-template-areas: "child-one" "child-two" "child-three";
+      grid-template-areas: "portfolio-services-child-one" "portfolio-services-child-two" "portfolio-services-child-three";
 }
 
 @media only screen and (max-width: 900px) {
-  .about-us-icons-services {
+  .portfolio-services {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: (auto)[3];
@@ -136,7 +136,7 @@
   }
 }
 
-.about-us-icons-services h4 {
+.portfolio-services h4 {
   font-size: 24px;
   font-weight: 600;
   margin: 0 0 16px;
@@ -148,12 +148,12 @@
 }
 
 @media only screen and (max-width: 440px) {
-  .about-us-icons-services h4 {
+  .portfolio-services h4 {
     padding: 0 16px;
   }
 }
 
-.about-us-icons-services p {
+.portfolio-services p {
   font-size: 1.125rem;
   line-height: 1.5;
   max-width: 660px;
@@ -163,24 +163,24 @@
 }
 
 @media only screen and (max-width: 440px) {
-  .about-us-icons-services p {
+  .portfolio-services p {
     padding: 0 16px;
   }
 }
 
-.about-us-icons-services .child-one-icons {
+.portfolio-services .child-one-icons {
   text-align: center;
 }
 
-.about-us-icons-services .child-two-icons {
+.portfolio-services .portfolio-services-child-two {
   text-align: center;
 }
 
-.about-us-icons-services .child-three-icons {
+.portfolio-services .portfolio-services-child-three {
   text-align: center;
 }
 
-.about-us-icons-services img {
+.portfolio-services img {
   max-width: 100%;
   height: auto;
 }
@@ -195,7 +195,7 @@
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (auto)[1];
       grid-template-rows: repeat(1, auto);
-      grid-template-areas: "child-one child-two";
+      grid-template-areas: "portfolio-services-child-one portfolio-services-child-two";
 }
 
 .services-billboard h1 {
@@ -220,16 +220,12 @@
 }
 
 .services-billboard .child-one-services {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: child-one;
   padding-left: 24px;
   margin: auto 0;
 }
 
 .services-billboard .child-two-services {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: child-two;
   padding-right: 24px;
   margin: auto 0;
@@ -248,7 +244,6 @@
         grid-template-rows: repeat(1, auto);
         grid-template-areas: "child-one";
     margin: 0px auto;
-    outline: 1px solid red;
   }
   .services-billboard h1 {
     font-size: 3rem;

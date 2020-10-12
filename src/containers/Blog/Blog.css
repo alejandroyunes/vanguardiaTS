@@ -248,7 +248,6 @@
         grid-template-rows: repeat(1, auto);
         grid-template-areas: "child-one";
     margin: 0px auto;
-    outline: 1px solid red;
   }
   .services-billboard h1 {
     font-size: 3rem;

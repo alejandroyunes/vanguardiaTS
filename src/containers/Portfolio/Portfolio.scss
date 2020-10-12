@@ -4,7 +4,7 @@
 @import "../../sass/mixins";
 
 .portfolio-main-title{
-  margin: 60px 0;
+  margin: 40px 0 0;
   h1 {
     font-weight: bold;
     color: $dark-blue;
@@ -20,14 +20,14 @@
   }
 }
 
-.about-us-icons-services {
+.portfolio-services {
   max-width: 1140px;
   margin: 20px auto;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, auto);
-  grid-template-areas: "child-one" "child-two" "child-three";
+  grid-template-areas: "portfolio-services-child-one" "portfolio-services-child-two" "portfolio-services-child-three";
   @include mq($screen-tablet) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -60,10 +60,10 @@
   .child-one-icons {
     text-align: center;
   }
-  .child-two-icons {
+  .portfolio-services-child-two {
     text-align: center;
   }
-  .child-three-icons {
+  .portfolio-services-child-three {
     text-align: center;
   }
   img {
@@ -79,7 +79,7 @@
   grid-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, auto);
-  grid-template-areas: "child-one child-two";
+  grid-template-areas: "portfolio-services-child-one portfolio-services-child-two";
   h1 {
     font-weight: bold;
     color: $dark-blue;
@@ -119,7 +119,6 @@
     grid-template-rows: repeat(1, auto);
     grid-template-areas: "child-one";
     margin: 0px auto;
-    outline: 1px solid red;
     h1 {
       font-size: 3rem;
       line-height: 1.2;

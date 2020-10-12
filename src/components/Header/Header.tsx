@@ -19,9 +19,9 @@ function Header() {
   const location = useLocation();
 
   const listenScrollEvent = () => {
-    if (window.scrollY < 70) {
+    if (window.scrollY <= 70) {
       setIsMenuOpen(false);
-      return setHeader("header__main");
+      setHeader("header__main");
     } else if (window.scrollY >= 70) {
       setIsMenuOpen(false);
       setHeader("header__slide__down");
@@ -40,7 +40,7 @@ function Header() {
   };
 
   const scrollBottom = () => {
-    window.scrollTo({ top: 2600, behavior: 'smooth' });
+    window.scrollTo({ top: 3000, behavior: 'smooth' });
   };
 
   const toggleDropdown = () => {
@@ -153,7 +153,7 @@ function Header() {
             </li>
             </Link>
 
-            
+
             <Link to={{ pathname: "/portfolio" }}>
               <li
                 id="portfolio-nav"
@@ -220,24 +220,32 @@ function Header() {
                   <li>Services</li>
                 </Link>
 
-                <li>Portfolio</li>
 
-                <li>Contact</li>
+                <Link to={{ pathname: "/portfolio" }}>
+                  <li>Portfolio</li>
+                </Link>
+                <Link to={{ pathname: "/contact" }}>
+                  <li>Contact</li>
+                </Link>
+
               </ul>
             </div>
           </div>
         </header>
-
-      </div>
-      <div
-        className="arrow-circle"
-        style={{ display: showScroll ? 'flex' : 'none' }}
-        onClick={scrollTop}>
-        <ArrowUpwardIcon
-          className="scrollTop-arrow"
-        />
+      
+        
       </div>
 
+      <div className="arrow-wrapper">
+        <div
+          className="arrow-circle"
+          style={{ display: showScroll ? 'flex' : 'none' }}
+          onClick={scrollTop}>
+          <ArrowUpwardIcon
+            className="scrollTop-arrow"
+          />
+        </div>
+        </div>
     </>
   );
 }

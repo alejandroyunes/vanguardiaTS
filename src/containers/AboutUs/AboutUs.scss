@@ -11,15 +11,15 @@
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, auto);
   grid-template-areas:
-    "child-one"
-    "child-two"
+    "about-child-one"
+    "about-child-two"
     "child-three";
 
   .about-logo {
     width: 368px;
     height: 68px;
   }
-  .child-one {
+  .about-child-one {
     text-align: center;
     img {
       max-width: 100%;
@@ -29,7 +29,7 @@
       }
     }
   }
-  .child-two {
+  .about-child-two {
     h1 {
       font-weight: bold;
       color: $dark-blue;
@@ -41,6 +41,7 @@
       text-align: center;
       @include mq($screen-small) {
         padding: 0 16px;
+        font-size: 1.6rem;
       }
     }
   }
@@ -51,7 +52,7 @@
       line-height: 1.5;
       margin: 0 auto 48px;
       max-width: 432px;
-      padding: 32px 16px 0;
+      padding: 16px 16px 0;
     }
   }
 }
@@ -63,7 +64,7 @@
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, auto);
-  grid-template-areas: "child-one" "child-two" "child-three";
+  grid-template-areas: "about-child-one" "about-child-two" "child-three";
   @include mq($screen-tablet) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -93,10 +94,10 @@
     }
   }
 
-  .child-one {
+  .about-child-one {
     text-align: center;
   }
-  .child-two {
+  .about-child-two {
     text-align: center;
   }
   .child-three {
@@ -115,13 +116,13 @@
   grid-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, auto);
-  grid-template-areas: "child-one" "child-two";
+  grid-template-areas: "about-child-one" "about-child-two";
   @include mq($screen-card_special) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
   }
 
-  .child-one {
+  .about-child-one {
     display: flex;
     align-items: center;
     h1 {
@@ -139,7 +140,7 @@
       }
     }
   }
-  .child-two {
+  .about-child-two {
     display: flex;
     align-items: center;
     text-align: center;

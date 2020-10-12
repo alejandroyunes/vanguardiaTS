@@ -17,16 +17,12 @@
     height: 70px;
     z-index: 3;
     margin: 0 auto;
-    // @include mq($screen-tablet) {
-    //   width: 100%;
-    //   position: fixed;
-    //   background-color: #fff;
-    // }
   }
   &__slide__down {
     position: fixed;
     height: 70px;
     top: 0%;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,10 +36,9 @@
     animation: navbar-slice-down 1s;
     left: 50%;
     transform: translate(-50%, 0);
-    @include mq($screen-tablet) {
-    }
   }
   &__logo {
+    display: block;
     margin: 0 24px;
     width: 48px;
   }
@@ -145,7 +140,7 @@
     display: none;
   }
   .header__logo {
-    min-width: 38px;
+
     width: 38px;
     margin: 6px 0 0 16px;
   }
@@ -492,8 +487,12 @@ input:checked {
 .display-none {
   display: none;
 }
+.arrow-wrapper{
+  max-width: 1140px;
+}
 
 .arrow-circle {
+  z-index: 9999;
   position: fixed; 
   right: 32px;
   width: 100%;
@@ -511,7 +510,7 @@ input:checked {
 }
 
 .scrollTop-arrow {
-  z-index: 10;
+
   position: fixed; 
   right: 44px;
   width: 100%;

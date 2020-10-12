@@ -121,6 +121,7 @@
   position: fixed;
   height: 70px;
   top: 0%;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,6 +147,7 @@
 }
 
 .header__logo {
+  display: block;
   margin: 0 24px;
   width: 48px;
 }
@@ -314,7 +316,6 @@
     display: none;
   }
   .header__logo {
-    min-width: 38px;
     width: 38px;
     margin: 6px 0 0 16px;
   }
@@ -695,7 +696,12 @@ input:checked + .toggle .star6 {
   display: none;
 }
 
+.arrow-wrapper {
+  max-width: 1140px;
+}
+
 .arrow-circle {
+  z-index: 9999;
   position: fixed;
   right: 32px;
   width: 100%;
@@ -715,7 +721,6 @@ input:checked + .toggle .star6 {
 }
 
 .scrollTop-arrow {
-  z-index: 10;
   position: fixed;
   right: 44px;
   width: 100%;

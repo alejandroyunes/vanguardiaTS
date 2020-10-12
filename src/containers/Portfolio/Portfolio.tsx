@@ -13,8 +13,8 @@ export default function Portfolio() {
                 </h1>
             </div>
 
-            <div className="about-us-icons-services">
-                <div className="child-one-icons">
+            <div className="portfolio-services">
+                <div className="portfolio-services-child-one">
                     <img className="about-logo" src={aboutMarketing} />
                     <h4>It can be a fuss to collect images from websiites</h4>
                     <p>
@@ -22,7 +22,7 @@ export default function Portfolio() {
                         procedures and when there are more than one.
                     </p>
                 </div>
-                <div className="child-two-icons">
+                <div className="portfolio-services-child-two">
                     <img className="about-logo" src={aboutBox} />
                     <h4>Lack of efficiency to organizing assets</h4>
                     <p>
@@ -30,7 +30,7 @@ export default function Portfolio() {
                         procedures and when there are more than one.
                     </p>
                 </div>
-                <div className="child-three-icons">
+                <div className="portfolio-services-child-three">
                     <img className="about-logo" src={aboutIllustrator} />
                     <h4>Finding assets become mission impossible</h4>
                     <p>
@@ -40,8 +40,8 @@ export default function Portfolio() {
                 </div>
             </div>
 
-            <div className="about-us-icons-services">
-                <div className="child-one-icons">
+            <div className="portfolio-services">
+                <div className="portfolio-services-child-one">
                     <img className="about-logo" src={aboutMarketing} />
                     <h4>It can be a fuss to collect images from websiites</h4>
                     <p>
@@ -49,7 +49,7 @@ export default function Portfolio() {
                         procedures and when there are more than one.
                     </p>
                 </div>
-                <div className="child-two-icons">
+                <div className="portfolio-services-child-two">
                     <img className="about-logo" src={aboutBox} />
                     <h4>Lack of efficiency to organizing assets</h4>
                     <p>
@@ -57,7 +57,7 @@ export default function Portfolio() {
                         procedures and when there are more than one.
                     </p>
                 </div>
-                <div className="child-three-icons">
+                <div className="portfolio-services-child-three">
                     <img className="about-logo" src={aboutIllustrator} />
                     <h4>Finding assets become mission impossible</h4>
                     <p>
@@ -67,8 +67,8 @@ export default function Portfolio() {
                 </div>
             </div>
 
-            <div className="about-us-icons-services">
-                <div className="child-one-icons">
+            <div className="portfolio-services">
+                <div className="portfolio-services-child-one">
                     <img className="about-logo" src={aboutMarketing} />
                     <h4>It can be a fuss to collect images from websiites</h4>
                     <p>
@@ -76,7 +76,7 @@ export default function Portfolio() {
                         procedures and when there are more than one.
                     </p>
                 </div>
-                <div className="child-two-icons">
+                <div className="portfolio-services-child-two">
                     <img className="about-logo" src={aboutBox} />
                     <h4>Lack of efficiency to organizing assets</h4>
                     <p>
@@ -84,7 +84,7 @@ export default function Portfolio() {
                         procedures and when there are more than one.
                     </p>
                 </div>
-                <div className="child-three-icons">
+                <div className="portfolio-services-child-three">
                     <img className="about-logo" src={aboutIllustrator} />
                     <h4>Finding assets become mission impossible</h4>
                     <p>

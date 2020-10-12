@@ -236,39 +236,4 @@
 .card__mobile p {
   padding: 8px 0;
 }
-
-#rocket {
-  -webkit-animation: topBottom 5s infinite;
-          animation: topBottom 5s infinite;
-}
-
-@-webkit-keyframes topBottom {
-  0% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  50% {
-    -webkit-transform: translate(0, -200px);
-            transform: translate(0, -200px);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
-@keyframes topBottom {
-  0% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  50% {
-    -webkit-transform: translate(0, -200px);
-            transform: translate(0, -200px);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
 /*# sourceMappingURL=Card.css.map */
