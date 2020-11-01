@@ -21,7 +21,7 @@ const OneColumnImageCard: FC<ImageColumnProps> = ({
         <img src={image} />
       </div>
       <div className="grid__title">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
       </div>
 
       <div className="grid__paragraph">

@@ -1,0 +1,114 @@
+@import "../../sass/config";
+@import "../../sass/mobile";
+@import "../../sass/utilities";
+@import "../../sass/mixins";
+
+.secondary__billboard {
+	max-width: 1140px;
+	margin: 120px auto;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "child-one child-two";
+	h1 {
+		
+		color: $dark-blue;
+		font-size: 2.8rem;
+		line-height: 1.2;
+	}
+	h2 {
+		color: $lighter-black;
+		font-size: 1.2rem;
+		line-height: 2rem;
+		padding: $default-padding16 0;
+	}
+	.child-one {
+		grid-area: child-one;
+		padding-left: 24px;
+		padding-right: 24px;
+		margin: auto 0;
+
+		ul li:before
+{content:'\2713';
+  display:inline-block;
+  color:red;
+  padding:0 6px 0 0;
+  }
+ul li{list-style-type:none;font-size:1em;}
+	}
+	.child-two {
+		grid-area: child-two;
+		padding-right: 24px;
+		margin: auto 0;
+	
+		img{
+			height: 480px;
+		}
+		.btn-video {
+			display: block;
+			position: relative;
+		}
+		.btn-video:hover:before{
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.btn-video:before {
+		content: "";
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		right: 10px;
+		bottom: 20px;
+		background: rgba(0,0,0,.1);
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transition: .3s all ease;
+		-o-transition: .3s all ease;
+		transition: .3s all ease;
+	}
+	}
+}
+
+.buttons {
+	display: flex;
+	margin-top: 16px;
+}
+
+@include mq($screen-tablet) {
+	.main__billboard {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, auto);
+		grid-template-areas: "child-one";
+		margin-bottom: 24px;
+		margin-top: 0px;
+
+		h1 {
+			font-size: 3.0rem;
+			line-height: 1.2;
+		}
+
+		.child-one {
+			grid-area: child-one;
+			padding: 0 16px;
+		}
+	}
+	.child-two {
+		display: none;
+	}
+
+	.buttons {
+		display: grid;
+		grid-gap: 10px;
+		margin-top: 16px;
+		text-align: center;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-areas: "button-one,
+                          button-two";
+	}
+}
+
+
+

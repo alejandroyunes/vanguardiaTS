@@ -1,5 +1,5 @@
 @import "../../sass/mixins";
-
+@import "../../sass/config";
 .image__column {
   align-items: center;
   &-img {
@@ -13,11 +13,12 @@
     text-align: center;
     padding: 12px;
   }
-  h3 {
-    color: #ae3c43;
+  h2 {
+    color: $dark-red;
     font-weight: 600;
     padding-top: 8px;
     text-align: center;
+    font-size: 20px;
   }
   @include mq($screen-desktop) {
     img {

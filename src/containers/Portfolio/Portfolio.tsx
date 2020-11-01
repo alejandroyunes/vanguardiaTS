@@ -1,97 +1,128 @@
 import React from "react";
 import "./Portfolio.scss";
-import aboutMarketing from ".././../assets/deskeagle.svg";
-import aboutBox from ".././../assets/boxeagle.svg";
-import aboutIllustrator from ".././../assets/illustraeagle.svg";
+import websiteOne from '../../assets/portfolio/website-one.jpg'
+import studioWebsite from '../../assets/portfolio/studio-website.jpg'
 
+
+import Button from "../../components/Button/Button";
+import Animation from "../../assets/development.png";
+
+import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
 export default function Portfolio() {
     return (
         <>
             <div className="portfolio-main-title">
                 <h1>
-                    Bienvenido al portafolio
+                    Portafolio
                 </h1>
             </div>
 
-            <div className="portfolio-services">
-                <div className="portfolio-services-child-one">
-                    <img className="about-logo" src={aboutMarketing} />
-                    <h4>It can be a fuss to collect images from websiites</h4>
-                    <p>
-                        Collecting images are always a nightmare, especially with all the
-                        procedures and when there are more than one.
-                    </p>
+
+            <div className="portfolio-billboard">
+                <div className="portfolio-billboard-child-one">
+                    <div>
+                        <h1>Hushina Restaurant</h1>
+                        <h2>
+                            Get rid of spam in your application. Use our API to access
+                            Akismet’s powerful spam detection. Our developer program provides
+                            valuable data and feedback during development.
+                        </h2>
+                        <div className="buttons">
+                            <div className="button-one">
+                                <Button
+                                    label="view work"
+                                    category="primary"
+                                    size="sm"
+                                    icon={WorkOutlineIcon}
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="portfolio-services-child-two">
-                    <img className="about-logo" src={aboutBox} />
-                    <h4>Lack of efficiency to organizing assets</h4>
-                    <p>
-                        Collecting images are always a nightmare, especially with all the
-                        procedures and when there are more than one.
-                    </p>
-                </div>
-                <div className="portfolio-services-child-three">
-                    <img className="about-logo" src={aboutIllustrator} />
-                    <h4>Finding assets become mission impossible</h4>
-                    <p>
-                        Collecting images are always a nightmare, especially with all the
-                        procedures and when there are more than one.
-                    </p>
+                <div className="portfolio-billboard-child-two">
+                    <img src={websiteOne} />
                 </div>
             </div>
+    
+            <div className="portfolio-billboard">
+                <div className="portfolio-billboard-child-two">
+                    <img src={studioWebsite} />
+                </div>
+                <div className="portfolio-billboard-child-one">
+                    <div>
+                        <h1>Vanguardia Digital Development</h1>
+                        <h2>
+                            Get rid of spam in your application. Use our API to access
+                            Akismet’s powerful spam detection. Our developer program provides
+                            valuable data and feedback during development.
+                        </h2>
+                        <div className="buttons">
+                            <div className="button-one">
+                                <Button
+                                    label="view work"
+                                    category="primary"
+                                    size="sm"
+                                    icon={WorkOutlineIcon}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div className="portfolio-services">
-                <div className="portfolio-services-child-one">
-                    <img className="about-logo" src={aboutMarketing} />
-                    <h4>It can be a fuss to collect images from websiites</h4>
-                    <p>
-                        Collecting images are always a nightmare, especially with all the
-                        procedures and when there are more than one.
-                    </p>
-                </div>
-                <div className="portfolio-services-child-two">
-                    <img className="about-logo" src={aboutBox} />
-                    <h4>Lack of efficiency to organizing assets</h4>
-                    <p>
-                        Collecting images are always a nightmare, especially with all the
-                        procedures and when there are more than one.
-                    </p>
-                </div>
-                <div className="portfolio-services-child-three">
-                    <img className="about-logo" src={aboutIllustrator} />
-                    <h4>Finding assets become mission impossible</h4>
-                    <p>
-                        Collecting images are always a nightmare, especially with all the
-                        procedures and when there are more than one.
-                    </p>
-                </div>
             </div>
 
-            <div className="portfolio-services">
-                <div className="portfolio-services-child-one">
-                    <img className="about-logo" src={aboutMarketing} />
-                    <h4>It can be a fuss to collect images from websiites</h4>
-                    <p>
-                        Collecting images are always a nightmare, especially with all the
-                        procedures and when there are more than one.
-                    </p>
+            <div className="portfolio-billboard">
+                <div className="portfolio-billboard-child-one">
+                    <div>
+                        <h1>Vanguardia Digital Development</h1>
+                        <h2>
+                            Get rid of spam in your application. Use our API to access
+                            Akismet’s powerful spam detection. Our developer program provides
+                            valuable data and feedback during development.
+                        </h2>
+                        <div className="buttons">
+                            <div className="button-one">
+                                <Button
+                                    label="view work"
+                                    category="primary"
+                                    size="sm"
+                                    icon={WorkOutlineIcon}
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="portfolio-services-child-two">
-                    <img className="about-logo" src={aboutBox} />
-                    <h4>Lack of efficiency to organizing assets</h4>
-                    <p>
-                        Collecting images are always a nightmare, especially with all the
-                        procedures and when there are more than one.
-                    </p>
+                <div className="portfolio-billboard-child-two">
+                    <img src={Animation} />
                 </div>
-                <div className="portfolio-services-child-three">
-                    <img className="about-logo" src={aboutIllustrator} />
-                    <h4>Finding assets become mission impossible</h4>
-                    <p>
-                        Collecting images are always a nightmare, especially with all the
-                        procedures and when there are more than one.
-                    </p>
+            </div>
+     
+
+            <div className="portfolio-billboard">
+                <div className="portfolio-billboard-child-two">
+                    <img src={Animation} />
                 </div>
+                <div className="portfolio-billboard-child-one">
+                    <div>
+                        <h1>Vanguardia Digital Development</h1>
+                        <h2>
+                            Get rid of spam in your application. Use our API to access
+                            Akismet’s powerful spam detection. Our developer program provides
+                            valuable data and feedback during development.
+                        </h2>
+                        <div className="buttons">
+                            <div className="button-one">
+                                <Button
+                                    label="view work"
+                                    category="primary"
+                                    size="sm"
+                                    icon={WorkOutlineIcon}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </>

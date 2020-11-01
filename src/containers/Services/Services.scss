@@ -3,6 +3,23 @@
 @import "../../sass/utilities";
 @import "../../sass/mixins";
 
+.portfolio-main-title{
+	margin: 60px 0;
+	h1 {
+	  font-weight: bold;
+	  color: $dark-blue;
+	  font-size: 3rem;
+	  line-height: 1.2;
+	  max-width: 760px;
+	  padding: 0 32px;
+	  margin: 32px auto;
+	  text-align: center;
+	  @include mq($screen-small) {
+		padding: 0 16px;
+	  }
+	}
+  }
+
 .services-billboard {
 	max-width: 1140px;
 	margin: 50px auto 20px;

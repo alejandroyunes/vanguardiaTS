@@ -3,81 +3,13 @@
 
 @import './config';
 // Fonts
-$font-12: 0.75rem;
-$font-14: 0.875rem;
-$font-base: 16px;
-$font-18: 1.125rem;
-$font-20: 1.25rem;
-$font-24: 1.5rem;
-$font-26: 1.625rem;
-$font-28: 1.75rem;
-$font-32: 2rem;
-$font-38: 2.375rem;
-$font-40: 2.5rem;
-$font-50: 3.125rem;
-$font-56: 3.5rem;
-$font-72: 4.5rem;
-$font-88: 5.5rem;
-$font-96: 6rem;
 
-// Letter spacing
-$spacing-020: -0.2px;
-$spacing-027: -0.27px;
-$spacing-base: -0.3px;
-$spacing-032: -0.32px;
-$spacing-038: -0.38px;
-$spacing-040: -0.4px;
-$spacing-045: -0.45px;
-$spacing-046: -0.46px;
-$spacing-050: -0.5px;
-$spacing-060: -0.6px;
 
 // Base Colors
-$color-red: #A93226;
-$color-green: #16c98d;
-$color-yellow: #ffcf01;  //border
-$color-blue: #00448d;
+
 $color-white: #fff;
 $color-black: #000;
-$color-transparent: rgba(0, 0, 0, 0);
+
 
 // App Colors
-$color-text-heading1: $color-yellow;
-$color-text-heading2: $color-blue;
-$color-text-base: #292929;
-$color-text-light: #808285;
-$color-text-lighter: #a7a9ac;
-$color-text-lightest: #f7f7f7;
-$color-text-white: $color-white;
 
-$color-status-alert: $primary-color;
-$color-status-info: $color-blue;
-$color-status-info2: #747779;
-$color-status-error: $color-red;
-$color-status-success: $color-green;
-
-// daypicker
-$color-bg-70: #110b36;
-$color-bg-60: #6d6e71;
-$color-bg-10: #d1d3d4;
-$color-bg-5: #e6e7e8;
-$color-bg-1: #f7f7f7;
-$color-bg-white: $color-white;
-$color-bg-transparent: $color-transparent;
-
-$color-icon-yellow: $color-yellow;
-$color-icon-blue: $color-blue;
-$color-icon-black: #454648;
-$color-icon-white: $color-white;
-$color-icon-red: $color-red;
-$color-icon-green: $color-green;
-
-// Font Family
-// $family-base: 'Open Sans', sans-serif;
-// $family-bold: 'Nunito', sans-serif;
-
-// Screen Sizes
-$screen-small: 440px;
-$screen-tablet: 768px;
-$screen-desktop-1200: 1200px;
-$screen-desktop: 1366px;

@@ -93,6 +93,27 @@
   }
 }
 
+.portfolio-main-title {
+  margin: 60px 0;
+}
+
+.portfolio-main-title h1 {
+  font-weight: bold;
+  color: #508EBC;
+  font-size: 3rem;
+  line-height: 1.2;
+  max-width: 760px;
+  padding: 0 32px;
+  margin: 32px auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 440px) {
+  .portfolio-main-title h1 {
+    padding: 0 16px;
+  }
+}
+
 .services-billboard {
   max-width: 1140px;
   margin: 50px auto 20px;
