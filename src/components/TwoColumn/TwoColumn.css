@@ -194,13 +194,13 @@
   margin-bottom: 16px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .two__column-grid {
     margin: 0 16px;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .two__column-grid {
     margin: 0 16px;
     -ms-grid-columns: (1fr)[1];
@@ -215,7 +215,7 @@
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (min-width: 440px) {
   .two__column-grid {
     margin: 0;
     gap: 4px 4px;

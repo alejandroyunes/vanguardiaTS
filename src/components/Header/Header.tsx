@@ -103,8 +103,6 @@ function Header() {
               </label>
             </div>
           </div>
-
-
           <ul className="header__links">
             <Link to={{ pathname: "/" }}>
               <li
@@ -232,8 +230,6 @@ function Header() {
             </div>
           </div>
         </header>
-      
-        
       </div>
 
       <div className="arrow-wrapper">
@@ -245,7 +241,7 @@ function Header() {
             className="scrollTop-arrow"
           />
         </div>
-        </div>
+      </div>
     </>
   );
 }

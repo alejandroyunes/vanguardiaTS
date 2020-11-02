@@ -94,13 +94,13 @@
       grid-template-areas: "boxf1 boxf2";
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .footer .footer__grid {
     padding-bottom: 0;
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (min-width: 750px) {
   .footer .footer__grid {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -120,7 +120,7 @@
   padding-left: 24px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .footer .footer__grid .boxf1 {
     padding: 40px 16px 0 16px;
   }
@@ -198,7 +198,7 @@
   padding-right: 24px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .footer .footer__grid .boxf2 {
     padding: 0 16px 32px;
     margin-top: 30px;

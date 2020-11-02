@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react'
+import React, { FC } from 'react'
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import HomeRouter from "./containers/HomeRouter/HomeRouter";
 import PublicRoute from './core/PublicRoute/PublicRoute';
@@ -11,11 +11,7 @@ import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './theme';
 import { GlobalStyles } from './app.styled';
 
-import { useLocation } from "react-router-dom";
-
 let routerProps = {}
-
-
 
 const App: FC = () => {
 
@@ -23,14 +19,12 @@ const App: FC = () => {
   const darkMode = useSelector((state: AppStore) => state.app.darkMode);
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-       <GlobalStyles />
-     
+      <GlobalStyles />
+
       <Router
-      {...routerProps}>
-      
+        {...routerProps}>
         <Switch>
-        
-          <PublicRoute path="/" component={HomeRouter}  />
+          <PublicRoute path="/" component={HomeRouter} />
         </Switch>
       </Router>
     </ThemeProvider>

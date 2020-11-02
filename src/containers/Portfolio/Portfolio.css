@@ -141,7 +141,7 @@
   max-height: 360px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .portfolio-billboard .portfolio-billboard-child-one {
     display: none;
   }

@@ -9,7 +9,7 @@ export default function Index() {
   return (
     <>
       <Billboard />
-       <Cards />
+       <Cards /> 
        <BillboardTwo />
       <ImageGallery/>
       <TwoColumn />  

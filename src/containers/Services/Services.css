@@ -108,7 +108,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (min-width: 440px) {
   .portfolio-main-title h1 {
     padding: 0 16px;
   }
@@ -163,7 +163,7 @@
   height: auto;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .services-billboard .services-billboard-child-one {
     display: none;
   }
@@ -176,7 +176,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .services-billboard-mobile {
     display: block;
     -ms-grid-columns: (1fr)[1];
@@ -268,7 +268,7 @@
   margin: auto 0;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .services-tech {
     display: none;
   }
@@ -290,7 +290,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .services-tech-mobile {
     display: block;
   }
@@ -379,7 +379,7 @@
       grid-template-areas: "child-one" "child-two" "child-three";
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .about-us-icons-services {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -399,7 +399,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (min-width: 440px) {
   .about-us-icons-services h4 {
     padding: 0 16px;
   }
@@ -414,7 +414,7 @@
   padding: 0 32px;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (min-width: 440px) {
   .about-us-icons-services p {
     padding: 0 16px;
   }

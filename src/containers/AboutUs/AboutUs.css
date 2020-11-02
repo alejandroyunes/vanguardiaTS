@@ -120,7 +120,7 @@
   height: auto;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (min-width: 440px) {
   .wrapper .about-child-one img {
     padding: 0 16px;
   }
@@ -137,7 +137,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (min-width: 440px) {
   .wrapper .about-child-two h1 {
     padding: 0 16px;
     font-size: 1.6rem;
@@ -169,7 +169,7 @@
       grid-template-areas: "about-child-one" "about-child-two" "child-three";
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .about-us-icons-column {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -189,7 +189,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (min-width: 440px) {
   .about-us-icons-column h4 {
     padding: 0 16px;
   }
@@ -204,7 +204,7 @@
   padding: 0 32px;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (min-width: 440px) {
   .about-us-icons-column p {
     padding: 0 16px;
   }
@@ -240,7 +240,7 @@
       grid-template-areas: "about-child-one" "about-child-two";
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 700px) {
   .about-us-info {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -267,13 +267,13 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .about-us-info .about-child-one h1 {
     font-size: 2.6rem;
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (min-width: 440px) {
   .about-us-info .about-child-one h1 {
     padding: 0 16px;
   }
@@ -295,14 +295,14 @@
   margin: 32px auto;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 700px) {
   .about-us-info .about-child-two img {
     max-width: 100%;
     height: auto;
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (min-width: 440px) {
   .about-us-info .about-child-two img {
     padding: 0 16px;
   }

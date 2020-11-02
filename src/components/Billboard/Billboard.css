@@ -143,7 +143,7 @@
   margin-top: 16px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .main__billboard {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);

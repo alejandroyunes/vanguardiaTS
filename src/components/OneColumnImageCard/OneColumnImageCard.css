@@ -106,13 +106,13 @@
   font-size: 20px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .image__column img {
     width: 380px;
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (min-width: 440px) {
   .image__column img {
     width: 100%;
   }
@@ -126,13 +126,13 @@
   width: 600px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .grid__paragraph {
     width: 400px;
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (min-width: 440px) {
   .grid__paragraph {
     width: 100%;
   }
