@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 import './Card.scss'
 
 interface CardProps {
@@ -21,10 +21,8 @@ const Card: FC<CardProps> = ({
   return (
     <>
       <div className="card__container">
-
         <div className="card__container__img">
           <img src={image} />
-
         </div>
         <h2>{title}</h2>
         <h3>{subtitle}</h3>

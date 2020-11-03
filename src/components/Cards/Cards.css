@@ -94,127 +94,138 @@
 }
 
 .cards__container {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 0 auto;
-  padding: 10px 0 26px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
 }
 
-@media only screen and (min-width: 1200px) {
-  .cards__container {
-    margin: 0 20px;
+.cards__container .card__child__hide {
+  display: none;
+}
+
+.cards__container .card__child__active {
+  display: block;
+}
+
+.cards__container .animated {
+  background-repeat: no-repeat;
+  background-position: left top;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
   }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.cards__container .bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+          animation-name: bounceInLeft;
+}
+
+@-webkit-keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.cards__container .bounceInRight {
+  -webkit-animation-name: bounceInRight;
+          animation-name: bounceInRight;
 }
 
 @media only screen and (min-width: 900px) {
   .cards__container {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 10px 0 26px 0;
   }
   .cards__container .card__child__hide {
-    display: none;
+    display: block;
   }
   .cards__container .card__child__active {
     display: block;
-  }
-  .cards__container .animated {
-    background-repeat: no-repeat;
-    background-position: left top;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-  }
-  @-webkit-keyframes bounceInLeft {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(-200px);
-              transform: translateX(-200px);
-    }
-    60% {
-      opacity: 1;
-      -webkit-transform: translateX(0px);
-              transform: translateX(0px);
-    }
-    80% {
-      -webkit-transform: translateX(-10px);
-              transform: translateX(-10px);
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-  }
-  @keyframes bounceInLeft {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(-200px);
-              transform: translateX(-200px);
-    }
-    60% {
-      opacity: 1;
-      -webkit-transform: translateX(0px);
-              transform: translateX(0px);
-    }
-    80% {
-      -webkit-transform: translateX(-10px);
-              transform: translateX(-10px);
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-  }
-  .cards__container .bounceInLeft {
-    -webkit-animation-name: bounceInLeft;
-            animation-name: bounceInLeft;
-  }
-  @-webkit-keyframes bounceInRight {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(200px);
-              transform: translateX(200px);
-    }
-    60% {
-      opacity: 1;
-      -webkit-transform: translateX(0px);
-              transform: translateX(0px);
-    }
-    80% {
-      -webkit-transform: translateX(10px);
-              transform: translateX(10px);
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-  }
-  @keyframes bounceInRight {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(200px);
-              transform: translateX(200px);
-    }
-    60% {
-      opacity: 1;
-      -webkit-transform: translateX(0px);
-              transform: translateX(0px);
-    }
-    80% {
-      -webkit-transform: translateX(10px);
-              transform: translateX(10px);
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-  }
-  .cards__container .bounceInRight {
-    -webkit-animation-name: bounceInRight;
-            animation-name: bounceInRight;
   }
 }
 
@@ -241,25 +252,13 @@
 }
 
 .button__div .left {
-  visibility: hidden;
-}
-
-@media only screen and (min-width: 900px) {
-  .button__div .left {
-    visibility: visible;
-    left: 0px;
-  }
+  visibility: visible;
+  left: 0px;
 }
 
 .button__div .right {
-  visibility: hidden;
-}
-
-@media only screen and (min-width: 900px) {
-  .button__div .right {
-    visibility: visible;
-    right: 0px;
-  }
+  visibility: visible;
+  right: 0px;
 }
 
 .button__div .arrow-active polyline {
@@ -292,26 +291,42 @@
 }
 
 @media only screen and (min-width: 900px) {
-  .dot {
-    width: 16px;
-    height: 16px;
-    background: white;
-    border-radius: 50%;
-    margin: 0 auto;
-    cursor: pointer;
-    -webkit-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  .button__div .left {
+    visibility: hidden;
   }
-  .current {
-    background: #AE3C43;
+  .button__div .right {
+    visibility: hidden;
   }
+}
+
+.dots-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px auto;
+  width: 80px;
+  visibility: visible;
+}
+
+.dots-container .dot {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.dots-container .current {
+  background: #AE3C43;
+}
+
+@media only screen and (min-width: 900px) {
   .dots-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 auto;
-    width: 80px;
+    display: none;
   }
 }
 /*# sourceMappingURL=Cards.css.map */

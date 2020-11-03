@@ -1,50 +1,57 @@
 @import "../../sass/mixins";
 @import "../../sass/config";
+
 .image__column {
-  align-items: center;
-  &-img {
-    text-align: center;
-    width: 100%;
-  }
-  img {
-    width: 480px;
-  }
-  p {
-    text-align: center;
-    padding: 12px;
-  }
-  h2 {
-    color: $dark-red;
-    font-weight: 600;
-    padding-top: 8px;
-    text-align: center;
-    font-size: 20px;
-  }
-  @include mq($screen-desktop) {
-    img {
-      width: 380px;
-    }
-  }
-  @include mq($screen-small) {
+  .image__column-image-wrapper {
+    margin: 0 auto;
     img {
       width: 100%;
+      height: auto;
     }
   }
-  .grid__title{
-    margin-top: 8px;
+  .grid__title {
+    padding: 0 16px;
+    max-width: 600px;
+    margin: 10px auto;
+    h2 {
+      color: $dark-red;
+      font-weight: 600;
+      padding-top: 8px;
+      text-align: center;
+      font-size: 24px;
+    }
   }
-
- 
+  .grid__paragraph {
+    padding: 0 16px;
+    max-width: 600px;
+    margin: 0 auto;
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      padding-bottom: 24px;
+    }
+  }
 }
 
-.grid__paragraph {
-  width: 600px;
-
-  @include mq($screen-desktop) {
-    width: 400px;
+@include mq($screen-tablet) {
+  .image__column {
+    .image__column-image-wrapper {
+      min-width: 400px;
+      height: auto;
+    }
+    .grid__paragraph {
+      p {
+        padding-bottom: 0px;
+      }
+    }
   }
-  @include mq($screen-small) {
-    width: 100%;
-  }
+}
 
+@include mq($screen-desktop) {
+  .image__column {
+    .image__column-image-wrapper {
+      width: 520px;
+      height: auto;
+    }
+  }
 }

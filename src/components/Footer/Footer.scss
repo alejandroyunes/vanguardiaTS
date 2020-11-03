@@ -7,31 +7,24 @@
   max-width: 2000px;
   background-color: $secondary-color;
   .footer__grid {
-    margin: 0 auto;
-    padding-bottom: 40px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "boxf1 boxf2";
-    @include mq($screen-tablet) {
-      padding-bottom: 0;
-    }
-
+    grid-template-areas:
+      "footer-child-one"
+      "footer-child-two";
+    padding-bottom: 40px;
     @include mq($screen-tablet-footer) {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      margin: 0 auto;
+      padding-bottom: 40px;
+      grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
-      grid-template-areas:
-        "boxf1"
-        "boxf2";
+      grid-template-areas: "footer-child-one footer-child-two";
     }
 
-    .boxf1 {
-      grid-area: boxf1;
-      padding-top: 40px;
-      padding-left: 24px;
-      @include mq($screen-tablet) {
-        padding: 40px 16px 0 16px;
-      }
+    .footer-child-one {
+      grid-area: footer-child-one;
+      padding: 40px 0 0 16px;
       h1 {
         font-weight: bold;
         color: white;
@@ -84,13 +77,14 @@
       }
     }
 
-    .boxf2 {
-      grid-area: boxf2;
+    .footer-child-two {
+      grid-area: footer-child-two;
       margin-top: 60px;
-      padding-right: 24px;
-      @include mq($screen-tablet) {
-        padding: 0 16px 32px;
-        margin-top: 30px;
+      padding: 0 16px;
+    }
+    @include mq($screen-tablet) {
+      .footer-child-two {
+        padding: 0 32px;
       }
     }
 

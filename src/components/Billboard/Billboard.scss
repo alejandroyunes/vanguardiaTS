@@ -4,73 +4,70 @@
 @import "../../sass/mixins";
 
 .main__billboard {
-	max-width: 1140px;
-	margin: 20px auto;
+	margin: 10px auto;
 	display: grid;
 	grid-gap: 10px;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 	grid-template-rows: repeat(1, auto);
-	grid-template-areas: "child-one child-two";
+	grid-template-areas:
+		"main-billboard-child-one"
+		"main-billboard-child-two";
 	h1 {
+		font-size: 3rem;
+		line-height: 1.2;
 		font-weight: bold;
 		color: $dark-blue;
-		font-size: 3.8rem;
-		line-height: 1.2;
 	}
-	h2 {
+	p {
 		color: $lighter-black;
 		font-size: 1.2rem;
 		line-height: 2rem;
-		padding: $default-padding16 0;
+		padding: 16px 0;
 	}
-	.child-one {
-		grid-area: child-one;
-		padding-left: 24px;
-		margin: auto 0;
+	.main-billboard-child-one {
+		grid-area: main-billboard-child-one;
+		padding: 0 16px;
 	}
-	.child-two {
-		grid-area: child-two;
-		padding-right: 24px;
-		margin: auto 0;
+	.main-billboard-child-two {
+		pointer-events: none;
+		padding: 8px 16px;
 	}
-}
-
-.buttons {
-	display: flex;
-	margin-top: 16px;
+	.billboard-button {
+		margin-top: 16px;
+		text-align: center;
+	}
 }
 
 @include mq($screen-tablet) {
 	.main__billboard {
-		grid-template-columns: repeat(1, 1fr);
+		max-width: 1140px;
+		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(1, auto);
-		grid-template-areas: "child-one";
-		margin-bottom: 24px;
-		margin-top: 0px;
-
+		grid-template-areas: "main-billboard-child-one main-billboard-child-two";
 		h1 {
-			font-size: 3.0rem;
-			line-height: 1.2;
+			font-size: 3.8rem;
 		}
-
-		.child-one {
-			grid-area: child-one;
-			padding: 0 16px;
+		p {
+			color: $lighter-black;
+			font-size: 1.2rem;
+			line-height: 2rem;
+			padding: $default-padding16 0;
 		}
-	}
-	.child-two {
-		display: none;
-	}
-
-	.buttons {
-		display: grid;
-		grid-gap: 10px;
-		margin-top: 16px;
-		text-align: center;
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-		grid-template-areas: "button-one,
-                          button-two";
+		.main-billboard-child-one {
+			grid-area: main-billboard-child-one;
+			padding-left: 24px;
+			margin: auto 0;
+		}
+		.main-billboard-child-two {
+			display: block;
+			grid-area: main-billboard-child-two;
+			padding-right: 24px;
+			margin: auto 0;
+		}
+		.billboard-button {
+			margin-top: 16px;
+			float: left;
+		}
 	}
 }
 

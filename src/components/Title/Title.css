@@ -79,39 +79,27 @@
 }
 
 .title__section {
-  margin: 0 auto;
-  max-width: 1140px;
+  margin: 20px auto;
+  padding: 0 16px;
 }
 
-.title__section__title {
-  margin-top: 40px;
+.title__section h3 {
+  margin-top: 0px;
   text-align: center;
   font-size: 1.2rem;
   color: #7d8693;
 }
 
-.title__section__subtitle {
+.title__section h2 {
   text-align: center;
   font-size: 3rem;
-  color: #1f2732;
-}
-
-.title__section__line {
-  text-align: center;
-  font-size: 2rem;
-  color: #1f2732;
-  margin-bottom: 40px;
+  color: #508EBC;
+  line-height: 3rem;
 }
 
 @media only screen and (min-width: 900px) {
-  .title__section__line {
-    display: none;
-  }
-  .title__section__subtitle {
-    margin-bottom: 40px;
-  }
-  .title__section__subtitle {
-    line-height: 1.2;
+  .title__section {
+    max-width: 1140px;
   }
 }
 /*# sourceMappingURL=Title.css.map */

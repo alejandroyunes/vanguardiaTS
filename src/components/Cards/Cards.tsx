@@ -48,8 +48,6 @@ export default function Cards() {
   }
   return (
     <>
-      <Title title="Latest Technologies" message="Mobile first world" />
-
       <div className="cards__container section__grid">
 
         <div className={
@@ -187,5 +185,4 @@ export default function Cards() {
     </>
   );
 }
-
 

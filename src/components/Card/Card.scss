@@ -1,111 +1,23 @@
-
 @import "../../sass/config";
 @import "../../sass/mobile";
 @import "../../sass/utilities";
 @import "../../sass/mixins";
 
 .card__container {
-      padding: $default-padding24;
-      margin: 0 auto;
-      background-color: #fff;
-      border-radius: 0.5rem;
-      width: 300px;
-      height: 490px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-    @include mq($screen-desktop) {
-      padding: $default-padding20;
-      margin: 0 auto;
-      width: 260px;
-      height: 500px;
-    }
-    &__img{
-      text-align: center;
-    }
-    img {
-      width: 150px;
-      height: 150px;
-    }
-    h2 {
-      font-size: 1.5rem;
-      padding: $default-padding8 0;
-      font-weight: 700;
-      color: #666666;
-    }
-    h3 {
-      color: #ae3c43;
-      padding: $default-padding8 0;
-      font-weight: 600;
-    }
-    h6 {
-      color: $light-gray;
-      padding: $default-padding16 0;
-      font-weight: 600;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-    p {
-      padding: $default-padding8 0;
-    }
-
-  }
-  
-    .card__container_tablet {
-      padding: $default-padding24;
-      margin: 0 $default-padding32;
-      background-color: #fff;
-      border-radius: 0.5rem;
-      width: 260px;
-      height: 420px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     
-  
-    &__img{
-      text-align: center;
-    }
-    img {
-      width: 60px;
-      height: auto;
-    }
-    h2 {
-      font-size: 1.5rem;
-      padding: $default-padding8 0;
-      font-weight: 700;
-      color: #666666;
-    }
-    h3 {
-      color: #ae3c43;
-      padding: $default-padding8 0;
-      font-weight: 600;
-    }
-    h6 {
-      color: $light-gray;
-      padding: $default-padding16 0;
-      font-weight: 600;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-    p {
-      padding: $default-padding8 0;
-    }
-  }
-  
-  .card__mobile {
-    padding: $default-padding24;
-    margin: 0 $default-padding32;
-    background-color: #fff;
-    border-radius: 0.5rem;
-    width: 260px;
-    height: 420px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   
-  
-  &__img{
+  padding: $default-padding24;
+  margin: 24px auto;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  width: 260px;
+  height: 500px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  &__img {
     text-align: center;
   }
   img {
-    width: 60px;
-    height: auto;
+    width: 150px;
+    height: 150px;
   }
   h2 {
     font-size: 1.5rem;
@@ -128,5 +40,4 @@
   p {
     padding: $default-padding8 0;
   }
-  }
-
+}

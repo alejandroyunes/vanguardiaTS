@@ -1,46 +1,26 @@
-
 @import "../../sass/utilities";
 @import "../../sass/config";
 @import "../../sass/mixins";
 
 .title__section {
-  margin: 0 auto;
-  max-width: 1140px;
-
-
-
-  &__title {
-    margin-top: 40px;
+  margin: 20px auto;
+  padding: 0 16px;
+  h3 {
+    margin-top: 0px;
     text-align: center;
     font-size: 1.2rem;
     color: $light-gray;
-
   }
-  &__subtitle {
+  h2 {
     text-align: center;
     font-size: 3rem;
-    color: $secondary-color;
+    color: $dark-blue;
+    line-height: 3rem;
   }
-  &__line {
-    text-align: center;
-    font-size: 2rem;
-    color: $secondary-color;
-    margin-bottom: 40px;
-  }
-
 }
 
 @include mq($screen-tablet) {
   .title__section {
-    &__line {
-      display: none;
-    }
-    &__subtitle {
-      margin-bottom: 40px;
-
-    }
-    &__subtitle {
-      line-height: 1.2;
-    }
-}
+    max-width: 1140px;
+  }
 }

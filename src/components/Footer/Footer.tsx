@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC } from "react";
 import "./Footer.scss";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
@@ -13,7 +13,7 @@ const Footer: FC = () => {
     <>
       <div className="footer ">
         <div className="section__grid footer__grid">
-          <div className="boxf1">
+          <div className="footer-child-one">
             <h1>Our Office</h1>
             <h2>Leading digital agency with solid design.</h2>
             <div className="footer__button">
@@ -37,7 +37,7 @@ const Footer: FC = () => {
               <GitHubIcon fontSize="large" />
             </div>
           </div>
-          <div className="boxf2">
+          <div className="footer-child-two">
               <form>
                 <input
                   name="name"

@@ -203,7 +203,7 @@
 
 @media only screen and (min-width: 900px) {
   .digital-services-billboard {
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 120px auto;
     display: -ms-grid;
     display: grid;

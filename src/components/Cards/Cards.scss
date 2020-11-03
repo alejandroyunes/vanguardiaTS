@@ -4,76 +4,79 @@
 @import "../../sass/mixins";
 
 .cards__container {
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-evenly;
-  margin: 0 auto;
-  padding: 10px 0 26px 0;
-  @include mq($screen-desktop) {
-    margin: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  .card__child__hide {
+    display: none;
+  }
+  .card__child__active {
+    display: block;
+
+  }
+  .animated {
+    background-repeat: no-repeat;
+    background-position: left top;
+    animation-duration: 1s;
+    animation-fill-mode: both;
   }
 
-  @include mq($screen-tablet) {
-    grid-template-columns: repeat(1, 1fr);
+  @keyframes bounceInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    80% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .bounceInLeft {
+    animation-name: bounceInLeft;
+  }
+
+  @keyframes bounceInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    80% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .bounceInRight {
+    animation-name: bounceInRight;
+  }
+}
+
+@include mq($screen-tablet) {
+  .cards__container {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 10px 0 26px 0;
     .card__child__hide {
-      display: none;
+      display: block;
     }
     .card__child__active {
       display: block;
     }
-
-
-    .animated {
-      background-repeat: no-repeat;
-      background-position: left top; 
-      animation-duration: 1s; 
-      animation-fill-mode: both; 
-   }
-   
-   
-   @keyframes bounceInLeft {
-      0% {
-         opacity: 0;
-         transform: translateX(-200px);
-      }
-      60% {
-         opacity: 1;
-         transform: translateX(0px);
-      }
-      80% {
-         transform: translateX(-10px);
-      }
-      100% {
-         transform: translateX(0);
-      }
-   }
-   
-   .bounceInLeft {
-      animation-name: bounceInLeft;
-   }
-
-   @keyframes bounceInRight {
-    0% {
-       opacity: 0;
-       transform: translateX(200px);
-    }
-    60% {
-       opacity: 1;
-       transform: translateX(0px);
-    }
-    80% {
-       transform: translateX(10px);
-    }
-    100% {
-       transform: translateX(0);
-    }
- }
- 
- .bounceInRight {
-    animation-name: bounceInRight;
- }
   }
 }
-
 
 .button__div {
   position: relative;
@@ -82,11 +85,9 @@
     border: 0;
     outline: 0;
   }
-
   svg {
     padding: 6px;
   }
-
   .arrow {
     cursor: pointer;
     position: absolute;
@@ -95,26 +96,19 @@
     height: 90px;
   }
 
-  .left{
-    visibility: hidden;
-    @include mq($screen-tablet) {
-      visibility: visible;
-      left: 0px;
-    }
- 
+  .left {
+    visibility: visible;
+    left: 0px;
   }
-  .right{
-    visibility: hidden;
-    @include mq($screen-tablet) {
-      visibility: visible;
-      right: 0px;
-    }
+  .right {
+    visibility: visible;
+    right: 0px;
   }
 
   .arrow-active polyline {
     stroke-width: 3;
   }
-  
+
   .left:hover polyline {
     stroke-width: 3;
   }
@@ -139,25 +133,40 @@
 }
 
 @include mq($screen-tablet) {
-
-.dot{
-  width: 16px;
-  height: 16px;
-  background: white;
-  border-radius: 50%;
-  margin: 0 auto;
-  cursor: pointer;
-  transition: all .6s ease-in-out;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  .button__div {
+    .left {
+      visibility: hidden;
+    }
+    .right {
+      visibility: hidden;
+    }
+  }
 }
 
-.current{
-  background: $dark-red;
-}
-
-.dots-container{
+.dots-container {
   display: flex;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 80px;
+  visibility: visible;
+
+  .dot {
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .current {
+    background: $dark-red;
+  }
 }
+
+@include mq($screen-tablet) {
+  .dots-container {
+    display: none;
+  }
 }

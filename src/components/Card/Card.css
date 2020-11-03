@@ -95,22 +95,14 @@
 
 .card__container {
   padding: 24px;
-  margin: 0 auto;
+  margin: 24px auto;
   background-color: #fff;
   border-radius: 0.5rem;
-  width: 300px;
-  height: 490px;
+  width: 260px;
+  height: 500px;
+  padding: 20px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media only screen and (min-width: 1200px) {
-  .card__container {
-    padding: 20px;
-    margin: 0 auto;
-    width: 260px;
-    height: 500px;
-  }
 }
 
 .card__container__img {
@@ -144,96 +136,6 @@
 }
 
 .card__container p {
-  padding: 8px 0;
-}
-
-.card__container_tablet {
-  padding: 24px;
-  margin: 0 32px;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  width: 260px;
-  height: 420px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card__container_tablet__img {
-  text-align: center;
-}
-
-.card__container_tablet img {
-  width: 60px;
-  height: auto;
-}
-
-.card__container_tablet h2 {
-  font-size: 1.5rem;
-  padding: 8px 0;
-  font-weight: 700;
-  color: #666666;
-}
-
-.card__container_tablet h3 {
-  color: #ae3c43;
-  padding: 8px 0;
-  font-weight: 600;
-}
-
-.card__container_tablet h6 {
-  color: #7d8693;
-  padding: 16px 0;
-  font-weight: 600;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.card__container_tablet p {
-  padding: 8px 0;
-}
-
-.card__mobile {
-  padding: 24px;
-  margin: 0 32px;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  width: 260px;
-  height: 420px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card__mobile__img {
-  text-align: center;
-}
-
-.card__mobile img {
-  width: 60px;
-  height: auto;
-}
-
-.card__mobile h2 {
-  font-size: 1.5rem;
-  padding: 8px 0;
-  font-weight: 700;
-  color: #666666;
-}
-
-.card__mobile h3 {
-  color: #ae3c43;
-  padding: 8px 0;
-  font-weight: 600;
-}
-
-.card__mobile h6 {
-  color: #7d8693;
-  padding: 16px 0;
-  font-weight: 600;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.card__mobile p {
   padding: 8px 0;
 }
 /*# sourceMappingURL=Card.css.map */

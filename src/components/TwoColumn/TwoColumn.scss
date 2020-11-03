@@ -3,41 +3,25 @@
 @import "../../sass/config";
 @import "../../sass/mixins";
 
-.design__section {
-  max-width: 2000px;
-  margin: 60px 0;
-	display: flex;
-	justify-content: center;
+.two__columns_design__section {
+	max-width: 1200px;
+	margin: 60px auto;
 }
-.two__column-grid {
+.two__columns-grid {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 1fr;
-	gap: 16px 16px;
-	grid-template-areas: "two__column-box-one two__column-box-two ";
-	.two__column-box-one {
-		grid-area: two__column-box-one;
-		margin-bottom: 16px;
-	}
-	.two__column-box-two {
-		grid-area: two__column-box-two;
-		margin-bottom: 16px;
-	}
-	@include mq($screen-desktop) {
-		margin: 0 16px;
-	}
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: 
+	"two__columns-child-one" 
+	"two__columns-child-two";
+}
 
-	@include mq($screen-tablet) {
-		margin: 0 $default-padding16;
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-		justify-content: center;
-		gap: 8px 8px;
-		grid-template-areas: "two__column-box-one" "two__column-box-two";
-	}
-
-	@include mq($screen-small) {
-		margin: 0;
-		gap: 4px 4px;
+@include mq($screen-tablet) {
+	.two__columns-grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-template-areas: "two__columns-child-one" "two__columns-child-two";
+		gap: 0 16px;
+		margin: 0 32px;
 	}
 }

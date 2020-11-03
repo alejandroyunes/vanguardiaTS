@@ -541,9 +541,11 @@
   }
   .header__main {
     height: 70px;
+    max-width: 2000px;
   }
   .header__slide__down {
     height: 70px;
+    max-width: 2000px;
   }
   .header__logo {
     margin: 0 24px;

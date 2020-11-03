@@ -205,7 +205,7 @@ body {
 }
 
 .section__grid {
-  max-width: 1140px;
+  max-width: 1200px;
   display: -ms-grid;
   display: grid;
   overflow: hidden;

@@ -1,6 +1,4 @@
-import React, { FC, useEffect } from 'react'
-
-
+import React, { FC } from 'react'
 import Index from '../Index/Index'
 import AboutUs from '../AboutUs/AboutUs'
 import Services from '../Services/Services'
