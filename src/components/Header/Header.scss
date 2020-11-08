@@ -5,7 +5,6 @@
 
 .header {
   height: 50px;
-  position: relative;
   margin: 0 auto;
   &__main {
     display: flex;
@@ -36,28 +35,15 @@
     transform: translate(-50%, 0);
   }
   &__logo {
-    display: block;
     width: 38px;
     margin: 6px 0 0 16px;
   }
-  @keyframes navbar-slice-down {
-    0% {
-      top: -70px;
-    }
-    35% {
-      background-color: #fff;
-      color: #fff;
-    }
-
-    100% {
-      background-color: #fff;
-    }
-  }
-  &__link__item {
-    display: none;
+  .header__links-wrapper{
+    position: relative;
   }
   .hamburger-menu-mobile {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    position: relative;
     #toggleMenu {
       top: 16px;
       right: 0px;
@@ -149,10 +135,12 @@
       transform: none;
     }
   }
+
   .header__toggle__dark_mode_container {
     position: absolute;
+    float: left;
+    top: 6px;
     right: 40px;
-    top: 18px;
 
     .dark-toggle-input {
       overflow: hidden;
@@ -338,6 +326,23 @@
       }
     }
   }
+ 
+  @keyframes navbar-slice-down {
+    0% {
+      top: -70px;
+    }
+    35% {
+      background-color: #fff;
+      color: #fff;
+    }
+
+    100% {
+      background-color: #fff;
+    }
+  }
+  &__link__item {
+    display: none;
+  }
 }
 
 @include mq($screen-tablet) {
@@ -357,10 +362,6 @@
     &__logo {
       margin: 0 24px;
       width: 48px;
-    }
-    &__links {
-      position: relative;
-      margin: 0 24px;
     }
     &__link__item {
       display: inline-block;
@@ -436,8 +437,10 @@
       }
     }
     .header__toggle__dark_mode_container {
-      top: 30px;
-      right: 540px;
+      position: absolute;
+      top: 18px;
+      left: 100px;
+      
     }
   }
 }

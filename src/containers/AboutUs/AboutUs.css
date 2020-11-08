@@ -94,11 +94,11 @@
 }
 
 .wrapper {
-  max-width: 1140px;
-  margin: 30px auto;
+  max-width: 1200px;
+  margin: 32px auto;
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px;
+  padding: 0 16px;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
   -ms-grid-rows: (auto)[1];
@@ -106,24 +106,21 @@
       grid-template-areas: "about-child-one" "about-child-two" "child-three";
 }
 
-.wrapper .about-logo {
-  width: 368px;
-  height: 68px;
-}
-
 .wrapper .about-child-one {
   text-align: center;
 }
 
+.wrapper .about-child-one .about-logo {
+  width: 100%;
+}
+
 .wrapper .about-child-one img {
-  max-width: 100%;
+  max-width: 308px;
   height: auto;
 }
 
-@media only screen and (min-width: 440px) {
-  .wrapper .about-child-one img {
-    padding: 0 16px;
-  }
+.wrapper .about-child-two {
+  margin: 32px auto;
 }
 
 .wrapper .about-child-two h1 {
@@ -132,16 +129,7 @@
   font-size: 3rem;
   line-height: 1.2;
   max-width: 760px;
-  padding: 0 32px;
-  margin: 32px auto;
   text-align: center;
-}
-
-@media only screen and (min-width: 440px) {
-  .wrapper .about-child-two h1 {
-    padding: 0 16px;
-    font-size: 1.6rem;
-  }
 }
 
 .wrapper .child-three {
@@ -153,28 +141,30 @@
   line-height: 1.5;
   margin: 0 auto 48px;
   max-width: 432px;
-  padding: 16px 16px 0;
 }
 
 .about-us-icons-column {
-  max-width: 1140px;
-  margin: 20px auto;
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (auto)[1];
-      grid-template-rows: repeat(1, auto);
-      grid-template-areas: "about-child-one" "about-child-two" "child-three";
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "about-child-one"  "about-child-two"  "child-three";
+  padding: 0 16px;
 }
 
 @media only screen and (min-width: 900px) {
   .about-us-icons-column {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: (auto)[3];
-        grid-template-rows: repeat(3, auto);
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 32px;
+    grid-gap: 10px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (auto)[1];
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas: "about-child-one" "about-child-two" "child-three";
   }
 }
 
@@ -183,16 +173,9 @@
   font-weight: 600;
   margin: 0 0 16px;
   line-height: 1.3;
-  padding: 0 32px;
   max-width: 660px;
   margin: 16px auto;
   text-align: center;
-}
-
-@media only screen and (min-width: 440px) {
-  .about-us-icons-column h4 {
-    padding: 0 16px;
-  }
 }
 
 .about-us-icons-column p {
@@ -201,13 +184,6 @@
   max-width: 660px;
   margin: 0 auto;
   text-align: center;
-  padding: 0 32px;
-}
-
-@media only screen and (min-width: 440px) {
-  .about-us-icons-column p {
-    padding: 0 16px;
-  }
 }
 
 .about-us-icons-column .about-child-one {
@@ -228,24 +204,24 @@
 }
 
 .about-us-info {
-  max-width: 1140px;
-  margin: 80px auto;
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (auto)[1];
-      grid-template-rows: repeat(1, auto);
-      grid-template-areas: "about-child-one" "about-child-two";
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  margin: 80px auto;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .about-us-info {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: (auto)[2];
-        grid-template-rows: repeat(2, auto);
+    max-width: 1200px;
+    grid-gap: 10px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (auto)[1];
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas: "about-child-one" "about-child-two";
   }
 }
 
@@ -286,25 +262,23 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
 }
 
 .about-us-info .about-child-two .about-logo {
-  width: 368px;
-  height: 368px;
-  margin: 32px auto;
+  max-width: 500px;
+  height: auto;
+  margin: 32px auto 0;
+  padding: 0 16px;
 }
 
-@media only screen and (min-width: 700px) {
-  .about-us-info .about-child-two img {
-    max-width: 100%;
-    height: auto;
-  }
+.about-us-info .about-child-two img {
+  width: 100%;
+  height: auto;
 }
 
-@media only screen and (min-width: 440px) {
-  .about-us-info .about-child-two img {
-    padding: 0 16px;
+@media only screen and (min-width: 900px) {
+  .about-us-info .about-child-two .about-logo {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=AboutUs.css.map */

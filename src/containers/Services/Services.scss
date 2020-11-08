@@ -3,235 +3,150 @@
 @import "../../sass/utilities";
 @import "../../sass/mixins";
 
-.portfolio-main-title{
-	margin: 60px 0;
-	h1 {
-	  font-weight: bold;
-	  color: $dark-blue;
-	  font-size: 3rem;
-	  line-height: 1.2;
-	  max-width: 760px;
-	  padding: 0 32px;
-	  margin: 32px auto;
-	  text-align: center;
-	  @include mq($screen-small) {
+.services-page-hero {
+	img {
+		height: 600px;
+		width: auto;
+	}
+}
+@include mq($screen-tablet) {
+	.services-page-billboard {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, auto);
+		grid-template-areas: "services-billboard-child-one" "services-billboard-child-two";
+
+		.services-page-billboard-child-one {
+			padding-bottom: 16px;
+		}
+	}
+}
+
+.services-tech-mobile {
+	.services-tech-mobile-container {
+		display: grid;
+		grid-template-columns: repeat(1fr);
+		grid-template-rows: repeat(1fr 1fr);
+		grid-template-areas: "services-tech-mobile-child-one" "services-tech-mobile-child-two";
 		padding: 0 16px;
-	  }
+		width: 100%;
+		.html-svg {
+			width: 80%;
+			padding: 0 8px;
+		}
+		.css-svg {
+			width: 80%;
+			padding: 0 8px;
+		}
+		.js-svg {
+			width: 60%;
+			padding: 0 8px;
+		}
+		.react-svg {
+			width: 80%;
+			margin: auto 0;
+			padding: 10px 8px 0;
+		}
+		.node-svg {
+			width: 40%;
+			padding: 0 8px;
+		}
+		.wordpress-svg {
+			width: 30%;
+			padding: 0 8px;
+		}
+		.typescript-svg {
+			width: 30%;
+			padding: 0 8px;
+		}
+		.nginx-svg {
+			width: 40%;
+			padding: 0 8px;
+		}
+		.apache-svg {
+			width: 30%;
+			padding: 0 8px;
+		}
 	}
-  }
-
-.services-billboard {
-	max-width: 1140px;
-	margin: 50px auto 20px;
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(1, auto);
-	grid-template-areas: "services-billboard-child-one services-billboard-child-two";
-	h1 {
-		font-weight: bold;
-		color: $dark-blue;
-		font-size: 3.8rem;
-		line-height: 1.2;
-	}
-	h2 {
-		color: $lighter-black;
-		font-size: 1.2rem;
-		line-height: 2rem;
-		padding: $default-padding16 0;
-	}
-
-	.buttons {
+	.services-tech-mobile-child-one {
 		display: flex;
-		margin-top: 16px;
-	}
-	.services-billboard-child-one {
-		padding-left: 24px;
-		margin: auto 0;
-	}
-	.services-billboard-child-two {
-		padding-right: 24px;
-		margin: auto 0;
-		img {
-			max-width: 100%;
-			height: auto;
-		}
-	}
-	@include mq($screen-tablet) {
-		.services-billboard-child-one {
-			display: none;
-		}
-		.services-billboard-child-two {
-			display: none;
-		}
-	}
-}
-
-.services-billboard-mobile {
-	display: none;
-	@include mq($screen-tablet) {
-		display: block;
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-		grid-template-areas: "services-billboard-mobile-child-one" "services-billboard-mobile-child-two";
-		margin: 0px auto;
-		h1 {
-			font-size: 3rem;
-			line-height: 1.2;
-			color: $primary-color;
-			padding-bottom: 60px;
-		}
-		h2 {
-			padding: 16px 0;
-			text-align: center;
-		}
-		.services-billboard-mobile-child-one {
-			padding: 0 16px;
-		}
-		.services-billboard-mobile-child-two {
-			padding: 0 16px;
-			img {
-				max-width: 100%;
-				height: auto;
-			}
-		}
-
-		.buttons {
-			display: grid;
-			grid-gap: 10px;
-			margin-top: 16px;
-			text-align: center;
-			grid-template-columns: repeat(1, 1fr);
-			grid-template-rows: repeat(1, 1fr);
-			grid-template-areas: "button-one";
-		}
-	}
-}
-
-.services-tech {
-	max-width: 1140px;
-	margin: 30px auto 40px;
-	padding: 0 24px;
-	.html-svg {
-		width: 100px;
-	}
-	.css-svg {
-		width: 100px;
-	}
-	.js-svg {
-		width: 72px;
-	}
-	.react-svg {
-		width: 100px;
-		margin: auto 0;
-	}
-	.node-svg {
-		width: 120px;
-		margin: auto 0;
-	}
-	.wordpress-svg {
-		width: 80px;
-		margin: auto 0;
-	}
-	.typescript-svg {
-		width: 80px;
-		margin: auto 0;
-	}
-	.nginx-svg {
-		width: 80px;
-		margin: auto 0;
-	}
-	.apache-svg {
-		width: 80px;
-		margin: auto 0;
+		justify-content: space-between;
+		align-items: center;
 	}
 
-	@include mq($screen-tablet) {
-		display: none;
-	}
-	.services-tech-container {
+	.services-tech-mobile-child-two {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 }
+@include mq($screen-tablet) {
+	.services-tech-mobile {
+		display: none;
+	}
+}
 
-.services-tech-mobile {
+.services-tech {
 	display: none;
-	@include mq($screen-tablet) {
+}
+@include mq($screen-tablet) {
+	.services-tech {
 		display: block;
-		
-		.services-tech-mobile-container {
-			display: grid;
-			grid-template-columns: repeat(1fr);
-			grid-template-rows: repeat(1fr 1fr);
-			grid-template-areas: "services-tech-mobile-child-one" "services-tech-mobile-child-two";
-      padding: 0 16px;
-      width: 100%;
+		max-width: 1200px;
+		margin: 30px auto 40px;
+		padding: 0 24px;
+
+		.services-tech-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
 			.html-svg {
-        width: 80%;
-        padding: 0 8px;
+				width: 100px;
 			}
 			.css-svg {
-        width: 80%;
-        padding: 0 8px;
+				width: 100px;
 			}
 			.js-svg {
-        width: 60%;
-        padding: 0 8px;
+				width: 72px;
 			}
 			.react-svg {
-				width: 80%;
-        margin: auto 0;
-        padding: 10px 8px 0;
+				width: 100px;
+				margin: auto 0;
 			}
 			.node-svg {
-				width: 40%;
-				padding: 0 8px;
+				width: 120px;
+				margin: auto 0;
 			}
 			.wordpress-svg {
-				width: 30%;
-				padding: 0 8px;
+				width: 80px;
+				margin: auto 0;
 			}
 			.typescript-svg {
-				width: 30%;
-				padding: 0 8px;
+				width: 80px;
+				margin: auto 0;
 			}
 			.nginx-svg {
-				width: 40%;
-				padding: 0 8px;
+				width: 80px;
+				margin: auto 0;
 			}
 			.apache-svg {
-				width: 30%;
-				padding: 0 8px;
+				width: 80px;
+				margin: auto 0;
 			}
-		}
-		.services-tech-mobile-child-one {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
-
-		.services-tech-mobile-child-two {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
 		}
 	}
 }
 
-.about-us-icons-services {
-	max-width: 1140px;
+.services-three-columns {
+	max-width: 1200px;
 	margin: 20px auto;
 	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(1, auto);
-	grid-template-areas: "child-one" "child-two" "child-three";
-	@include mq($screen-tablet) {
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(3, auto);
-	}
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+		"child-one"
+		"child-two"
+		"child-three";
 	h4 {
 		font-size: 24px;
 		font-weight: 600;
@@ -241,9 +156,6 @@
 		max-width: 660px;
 		margin: 16px auto;
 		text-align: center;
-		@include mq($screen-small) {
-			padding: 0 16px;
-		}
 	}
 	p {
 		font-size: 1.125rem;
@@ -252,22 +164,28 @@
 		margin: 0 auto;
 		text-align: center;
 		padding: 0 32px;
-		@include mq($screen-small) {
-			padding: 0 16px;
-		}
 	}
 
-	.child-one-icons {
+	.services-three-columns-child-one {
 		text-align: center;
 	}
-	.child-two-icons {
+	.services-three-columns-child-two {
 		text-align: center;
 	}
-	.child-three-icons {
+	.services-three-columns-child-three {
 		text-align: center;
 	}
 	img {
 		max-width: 100%;
 		height: auto;
+	}
+}
+
+@include mq($screen-tablet) {
+	.services-three-columns {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(1, auto);
+		grid-template-areas: "child-one" "child-two" "child-three";
+		grid-gap: 10px;
 	}
 }
