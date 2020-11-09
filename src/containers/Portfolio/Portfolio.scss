@@ -4,47 +4,89 @@
 @import "../../sass/mixins";
 
 .portfolio-billboard {
-	max-width: 1140px;
-	margin: 0px auto 160px;
 	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(1, auto);
-	grid-template-areas: "portfolio-billboard-child-one portfolio-billboard-child-two";
-	h1 {
-		font-weight: bold;
-		color: $dark-blue;
-		font-size: 3.8rem;
-		line-height: 1.2;
-	}
-	h2 {
-		color: $lighter-black;
-		font-size: 1.2rem;
-		line-height: 2rem;
-		padding: $default-padding16 0;
-	}
-
-	.buttons {
-		display: flex;
-		margin-top: 16px;
-	}
+	min-height: 100%;
+	grid-gap: 30px 30px;
+	grid-template-columns: repeat(1, auto);
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas:
+		"portfolio-billboard-child-one"
+		"portfolio-billboard-child-two";
+	margin: 60px auto;
+	padding: 0 12px;
 	.portfolio-billboard-child-one {
-		padding-left: 24px;
-		margin: auto 0;
+		grid-area: portfolio-billboard-child-one;
+		h1 {
+			font-weight: bold;
+			color: $dark-blue;
+			font-size: 2.8rem;
+			line-height: 1.2;
+		}
+		h2 {
+			color: $lighter-black;
+			font-size: 1.2rem;
+			line-height: 2rem;
+			padding: $default-padding16 0;
+		}
 	}
 	.portfolio-billboard-child-two {
-		padding-right: 24px;
+		grid-area: portfolio-billboard-child-two;
 		img {
-			max-width: 100%;
-      max-height: 360px;
+			width: 100%;
+			height: auto;
 		}
 	}
-	@include mq($screen-tablet) {
+}
+
+@include mq($screen-tablet) {
+	.portfolio-billboard {
+		max-width: 1200px;
+		margin: 0px auto 160px;
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, auto);
+		grid-template-areas: "portfolio-billboard-child-one portfolio-billboard-child-two";
+		h1 {
+			font-weight: bold;
+			color: $dark-blue;
+			font-size: 3.8rem;
+			line-height: 1.2;
+		}
+		h2 {
+			color: $lighter-black;
+			font-size: 1.2rem;
+			line-height: 2rem;
+			padding: $default-padding16 0;
+		}
+
+		.buttons {
+			display: flex;
+			margin-top: 16px;
+		}
 		.portfolio-billboard-child-one {
-			display: none;
+			grid-area: portfolio-billboard-child-one;
+			padding-left: 24px;
+			margin: auto 0;
 		}
 		.portfolio-billboard-child-two {
-			display: none;
+			grid-area: portfolio-billboard-child-two;
+			padding-right: 24px;
+			img {
+				max-width: 100%;
+				max-height: 360px;
+			}
+		}
+	}
+}
+
+@include mq($screen-desktop) {
+	.portfolio-billboard {
+		.portfolio-billboard-child-two {
+			img {
+				height: 480px;
+				width: auto;
+			}
 		}
 	}
 }

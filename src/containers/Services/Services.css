@@ -93,9 +93,14 @@
   }
 }
 
-.services-page-hero img {
-  height: 600px;
-  width: auto;
+.services-page-hero {
+  margin: 0 auto;
+}
+
+.services-main-content {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 24px;
 }
 
 @media only screen and (min-width: 900px) {

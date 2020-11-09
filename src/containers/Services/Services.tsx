@@ -6,7 +6,10 @@ import aboutIllustrator from ".././../assets/illustraeagle.svg";
 import Title from "../../components/Title/Title";
 
 
-import servicesImg from "../../assets/services.jpg";
+import servicesImg from "../../assets/services/services.jpg";
+
+import servicesImgMobile from "../../assets/services/services-hero-mobile.jpg";
+import webDesignImg from "../../assets/services/web-design-services.jpg";
 import HtmlSvg from "../../assets/html.svg";
 import CssSvg from "../../assets/css.svg";
 import JsSvg from "../../assets/javascript.svg";
@@ -21,7 +24,39 @@ export default function Services() {
   return (
     <>
       <div className="services-page-hero">
-<img src={servicesImg}/>
+
+        <img srcSet={`${servicesImgMobile} 1200w, ${servicesImg} 2000w`}
+          sizes={`(max-width: 1199px) 1200px, (max-width: 2000px) src=${servicesImg} 2000w  alt="Some text"`} />
+
+      </div>
+
+      <div className="services-main-content">
+        <Title message={"Services"} title={""} />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta velit cupiditate laudantium ipsam quo, officiis quas temporibus explicabo corporis nisi ex, necessitatibus voluptatibus suscipit quibusdam fugiat? Sunt dolorum delectus autem veniam sed mollitia? Iure enim, quidem officiis repudiandae adipisci corporis et. Laudantium sint hic illo repudiandae expedita magni placeat obcaecati voluptates, rem voluptas aspernatur culpa nesciunt ipsam illum officiis reprehenderit cumque ea neque. Nemo molestiae aut explicabo sequi, excepturi porro rerum ea ut quisquam harum corrupti dicta earum ullam fugit mollitia possimus dolore dignissimos veniam nostrum in facere. Accusamus maiores dignissimos nam corrupti ipsam molestias? Cum repellendus impedit sequi.</p>
+      </div>
+
+      <div className="services-three-columns">
+        <div className="services-three-columns-child-one">
+          <img className="about-logo" src={aboutMarketing} />
+          <h4>Web Design</h4>
+          <p>
+            Páginas Web, Tiendas virtuales, Blogs, LandingPage, template.
+          </p>
+        </div>
+        <div className="services-three-columns-child-two">
+          <img className="about-logo" src={aboutBox} />
+          <h4>Marketing Digital</h4>
+          <p>
+            Creamos estrategias para que tu marca tenga un impacto en internet.
+          </p>
+        </div>
+        <div className="services-three-columns-child-three">
+          <img className="about-logo" src={aboutIllustrator} />
+          <h4>Branding / Marca</h4>
+          <p>
+            Diseñamos y estructuramos la identidad de tu marca sostenible en el tiempo.
+          </p>
+        </div>
       </div>
 
 
@@ -95,32 +130,7 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="services-three-columns">
-        <div className="services-three-columns-child-one">
-          <img className="about-logo" src={aboutMarketing} />
-          <h4>It can be a fuss to collect images from websites</h4>
-          <p>
-            Collecting images are always a nightmare, especially with all the
-            procedures and when there are more than one.
-          </p>
-        </div>
-        <div className="services-three-columns-child-two">
-          <img className="about-logo" src={aboutBox} />
-          <h4>Lack of efficiency to organizing assets</h4>
-          <p>
-            Collecting images are always a nightmare, especially with all the
-            procedures and when there are more than one.
-          </p>
-        </div>
-        <div className="services-three-columns-child-three">
-          <img className="about-logo" src={aboutIllustrator} />
-          <h4>Finding assets become mission impossible</h4>
-          <p>
-            Collecting images are always a nightmare, especially with all the
-            procedures and when there are more than one.
-          </p>
-        </div>
-      </div>
+
     </>
   );
 }

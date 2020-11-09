@@ -26,33 +26,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="about-us-icons-column">
-        <div className="about-child-one">
-          <img className="about-logo" src={aboutMarketing} />
-          <h4>It can be a fuss to collect images from websites</h4>
-          <p>
-            Collecting images are always a nightmare, especially with all the
-            procedures and when there are more than one.
-          </p>
-        </div>
-        <div className="about-child-two">
-          <img className="about-logo" src={aboutBox} />
-          <h4>Lack of efficiency to organizing assets</h4>
-          <p>
-            Collecting images are always a nightmare, especially with all the
-            procedures and when there are more than one.
-          </p>
-        </div>
-        <div className="child-three">
-          <img className="about-logo" src={aboutIllustrator} />
-          <h4>Finding assets become mission impossible</h4>
-          <p>
-            Collecting images are always a nightmare, especially with all the
-            procedures and when there are more than one.
-          </p>
-        </div>
-      </div>
-
+   
       <div className="about-us-info">
         <div className="about-child-one">
           <h1>Collecting images are always a nightmare, especially with all the

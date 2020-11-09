@@ -81,63 +81,63 @@ function Header() {
           </div>
 
           <div className="header__links-wrapper">
-          <div className={"hamburger-menu-mobile"}>
-            <div id="toggleMenu" onBlur={() => setIsMenuOpen(false)}>
-              <input
-                type="checkbox"
-                // defaultChecked={isMenuOpen}
-                checked={isMenuOpen}
-                onClick={() => toggleDropdown()}
-              />
-              <span></span>
-              <span></span>
-              <span></span>
-              <ul id="menu">
-                <Link to={{ pathname: "/" }}>
-                  <li>Home</li>
-                </Link>
-                <Link to={{ pathname: "/about" }}>
-                  <li>About</li>
-                </Link>
-                <Link to={{ pathname: "/services" }}>
-                  <li>Services</li>
-                </Link>
+            <div className={"hamburger-menu-mobile"}>
+              <div id="toggleMenu" onBlur={() => setIsMenuOpen(false)}>
+                <input
+                  type="checkbox"
+                  // defaultChecked={isMenuOpen}
+                  checked={isMenuOpen}
+                  onClick={() => toggleDropdown()}
+                />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                  <Link to={{ pathname: "/" }}>
+                    <li>Home</li>
+                  </Link>
+                  <Link to={{ pathname: "/about" }}>
+                    <li>About</li>
+                  </Link>
+                  <Link to={{ pathname: "/services" }}>
+                    <li>Services</li>
+                  </Link>
 
 
-                <Link to={{ pathname: "/portfolio" }}>
-                  <li>Portfolio</li>
-                </Link>
-                <Link to={{ pathname: "/contact" }}>
-                  <li>Contact</li>
-                </Link>
+                  <Link to={{ pathname: "/portfolio" }}>
+                    <li>Portfolio</li>
+                  </Link>
+                  <Link to={{ pathname: "/contact" }}>
+                    <li>Contact</li>
+                  </Link>
 
-              </ul>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="header__toggle__dark_mode_container">
-            <div className="dark-toggle-input">
-              <input
-                type="checkbox"
-                defaultChecked={isDarkMode}
-                className="chk"
-                id="chk"
-                onChange={() => dispatch(toggleDarkMode())}
-              />
-              <label htmlFor="chk" className="toggle">
-                <span className="star star1"></span>
-                <span className="star star2"></span>
-                <span className="star star3"></span>
-                <span className="star star4"></span>
-                <span className="star star5"></span>
-                <span className="star star6"></span>
-                <span className="handler">
-                  <span className="crater crater1"></span>
-                  <span className="crater crater2"></span>
-                  <span className="crater crater3"></span>
-                </span>
-              </label>
+            <div className="header__toggle__dark_mode_container">
+              <div className="dark-toggle-input">
+                <input
+                  type="checkbox"
+                  defaultChecked={isDarkMode}
+                  className="chk"
+                  id="chk"
+                  onChange={() => dispatch(toggleDarkMode())}
+                />
+                <label htmlFor="chk" className="toggle">
+                  <span className="star star1"></span>
+                  <span className="star star2"></span>
+                  <span className="star star3"></span>
+                  <span className="star star4"></span>
+                  <span className="star star5"></span>
+                  <span className="star star6"></span>
+                  <span className="handler">
+                    <span className="crater crater1"></span>
+                    <span className="crater crater2"></span>
+                    <span className="crater crater3"></span>
+                  </span>
+                </label>
+              </div>
             </div>
-          </div>
             <ul>
               <Link to={{ pathname: "/" }}>
                 <li
@@ -230,11 +230,9 @@ function Header() {
                 Contact
             </li>
 
-          </ul>
+            </ul>
           </div>
 
-
-         
         </header>
       </div>
 

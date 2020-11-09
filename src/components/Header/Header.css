@@ -617,6 +617,9 @@
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
+  .header .header__links-wrapper {
+    padding-right: 24px;
+  }
   @-webkit-keyframes left-bracket {
     0% {
       left: -4px;

@@ -409,6 +409,9 @@
       position: absolute;
       animation-fill-mode: forwards;
     }
+    .header__links-wrapper{
+      padding-right: 24px;
+    }
 
     @keyframes left-bracket {
       0% {
