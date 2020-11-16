@@ -104,7 +104,7 @@
       grid-template-rows: repeat(2, auto);
       grid-template-areas: "digital-services-child-one" "digital-services-child-two";
   margin: 60px auto;
-  padding: 0 12px;
+  padding: 0 16px;
 }
 
 .digital-services-billboard h1 {

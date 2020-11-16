@@ -3,6 +3,7 @@
 @import "../../sass/utilities";
 @import "../../sass/mixins";
 
+//portfolio grid one start//
 .portfolio-billboard {
 	display: grid;
 	min-height: 100%;
@@ -12,8 +13,8 @@
 	grid-template-areas:
 		"portfolio-billboard-child-one"
 		"portfolio-billboard-child-two";
-	margin: 60px auto;
-	padding: 0 12px;
+	margin: 0px auto 60px;
+	padding: 0 16px;
 	.portfolio-billboard-child-one {
 		grid-area: portfolio-billboard-child-one;
 		h1 {
@@ -41,25 +42,13 @@
 @include mq($screen-tablet) {
 	.portfolio-billboard {
 		max-width: 1200px;
+		min-height: 100%;
+		grid-gap: 0px 30px;
 		margin: 0px auto 160px;
 		display: grid;
-		grid-gap: 10px;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(1, auto);
 		grid-template-areas: "portfolio-billboard-child-one portfolio-billboard-child-two";
-		h1 {
-			font-weight: bold;
-			color: $dark-blue;
-			font-size: 3.8rem;
-			line-height: 1.2;
-		}
-		h2 {
-			color: $lighter-black;
-			font-size: 1.2rem;
-			line-height: 2rem;
-			padding: $default-padding16 0;
-		}
-
 		.buttons {
 			display: flex;
 			margin-top: 16px;
@@ -79,6 +68,87 @@
 		}
 	}
 }
+//portfolio grid one end//
+
+//portfolio grid two start//
+.portfolio-billboard-two {
+	display: grid;
+	min-height: 100%;
+	grid-gap: 30px 30px;
+	grid-template-columns: repeat(1, auto);
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas:
+		"portfolio-billboard-two-child-one"
+		"portfolio-billboard-two-child-two";
+	margin: 60px auto;
+	padding: 0 16px;
+	.portfolio-billboard-two-child-one {
+		grid-area: portfolio-billboard-two-child-two;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.portfolio-billboard-two-child-two {
+		grid-area: portfolio-billboard-two-child-one;
+		h1 {
+			font-weight: bold;
+			color: $dark-blue;
+			font-size: 2.8rem;
+			line-height: 1.2;
+		}
+		h2 {
+			color: $lighter-black;
+			font-size: 1.2rem;
+			line-height: 2rem;
+			padding: $default-padding16 0;
+		}
+	}
+	
+}
+@include mq($screen-tablet){
+	.portfolio-billboard-two {
+		display: grid;
+		min-height: 100%;
+		max-width: 1200px;
+		margin: 0px auto 160px;
+		display: grid;
+		grid-gap: 0px 30px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, auto);
+		grid-template-areas: "portfolio-billboard-two-child-one portfolio-billboard-two-child-two ";
+	.buttons {
+		display: flex;
+		margin-top: 16px;
+	}
+	.portfolio-billboard-two-child-one {
+		grid-area: portfolio-billboard-two-child-one;
+		padding-left: 24px;
+		img {
+			max-width: 100%;
+			max-height: 360px;
+		}	
+	}
+	.portfolio-billboard-two-child-two {
+		grid-area: portfolio-billboard-two-child-two;
+		padding-right: 24px;
+		margin: auto 0;
+		h1 {
+			font-weight: bold;
+			color: $dark-blue;
+			font-size: 2.8rem;
+			line-height: 1.2;
+		}
+		h2 {
+			color: $lighter-black;
+			font-size: 1.2rem;
+			line-height: 2rem;
+			padding: $default-padding16 0;
+		}
+	}
+}
+}
+//portfolio grid two end//
 
 @include mq($screen-desktop) {
 	.portfolio-billboard {

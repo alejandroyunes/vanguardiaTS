@@ -44,11 +44,12 @@ export default function Portfolio() {
                 </div>
             </div>
 
-            <div className="portfolio-billboard">
-                <div className="portfolio-billboard-child-two">
+            <div className="portfolio-billboard-two">
+                
+                <div className="portfolio-billboard-two-child-one">
                     <img src={studioWebsite} />
                 </div>
-                <div className="portfolio-billboard-child-one">
+                <div className="portfolio-billboard-two-child-two">
                     <div>
                         <h1>Vanguardia Digital Development</h1>
                         <h2>
@@ -68,7 +69,6 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div className="portfolio-billboard">

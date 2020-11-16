@@ -15,8 +15,8 @@ export const GlobalStyles = createGlobalStyle`
 
 body {
 
-  background: url(${({ theme }) => theme.backgroundImage}) no-repeat center 120%, linear-gradient(${({ theme }) =>
-  theme.backgroundGradient.color1} 0%, ${({ theme }) => theme.backgroundGradient.color2} 100%);
+  background: no-repeat center 120%, linear-gradient(${({ theme }) =>
+  theme.backgroundGradient.color1} 0%,  ${({ theme }) => theme.backgroundGradient.color2} 100%);
   background-size: auto;
 }
 

@@ -5,6 +5,7 @@ import Cards from "../../components/Cards/Cards";
 import TwoColumn from "../../components/TwoColumn/TwoColumn";
 import { ImageGallery } from "../../components/ImageGallery/ImageGallery";
 import Title from '../../components/Title/Title'
+import Carousel from "../../components/Carousel/Carousel";
 export default function Index() {
   return (
     <>
@@ -16,6 +17,11 @@ export default function Index() {
       <ImageGallery />
       <Title title="Design" message="Modern tendency Interface Design" />
       <TwoColumn />
+
+    
+      <br/>
+      <br/>
+      <br/>
     </>
   );
 }

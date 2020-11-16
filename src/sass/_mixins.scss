@@ -4,6 +4,12 @@
   }
 }
 
+@mixin desktopFirst($screen-size) {
+  @media only screen and (max-width: $screen-size) {
+    @content;
+  }
+}
+
 // Screen Sizes
 $screen-small: 440px;
 $screen-card_special: 700px;

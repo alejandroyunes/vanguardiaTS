@@ -4,13 +4,13 @@
 @import "../../sass/mixins";
 
 .services-page-hero {
+	text-align: center;
 	margin: 0 auto;
+	width: 100%;
 
-}
-@include mq($screen-tablet) {
-	.services-page-hero {
-		
-	}
+	img {
+		max-width: 100%;
+	  }
 }
 
 .services-main-content {
