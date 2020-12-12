@@ -18,6 +18,7 @@ body {
   background: no-repeat center 120%, linear-gradient(${({ theme }) =>
   theme.backgroundGradient.color1} 0%,  ${({ theme }) => theme.backgroundGradient.color2} 100%);
   background-size: auto;
+  color: ${({ theme }) => theme.textColor};
 }
 
 `;

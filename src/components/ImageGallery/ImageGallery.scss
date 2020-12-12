@@ -4,47 +4,93 @@
 
 .grid__image-gallery {
   display: grid;
-  margin: 0 ;
+  margin: 0;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  gap: 0px 8px;
+  gap: 4px 4px;
   grid-template-areas:
-  "image-gallery-box-one image-gallery-box-one"
-  "image-gallery-box-one image-gallery-box-one"
-  "image-gallery-box-two image-gallery-box-three"
-  "image-gallery-box-four image-gallery-box-five";
-  
+    "image-gallery-box-one image-gallery-box-one"
+    "image-gallery-box-one image-gallery-box-one"
+    "image-gallery-box-two image-gallery-box-three"
+    "image-gallery-box-four image-gallery-box-five";
+
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
+
+  .overlay-red {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: $dark-red;
+  }
+  .text-overlay {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 1px solid white;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+ 
   .image-gallery-box-one {
     grid-area: image-gallery-box-one;
+    position: relative;
+  }
+
+  .image-gallery-box-one:hover .overlay-red {
+    opacity: 1;
   }
   .image-gallery-box-two {
     grid-area: image-gallery-box-two;
+    position: relative;
+  }
+  .image-gallery-box-two:hover .overlay-red {
+    opacity: 1;
   }
   .image-gallery-box-three {
     grid-area: image-gallery-box-three;
+    position: relative;
+  }
+  .image-gallery-box-three:hover .overlay-red {
+    opacity: 1;
   }
   .image-gallery-box-four {
     grid-area: image-gallery-box-four;
+    position: relative;
+  }
+  .image-gallery-box-four:hover .overlay-red {
+    opacity: 1;
   }
   .image-gallery-box-five {
     grid-area: image-gallery-box-five;
+    position: relative;
+  }
+  .image-gallery-box-five:hover .overlay-red {
+    opacity: 1;
   }
 }
-  @include mq($screen-tablet) {
-    .grid__image-gallery{
+@include mq($screen-tablet) {
+  .grid__image-gallery {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 16px 16px;
     grid-template-areas:
       "image-gallery-box-one image-gallery-box-one image-gallery-box-two image-gallery-box-three"
-      "image-gallery-box-one image-gallery-box-one image-gallery-box-four image-gallery-box-five";  
-  }  
+      "image-gallery-box-one image-gallery-box-one image-gallery-box-four image-gallery-box-five";
+  }
 }
-
-
-
-

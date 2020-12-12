@@ -2,15 +2,12 @@ import { AppActionTypes } from '../actionTypes';
 
 export interface IAppState {
 
-  isLoading: boolean;
-  isInitial: boolean;
   darkMode: boolean;
 }
 
 const initialState: IAppState = {
   
-  isLoading: false,
-  isInitial: true,
+
   darkMode: JSON.parse(localStorage.getItem('darkMode') as string) as boolean,
 };
 

@@ -5,18 +5,15 @@ import Cards from "../../components/Cards/Cards";
 import TwoColumn from "../../components/TwoColumn/TwoColumn";
 import { ImageGallery } from "../../components/ImageGallery/ImageGallery";
 import Title from '../../components/Title/Title'
-import Carousel from "../../components/Carousel/Carousel";
 export default function Index() {
   return (
     <>
       <Billboard />
-      <Title title="Latest Technologies" message="Mobile first world" />
+      <Title title="Últimas Tecnologías" message="La Era del Móvil" />
       <Cards />
       <BillboardTwo />
-      <Title title="Portfolio" message="Creative Interface Design" />
+      <Title title="Responsive para todos los dispositivos" message="Diseños Creativos" />
       <ImageGallery />
-      <Title title="Design" message="Modern tendency Interface Design" />
-      <TwoColumn />
 
     
       <br/>

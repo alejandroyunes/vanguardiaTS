@@ -6,6 +6,7 @@ interface CardProps {
   subtitle?: string
   message?: string
   image?: string
+  viewmore?: string
 
 }
 
@@ -14,7 +15,7 @@ const Card: FC<CardProps> = ({
   message,
   subtitle,
   image,
-
+  viewmore
 }) => {
 
 
@@ -29,7 +30,7 @@ const Card: FC<CardProps> = ({
         <p>
           {message}
         </p>
-        <h6>view more</h6>
+        <h6>{viewmore}</h6>
 
       </div>
     </>

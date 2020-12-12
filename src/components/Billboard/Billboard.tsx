@@ -4,26 +4,28 @@ import Animation from "./animation";
 import Button from "../Button/Button";
 import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
 import ContactMailIcon from "@material-ui/icons/ContactMail";
-
+import { useHistory, useLocation } from 'react-router-dom';
 
 export default function Billboard() {
+  let history = useHistory();
+  let location = useLocation();
+
   return (
     <>
       <div className="main__billboard">
         <div className="main-billboard-child-one">
           <div>
-            <h1>Building Amazing Web Experiences</h1>
+            <h1>Construimos Experiencias Web Asombrosas</h1>
             <p>
-              Leading digital agency with solid design and development
-              expertise. We build mobile and web products for startups and
-              design intricate trading platforms.
+              Agencia digital líder con sólida experiencia en diseño y desarrollo. Creamos productos móviles y web para nuevas empresas y diseñamos plataformas comerciales complejas.
             </p>
             <div className="billboard-button">
               <Button
-                label="view work"
+                label="ver trabajo"
                 category="primary"
                 size="sm"
                 icon={WorkOutlineIcon}
+                onClick={() => history.push('/portfolio')}
               />
             </div>
           </div>

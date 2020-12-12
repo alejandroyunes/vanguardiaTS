@@ -8,20 +8,19 @@ export default function BillboardTwo() {
             <div className="digital-services-billboard">
                 <div className="digital-services-child-one">
                     <div>
-                        <h3>DIGITAL SERVICES</h3>
-                        <h1>Selling Digital Services</h1>
+                        <h3>SOLUCIONES EN LÍNEA</h3>
+                        <h1>¿Necesitas un Sitio Web?</h1>
                         <h2>
-                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast.
+                        Podemos ayudarte a conseguir un dominio que se ajuste a tu negocio, el alojamiento y un diseño web profesional de calidad.
                         </h2>
                         <ul>
-                            <li>test1</li>
-                            <li>test</li>
+                            <li>Dominio</li>
+                            <li>Hosting</li>
+                            <li>Diseño Web</li>
                         </ul>
-                        <br />
-                        <p>
-                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast.
-                        </p>
-
+                        <h2>
+                        Todo lo que necesitas para impulsar tu negocio en el Internet y generar más ingresos.
+                        </h2>
                     </div>
                 </div>
 

@@ -9,7 +9,7 @@
   background-color: #fff;
   border-radius: 0.5rem;
   width: 260px;
-  height: 500px;
+  height: 470px;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   &__img {
@@ -24,21 +24,22 @@
     font-size: 1.5rem;
     padding: $default-padding8 0;
     font-weight: 700;
-    color: #666666;
+    color: $lighter-black;
   }
   h3 {
     color: #ae3c43;
-    padding: $default-padding8 0;
+    padding: 0;
     font-weight: 600;
   }
   h6 {
-    color: $light-gray;
+    color: $lighter-black;
     padding: $default-padding16 0;
-    font-weight: 600;
+    font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
   }
   p {
     padding: $default-padding8 0;
+    color: $lighter-black;
   }
 }

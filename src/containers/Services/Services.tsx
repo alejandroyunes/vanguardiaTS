@@ -33,17 +33,11 @@ export default function Services() {
           
          alt="Some text"`} />
 
-  
 
-        {/* <img srcSet={`${servicesImgMobile} 1200w, ${servicesImg} 2000w`}
-          sizes={`(max-width: 700px) src=${serviceHeroMobileImg} 700w,
-          (max-width: 1199px) 1200px, 
-          (max-width: 2000px) src=${servicesImg} 2000w, 
-           
-          alt="Some text"`} /> */}
+{/* <img src={servicesHeroImg} alt="services" /> */}
       </div>
+      <Title message={"Services"} title={""} />
       <div className="services-main-content">
-        <Title message={"Services"} title={""} />
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta velit cupiditate laudantium ipsam quo, officiis quas temporibus explicabo corporis nisi ex, necessitatibus voluptatibus suscipit quibusdam fugiat? Sunt dolorum delectus autem veniam sed mollitia? Iure enim, quidem officiis repudiandae adipisci corporis et. Laudantium sint hic illo repudiandae expedita magni placeat obcaecati voluptates, rem voluptas aspernatur culpa nesciunt ipsam illum officiis reprehenderit cumque ea neque. Nemo molestiae aut explicabo sequi, excepturi porro rerum ea ut quisquam harum corrupti dicta earum ullam fugit mollitia possimus dolore dignissimos veniam nostrum in facere. Accusamus maiores dignissimos nam corrupti ipsam molestias? Cum repellendus impedit sequi.</p>
       </div>
 
@@ -70,8 +64,7 @@ export default function Services() {
           </p>
         </div>
       </div>
-
-
+      <br />
       <Title message={"Technologies"} title={""} />
 
       <div className="services-tech">
@@ -142,7 +135,7 @@ export default function Services() {
         </div>
       </div>
 
-
+      <br />
     </>
   );
 }

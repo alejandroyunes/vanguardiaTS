@@ -37,10 +37,15 @@
 			display: inline-block;
 			color: $dark-red;
 			padding: 0 6px 0 0;
+			font-size: 20px;
 		}
 		ul li {
 			list-style-type: none;
 			font-size: 1em;
+			color: $lighter-black;
+		}
+		p {
+			color: $lighter-black;
 		}
 	}
 	.digital-services-child-two {

@@ -1,0 +1,23 @@
+@import url(/home/alejo/Documents/web assets/vanguardiaTS/node_modules/slick-carousel/slick/slick.css);
+@import url(/home/alejo/Documents/web assets/vanguardiaTS/node_modules/slick-carousel/slick/slick-theme.css);
+.slider-wrapper {
+  width: 100%;
+}
+
+.boxes {
+  margin: 30px 0;
+}
+
+.boxes img {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.boxes h3 {
+  padding: 0 20px;
+}
+
+.customDots {
+  background-color: white;
+}
+/*# sourceMappingURL=Carousel.css.map */

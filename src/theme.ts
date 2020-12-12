@@ -9,6 +9,7 @@ export interface Theme {
   };
   panelBgColor: string;
   panelTitleColor: string;
+  textColor: string;
 
 }
 
@@ -20,7 +21,7 @@ export const lightTheme: Theme = {
   },
   panelBgColor: '#FFFFFF',
   panelTitleColor: '#727E8E',
-
+  textColor: '#000000',
 
   
 };
@@ -33,5 +34,5 @@ export const darkTheme: Theme = {
   },
   panelBgColor: '#051A33',
   panelTitleColor: '#216397',
-
+  textColor: '#ffffff',
 };

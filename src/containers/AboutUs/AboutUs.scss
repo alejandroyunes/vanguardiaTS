@@ -43,6 +43,7 @@
       line-height: 1.5;
       margin: 0 auto 48px;
       max-width: 432px;
+      color: $lighter-black;
     }
   }
 }
@@ -65,7 +66,7 @@
     align-items: center;
     h1 {
       font-weight: bold;
-      color: black;
+      color: $dark-blue;
       font-size: 3rem;
       padding: 0 32px;
       line-height: 1.2;
