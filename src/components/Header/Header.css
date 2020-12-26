@@ -111,7 +111,7 @@
   width: 100%;
   background-color: transparent;
   height: 50px;
-  z-index: 3;
+  z-index: 9;
   margin: 0 auto;
 }
 
@@ -160,7 +160,7 @@
 .header .hamburger-menu-mobile #toggleMenu {
   top: 16px;
   right: 0px;
-  z-index: 2;
+  z-index: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
    -ms-user-select: none;

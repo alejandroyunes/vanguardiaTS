@@ -86,13 +86,41 @@
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
-  gap: 0px 8px;
+  gap: 4px 4px;
       grid-template-areas: "image-gallery-box-one image-gallery-box-one" "image-gallery-box-one image-gallery-box-one" "image-gallery-box-two image-gallery-box-three" "image-gallery-box-four image-gallery-box-five";
 }
 
 .grid__image-gallery img {
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+.grid__image-gallery .overlay-red {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #AE3C43;
+}
+
+.grid__image-gallery .text-overlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 1px solid white;
+  padding: 8px;
+  cursor: pointer;
 }
 
 .grid__image-gallery .image-gallery-box-one {
@@ -101,30 +129,55 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: image-gallery-box-one;
+  position: relative;
+}
+
+.grid__image-gallery .image-gallery-box-one:hover .overlay-red {
+  opacity: 1;
 }
 
 .grid__image-gallery .image-gallery-box-two {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: image-gallery-box-two;
+  position: relative;
+}
+
+.grid__image-gallery .image-gallery-box-two:hover .overlay-red {
+  opacity: 1;
 }
 
 .grid__image-gallery .image-gallery-box-three {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: image-gallery-box-three;
+  position: relative;
+}
+
+.grid__image-gallery .image-gallery-box-three:hover .overlay-red {
+  opacity: 1;
 }
 
 .grid__image-gallery .image-gallery-box-four {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: image-gallery-box-four;
+  position: relative;
+}
+
+.grid__image-gallery .image-gallery-box-four:hover .overlay-red {
+  opacity: 1;
 }
 
 .grid__image-gallery .image-gallery-box-five {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: image-gallery-box-five;
+  position: relative;
+}
+
+.grid__image-gallery .image-gallery-box-five:hover .overlay-red {
+  opacity: 1;
 }
 
 @media only screen and (min-width: 900px) {

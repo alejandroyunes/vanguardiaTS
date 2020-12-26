@@ -13,7 +13,7 @@
     width: 100%;
     background-color: transparent;
     height: 50px;
-    z-index: 3;
+    z-index: 9;
     margin: 0 auto;
   }
   &__slide__down {
@@ -47,7 +47,7 @@
     #toggleMenu {
       top: 16px;
       right: 0px;
-      z-index: 2;
+      z-index: 1;
       -webkit-user-select: none;
       user-select: none;
     }
@@ -141,7 +141,6 @@
     float: left;
     top: 6px;
     right: 40px;
-
     .dark-toggle-input {
       overflow: hidden;
       padding: 16px 0 0 30px;

@@ -75,6 +75,13 @@
           cursor: pointer;
         }
       }
+      .climate-data{
+        display: flex;
+        align-items: center;
+      }
+      .climate-data-one{
+        padding-right: 10px;
+      }
     }
 
     .footer-child-two {

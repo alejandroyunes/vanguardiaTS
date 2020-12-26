@@ -30,7 +30,6 @@ function Header() {
     if (window.pageYOffset > 400) {
       setShowScroll(true)
     } else if (window.pageYOffset <= 800) {
-      console.log('here in ')
       setShowScroll(false)
     }
   };
@@ -94,21 +93,21 @@ function Header() {
                 <span></span>
                 <ul id="menu">
                   <Link to={{ pathname: "/" }}>
-                    <li>Home</li>
+                    <li>Inicio</li>
                   </Link>
                   <Link to={{ pathname: "/about" }}>
-                    <li>About</li>
+                    <li>Nosotros</li>
                   </Link>
                   <Link to={{ pathname: "/services" }}>
-                    <li>Services</li>
+                    <li>Servicios</li>
                   </Link>
 
 
                   <Link to={{ pathname: "/portfolio" }}>
-                    <li>Portfolio</li>
+                    <li>Portafolio</li>
                   </Link>
                   <Link to={{ pathname: "/contact" }}>
-                    <li>Contact</li>
+                    <li>Contacto</li>
                   </Link>
 
                 </ul>
@@ -151,7 +150,7 @@ function Header() {
                       : "header__link__item"
                   }
                 >
-                  Home
+                  Inicio
             </li>
               </Link>
 
@@ -167,7 +166,7 @@ function Header() {
                       : "header__link__item"
                   }
                 >
-                  About
+                  Nosotros
             </li>
               </Link>
               <Link to={{ pathname: "/services" }}>
@@ -182,7 +181,7 @@ function Header() {
                       : "header__link__item"
                   }
                 >
-                  Services
+                  Servicios
             </li>
               </Link>
 
@@ -199,7 +198,7 @@ function Header() {
                       : "header__link__item"
                   }
                 >
-                  Portfolio
+                  Portafolio
             </li>
               </Link>
               <Link to={{ pathname: "/blog" }}>
@@ -227,7 +226,7 @@ function Header() {
                     : "header__link__item"
                 }
               >
-                Contact
+                Contacto
             </li>
 
             </ul>

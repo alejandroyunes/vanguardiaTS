@@ -15,7 +15,6 @@ let routerProps = {}
 
 const App: FC = () => {
 
-
   const darkMode = useSelector((state: AppStore) => state.app.darkMode);
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
