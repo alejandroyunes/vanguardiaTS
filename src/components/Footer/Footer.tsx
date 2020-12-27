@@ -7,36 +7,38 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import axios from "axios";
-import { getJSON } from "jquery";
-import WeatherIcons from './WeatherIcons/WeatherIcons'
 
+import WeatherClouds from './WeatherIcons/WeatherClouds'
+import WeatherRain from './WeatherIcons/WeatherRain'
+import WeatherSpinner from './WeatherIcons/WeatherSpinner'
+import WeatherClearNight from './WeatherIcons/WeatherClearNight'
+import WeatherClearDay from './WeatherIcons/WeatherClearDay'
+import WeatherThunder from './WeatherIcons/WeatherThunder'
 
 const Footer: FC = () => {
 
   const key = '3a306e66fcf53df61a19eb62070a3d84';
-  const [feels_like, setFeelsLike] = useState('');
-  const [mainTemp, setMainTemp] = useState('');
+
   const [description, setDescription] = useState('');
   const [main, setMain] = useState('');
-  const [iconID, setIconID] = useState('');
+  const [time, setTime] = useState(0);
 
   useEffect(() => {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=Medellín,co&APPID=' + key + '&units=metric')
       .then(res => res.json())
       .then(data => {
-        console.log(data);
-
-        setFeelsLike(data.main.feels_like);
-        setMainTemp(data.main.temp);
         setDescription(data.weather[0].description);
         setMain(data.weather[0].main);
-        setIconID(data.weather[0].icon);
-
       })
   }, [])
 
-
+  useEffect(() => {
+    let today = new Date();
+    let time = today.getHours() ;
+    setTime(time)
+    console.log(time)
+  })
+  
   return (
     <>
       <div className="footer ">
@@ -49,8 +51,20 @@ const Footer: FC = () => {
                 <h3>El clima en Medellín:</h3>
               </div>
               <div className="climate-data-two">
-                <span>{description ? <p>{<WeatherIcons />}</p> : <p>2</p>}</span>
+
+
+                {(() => {
+                  switch (main) {
+                    case "Clouds": return <WeatherClouds />;
+                    case "Rain"  || "Drizzle": return <WeatherRain />;
+                    case "Clear": return (time >= 6 && time < 18? <WeatherClearDay /> : <WeatherClearNight />);
+                    case "Thunderstorm": return <WeatherThunder />;
+                    
+                    default: return <WeatherSpinner />
+                  }
+                })()}
               </div>
+
             </div>
 
             <div className="footer__icon">

@@ -1,0 +1,149 @@
+/**
+ *variables
+ */
+ $basis-size: 40px;
+ $planetColor: #ccc;//rgb(209, 70, 22)
+ $darkPlanetColor: darken($planetColor, 5%);
+ $darkerPlanetColor: darken($planetColor, 10%);
+ $darkestPlannetColor: darken($planetColor, 15%);
+ 
+ 
+ .wrap-planet .planet {
+     margin:0 5px 20px 0;
+     animation: bounce 2s infinite;
+ }
+ 
+ .planet {
+     position: relative;
+     height: $basis-size;
+     width: $basis-size;
+     border-radius: 100%;
+     background-color: $planetColor;
+     background-image: radial-gradient(
+         circle at 0 20%,
+         $planetColor 0%,
+         transparent 65%,
+         $darkPlanetColor 65%
+     );
+ }
+ 
+ .planet__shadow {
+     position: absolute;
+     bottom: -20%;
+     left: 50%;
+     
+     &::after {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 40%;
+         transform: translateX(-50%);
+         width: $basis-size / 2;
+         height: $basis-size / 8;
+         border-radius: 50%;
+         background-color: rgba(0,0,0,0.1);
+         animation: shadow 2s infinite;
+     }
+ }
+ 
+ .spot {
+     position: absolute;
+     border-radius: 100%;
+     background-color: $darkPlanetColor;
+     background-image: radial-gradient(
+         circle at 100% 80%,
+         $darkerPlanetColor 0%,
+         $darkerPlanetColor 65%,
+         $darkestPlannetColor 65%
+     );
+     
+     &--one {
+         height: $basis-size / 8;
+         width: $basis-size / 8;
+         top: 15%;
+         left: 40%;
+     }
+     
+     &--two {
+         height: $basis-size / 4;
+         width: $basis-size / 4;
+         top: 63%;
+         left: 48%;
+     }
+     
+     &--three {
+         height: $basis-size / 4;
+         width: $basis-size / 4;
+         top: 28%;
+         left: 14%;
+     }
+     
+     &--four {
+         height: $basis-size / 6;
+         width: $basis-size / 6;
+         top: 64%;
+         left: 15%;
+     }
+     
+     &--five {
+         height: $basis-size / 7;
+         width: $basis-size / 7;
+         top: 38%;
+         left: 73%;
+     }
+     
+     &--six {
+         height: $basis-size / 14;
+         width: $basis-size / 14;
+         top: 17%;
+         left: 20%;
+     }
+     
+     &--seven {
+         height: $basis-size / 16;
+         width: $basis-size / 16;
+         top: 63%;
+         left: 35%;
+     }
+     
+     &--eigth {
+         height: $basis-size / 16;
+         width: $basis-size / 16;
+         top: 48%;
+         left: 56%;
+     }
+ }
+ 
+ /*
+  *animate
+     */
+ @keyframes bounce {
+     0% {
+         transform: translate3d(0,0,0);
+     }
+     50% {
+         transform: translate3d(0,5px,0);
+     }
+     100% {
+         transform: translate3d(0,0,0);
+     }
+ }
+ .animate-bounce {
+     animation-name: bounce;
+ }
+ 
+ @keyframes shadow {
+     0% {
+         transform: translate3d(0,0,0) scale(0.9);
+     }
+     50% {
+         transform: translate3d(0,-5px,0) scale(1);
+     }
+     100% {
+         transform: translate3d(0,0,0) scale(0.9);
+     }
+ }
+ .animate-shadow {
+     animation-name: shadow;
+ }
+ 

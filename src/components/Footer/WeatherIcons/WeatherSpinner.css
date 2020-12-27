@@ -1,0 +1,28 @@
+.nk-spinner {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999em;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-left: 4px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: nk-spinner 0.5s infinite linear;
+          animation: nk-spinner 0.5s infinite linear;
+}
+
+@-webkit-keyframes nk-spinner {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes nk-spinner {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=WeatherSpinner.css.map */

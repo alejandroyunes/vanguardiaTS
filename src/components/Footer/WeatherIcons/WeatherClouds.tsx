@@ -1,8 +1,8 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC } from "react";
 import "./WeatherIcons.scss";
 
 
-const WeatherIcons: FC = () => {
+const WeatherClouds: FC = () => {
   return (
     <>
 
@@ -15,4 +15,4 @@ const WeatherIcons: FC = () => {
     </>
   );
 };
-export default WeatherIcons;
+export default WeatherClouds;
