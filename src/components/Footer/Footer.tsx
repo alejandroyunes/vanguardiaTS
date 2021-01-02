@@ -8,12 +8,23 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
-import WeatherClouds from './WeatherIcons/WeatherClouds'
-import WeatherRain from './WeatherIcons/WeatherRain'
-import WeatherSpinner from './WeatherIcons/WeatherSpinner'
-import WeatherClearNight from './WeatherIcons/WeatherClearNight'
-import WeatherClearDay from './WeatherIcons/WeatherClearDay'
-import WeatherThunder from './WeatherIcons/WeatherThunder'
+
+import WeatherSpinner from './WeatherIcons/WeatherSpinner/WeatherSpinner'
+
+
+
+import Thunder from './WeatherIcons/Thunder/Thunder'
+import DrizzleDay from './WeatherIcons/Drizzle/Day/DrizzleDay'
+import DrizzleNight from './WeatherIcons/Drizzle/Night/DrizzleNight'
+import Rain from './WeatherIcons/Rain/Rain'
+import Snow from './WeatherIcons/Snow/Snow'
+
+import ClearNight from './WeatherIcons/NightClear/ClearNight'
+import ClearDay from './WeatherIcons/DayClear/ClearDay'
+import CloudsDay from './WeatherIcons/Clouds/Day/CloudsDay'
+import CloudsNight from './WeatherIcons/Clouds/Night/CloudsNight'
+
+import Mist from './WeatherIcons/Mist/Mist'
 
 const Footer: FC = () => {
 
@@ -34,11 +45,11 @@ const Footer: FC = () => {
 
   useEffect(() => {
     let today = new Date();
-    let time = today.getHours() ;
+    let time = today.getHours();
     setTime(time)
     console.log(time)
   })
-  
+
   return (
     <>
       <div className="footer ">
@@ -55,11 +66,17 @@ const Footer: FC = () => {
 
                 {(() => {
                   switch (main) {
-                    case "Clouds": return <WeatherClouds />;
-                    case "Rain"  || "Drizzle": return <WeatherRain />;
-                    case "Clear": return (time >= 6 && time < 18? <WeatherClearDay /> : <WeatherClearNight />);
-                    case "Thunderstorm": return <WeatherThunder />;
-                    
+
+                    case "Thunderstorm": return <Thunder />;
+                    case "Drizzle": return (time >= 6 && time < 18? <DrizzleDay /> : <DrizzleNight />);
+                    case "Rain": return <Rain />;
+                    case "Snow": return <Snow />;
+                    case "Clear": return (time >= 6 && time < 18? <ClearDay /> : <ClearNight />);
+                    case "Clouds": return (time >= 6 && time < 18? <CloudsDay /> : <CloudsNight />);
+
+                    case "Mist" || "Smoke" || "Haze" || "Dust" || "Fog"|| "Sand"|| "Ash"|| "Squall"|| "Tornado": return <Mist />;
+
+
                     default: return <WeatherSpinner />
                   }
                 })()}

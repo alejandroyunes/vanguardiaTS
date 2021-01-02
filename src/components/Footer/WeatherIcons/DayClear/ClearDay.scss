@@ -1,0 +1,48 @@
+.icon {
+    position: relative;
+    font-size: 8px; /* control icon size here */
+    padding-left: 48px;
+    margin-bottom: 12px;
+  }
+  .sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    margin: -1.25em;
+    background: #ffff77;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ffff77;
+    animation: spin 12s infinite linear;
+  }
+  .rays {
+    position: absolute;
+    top: -2em;
+    left: 50%;
+    display: block;
+    width: 0.375em;
+    height: 1.125em;
+    margin-left: -0.1875em;
+    background: #ffff77;
+    border-radius: 0.25em;
+    box-shadow: 0 5.375em #ffff77;
+  }
+  .rays:before,
+  .rays:after {
+    content: '';
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    display: block;
+    width: 0.375em;
+    height: 1.125em;
+    transform: rotate(60deg);
+    transform-origin: 50% 3.25em;
+    background: #ffff77;
+    border-radius: 0.25em;
+    box-shadow: 0 5.375em #ffff77;
+  }
+  .rays:before {
+    transform: rotate(120deg);
+  }

@@ -1,10 +1,10 @@
 import React, { FC } from "react";
-import "./WeatherIcons.scss";
+import "./ClearDay.scss";
 
 
-const WeatherClearNight: FC = () => {
+const ClearDay: FC = () => {
     return (
-        <div className="icon sunny">
+        <div className="icon">
             <div className="sun">
                 <div className="rays"></div>
             </div>
@@ -12,4 +12,4 @@ const WeatherClearNight: FC = () => {
 
     );
 };
-export default WeatherClearNight;
+export default ClearDay;

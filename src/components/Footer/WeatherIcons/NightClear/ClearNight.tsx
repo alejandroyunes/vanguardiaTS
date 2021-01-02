@@ -1,8 +1,8 @@
 import React, { FC } from "react";
-import "./WeatherClearNight.scss";
+import "./ClearNight.scss";
 
 
-const WeatherClearNight: FC = () => {
+const ClearNight: FC = () => {
     return (
         <div className="wrap-planet">
             <div className="planet">
@@ -22,4 +22,4 @@ const WeatherClearNight: FC = () => {
 
     );
 };
-export default WeatherClearNight;
+export default ClearNight;
