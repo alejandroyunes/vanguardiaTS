@@ -18,24 +18,24 @@ export default function Cards() {
               image={ResponsiveDesignIcon}
               title="Diseño Simple y Efectivo"
               subtitle=""
-              message="Impresiona a tus clientes con un sitio web veloz, moderno, personalizado y a la vanguardia con el diseño gráfico."
-              viewmore="Ver Más"
+              message="Impresiona a tus clientes con una app rápida, moderna, personalizada y a la vanguardia con el diseño gráfico."
+              viewmore="ver más"
             />
            <Card
               image={MobileDesignIcon}
-              title="Responsive Apps"
+              title="Ajustabilidad"
               subtitle="Aplicaciones para móvil"
               message="En el mundo moderno hay más de 5.000 millones
                de usuarios únicos con dispositivos móviles, esto cubre
                 el 67% de la población."
-              viewmore="Ver Más"
+              viewmore="ver más"
             />
           <Card
               image={Rocket}
               title="Tiempo de Carga"
               subtitle="Velocidad para tus clientes"
-              message="No dejes escapar a tus clientes por tener un sitio web lento, confia en los mejores servidores de alta velocidad en el mercado."
-              viewmore="Ver Más"
+              message="Contamos con los mejores servidores del mercado, así podemos ofrecerte velocidad en tus aplicaciones."
+              viewmore="ver más"
             />
         </div>
       </div>

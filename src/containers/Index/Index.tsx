@@ -8,7 +8,7 @@ export default function Index() {
   return (
     <>
       <Billboard />
-      <Title title="Últimas Tecnologías" message="La Era del Móvil" />
+      <Title title="Últimas Tecnologías" message="La Era Móvil" />
       <Cards />
       <BillboardTwo />
       <Title title="Responsive para todos los dispositivos" message="Diseños Creativos" />

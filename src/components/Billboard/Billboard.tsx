@@ -17,7 +17,7 @@ export default function Billboard() {
           <div>
             <h1>Construimos Experiencias Web Asombrosas</h1>
             <p>
-              Agencia digital líder con sólida experiencia en diseño y desarrollo. Creamos productos móviles y web para nuevas empresas y diseñamos plataformas comerciales complejas.
+              Agencia digital líder con sólida experiencia en diseño y desarrollo. Creamos productos móviles y web para plataformas comerciales complejas.
             </p>
             <div className="billboard-button">
               <Button

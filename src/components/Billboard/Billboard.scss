@@ -76,6 +76,10 @@
 	animation: change-color 3s linear 2s infinite alternate;
 }
 
+.background{
+	animation: spin 12s infinite linear;
+}
+
 @keyframes change-color {
 	0% {
 		fill: #e7515c;
