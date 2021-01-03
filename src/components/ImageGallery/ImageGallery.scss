@@ -46,10 +46,10 @@
     cursor: pointer;
   }
 
- 
   .image-gallery-box-one {
     grid-area: image-gallery-box-one;
     position: relative;
+    transform: rotateY(180deg);
   }
 
   .image-gallery-box-one:hover .overlay-red {

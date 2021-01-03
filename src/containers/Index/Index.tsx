@@ -11,7 +11,7 @@ export default function Index() {
       <Title title="Últimas Tecnologías" message="La Era Móvil" />
       <Cards />
       <BillboardTwo />
-      <Title title="Responsive para todos los dispositivos" message="Diseños Creativos" />
+      <Title title="Diseñado para todos los dispositivos" message="Diseños Creativos" />
       <ImageGallery />
       <br/>
       <br/>

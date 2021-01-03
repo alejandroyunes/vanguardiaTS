@@ -5,6 +5,7 @@ import Button from "../Button/Button";
 import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
 import ContactMailIcon from "@material-ui/icons/ContactMail";
 import { useHistory, useLocation } from 'react-router-dom';
+import MainAnimation from './MainAnimation/MainAnimation'
 
 export default function Billboard() {
   let history = useHistory();
@@ -32,7 +33,7 @@ export default function Billboard() {
         </div>
 
         <div className="main-billboard-child-two">
-          <Animation />
+          <MainAnimation />
         </div>
       </div>
     </>

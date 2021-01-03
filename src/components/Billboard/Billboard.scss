@@ -63,6 +63,7 @@
 			grid-area: main-billboard-child-two;
 			padding-right: 24px;
 			margin: auto 0;
+			transform: rotateY(180deg);
 		}
 		.billboard-button {
 			margin-top: 16px;
@@ -76,9 +77,14 @@
 	animation: change-color 3s linear 2s infinite alternate;
 }
 
-.background{
-	animation: spin 12s infinite linear;
-}
+// #blue-background{
+// 	animation: spin 2s infinite linear;
+// }
+// @keyframes spin {
+// 	100% {
+// 		transform: rotate(360deg);
+// 	}
+// }
 
 @keyframes change-color {
 	0% {
