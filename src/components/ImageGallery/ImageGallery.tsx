@@ -24,35 +24,19 @@ export const ImageGallery = () => {
         <div className="grid__image-gallery">
           <div className="image-gallery-box-one">
             <img src={MiniVan} />
-            <div className="overlay-red">
-              <div className="text-overlay">Diseño Receptivo</div>
-            </div>
           </div>
           <div className="image-gallery-box-two">
-            {/* <img src={PenTool} />  */}
             <Rocket/>
-            <div className="overlay-red">
-              <div className="text-overlay">Responsive Móvil</div>
-            </div>
           </div>
           <div className="image-gallery-box-three">
             <img src={WhiteMountains} />
-            <div className="overlay-red">
-              <div className="text-overlay">Diseño Gráfico</div>
-            </div>
           </div>
           <div className="image-gallery-box-four">
             <img src={GreenDesign} />
-            <div className="overlay-red">
-              <div className="text-overlay">Responsive Móvil</div>
-            </div>
           </div>
           <div className="image-gallery-box-five">
             {/* <img src={CellphoneColorful} /> */}
             <GirlFloating/>
-            <div className="overlay-red">
-              <div className="text-overlay">Responsive Móvil</div>
-            </div>
           </div>
         </div>
 

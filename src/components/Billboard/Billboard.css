@@ -168,6 +168,8 @@
     grid-area: main-billboard-child-two;
     padding-right: 24px;
     margin: auto 0;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   .main__billboard .billboard-button {
     margin-top: 16px;

@@ -1,0 +1,174 @@
+/**
+ *variables
+ */
+.wrap-planet .planet {
+  margin: 0 5px 20px 0;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+}
+
+.planet {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #ccc;
+  background-image: radial-gradient(circle at 0 20%, #ccc 0%, transparent 65%, #bfbfbf 65%);
+}
+
+.planet__shadow {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+}
+
+.planet__shadow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-animation: shadow 2s infinite;
+          animation: shadow 2s infinite;
+}
+
+.spot {
+  position: absolute;
+  border-radius: 100%;
+  background-color: #bfbfbf;
+  background-image: radial-gradient(circle at 100% 80%, #b3b3b3 0%, #b3b3b3 65%, #a6a6a6 65%);
+}
+
+.spot--one {
+  height: 5px;
+  width: 5px;
+  top: 15%;
+  left: 40%;
+}
+
+.spot--two {
+  height: 10px;
+  width: 10px;
+  top: 63%;
+  left: 48%;
+}
+
+.spot--three {
+  height: 10px;
+  width: 10px;
+  top: 28%;
+  left: 14%;
+}
+
+.spot--four {
+  height: 6.66667px;
+  width: 6.66667px;
+  top: 64%;
+  left: 15%;
+}
+
+.spot--five {
+  height: 5.71429px;
+  width: 5.71429px;
+  top: 38%;
+  left: 73%;
+}
+
+.spot--six {
+  height: 2.85714px;
+  width: 2.85714px;
+  top: 17%;
+  left: 20%;
+}
+
+.spot--seven {
+  height: 2.5px;
+  width: 2.5px;
+  top: 63%;
+  left: 35%;
+}
+
+.spot--eigth {
+  height: 2.5px;
+  width: 2.5px;
+  top: 48%;
+  left: 56%;
+}
+
+/*
+  *animate
+     */
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-bounce {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.9);
+            transform: translate3d(0, 0, 0) scale(0.9);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -5px, 0) scale(1);
+            transform: translate3d(0, -5px, 0) scale(1);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.9);
+            transform: translate3d(0, 0, 0) scale(0.9);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.9);
+            transform: translate3d(0, 0, 0) scale(0.9);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -5px, 0) scale(1);
+            transform: translate3d(0, -5px, 0) scale(1);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.9);
+            transform: translate3d(0, 0, 0) scale(0.9);
+  }
+}
+
+.animate-shadow {
+  -webkit-animation-name: shadow;
+          animation-name: shadow;
+}
+/*# sourceMappingURL=ClearNight.css.map */

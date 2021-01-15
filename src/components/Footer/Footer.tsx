@@ -120,7 +120,7 @@ const Footer: FC = () => {
                 className="feedback-input"
                 placeholder="Comentario"
               ></textarea>
-              <input type="submit" value="SUBMIT" />
+              <input type="submit" value="Enviar" />
             </form>
           </div>
         </div>

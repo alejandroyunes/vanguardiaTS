@@ -152,12 +152,12 @@
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 @media only screen and (min-width: 900px) {
   .about-us-info {
     max-width: 1200px;
-    grid-gap: 10px;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (auto)[1];
