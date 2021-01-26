@@ -51,19 +51,24 @@
 .about-us-info {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(2, 330px);
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   @include mq($screen-tablet) {
     max-width: 1200px;
+    padding: 100px 0;
+   margin-bottom: 0;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, auto);
     grid-template-areas: "about-child-one" "about-child-two";
   }
-
+  @include mq($screen-tablet) {
+    // margin-bottom: 60px;
+  }
   .about-child-one {
     display: flex;
     align-items: center;
+    margin-bottom: 80px;
     h1 {
       font-weight: bold;
       color: $dark-blue;
@@ -82,6 +87,14 @@
   .about-child-two {
     display: flex;
     align-items: center;
+    text-align: justify;
+    position: relative;
+    font-size: 1rem;
+    // width: 500px;
+
+
+    line-height: 0.9em;
+
     .about-logo {
       max-width: 500px;
       height: auto;
