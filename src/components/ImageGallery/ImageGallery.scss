@@ -62,6 +62,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 16px 16px;
+    padding-top: 30px;
     grid-template-areas:
       "image-gallery-box-one image-gallery-box-one image-gallery-box-two image-gallery-box-three"
       "image-gallery-box-one image-gallery-box-one image-gallery-box-four image-gallery-box-five";

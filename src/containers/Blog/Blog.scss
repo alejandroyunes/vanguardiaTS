@@ -3,7 +3,7 @@
 @import "../../sass/utilities";
 @import "../../sass/mixins";
 
-.blog-main-title{
+.blog-main-title {
   margin: 60px 0;
   h1 {
     font-weight: bold;
@@ -25,12 +25,15 @@
   margin: 20px auto;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, auto);
+
   grid-template-areas: "child-one" "child-two" "child-three";
-  @include mq($screen-tablet) {
+  @include mq($screen-small) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, auto);
+  }
+  @include mq($screen-tablet){
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
   }
   h4 {
     font-size: 24px;

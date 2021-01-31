@@ -92,7 +92,7 @@ const Footer: FC = () => {
             </div>
             <div className="footer__icon">
               <LocationOnIcon />
-              <p>2231 seymour, Futurama, WI 5304</p>
+              <p>En algún lugar del mundo</p>
             </div>
             <div className="footer__social">
               <InstagramIcon fontSize="large" />

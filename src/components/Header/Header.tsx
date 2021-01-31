@@ -101,8 +101,9 @@ function Header() {
                   <Link to={{ pathname: "/services" }}>
                     <li>Servicios</li>
                   </Link>
-
-
+                  <Link to={{ pathname: "/blog" }}>
+                    <li>Blog</li>
+                  </Link>
                   <Link to={{ pathname: "/portfolio" }}>
                     <li>Portafolio</li>
                   </Link>

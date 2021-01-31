@@ -6,6 +6,11 @@ import aboutIllustrator from ".././../assets/illustraeagle.svg";
 import Title from "../../components/Title/Title";
 
 
+import WebDesign from '../../components/ImageGallery/Assets/WebDesign/WebDesign'
+import DigitalMarketing from '../../components/ImageGallery/Assets/DigitalMarketing/DigitalMarketing'
+
+import Branding from '../../components/ImageGallery/Assets/Branding/Branding'
+
 import servicesHeroImg from "../../assets/services/services-hero-desktop.jpg";
 import serviceHeroSmallImg from "../../assets/services/services-hero-mobile-small.jpg"
 
@@ -36,28 +41,38 @@ export default function Services() {
 
 {/* <img src={servicesHeroImg} alt="services" /> */}
       </div>
-      <Title message={"Services"} title={""} />
+      <Title message={"Servicios"} title={""} />
       <div className="services-main-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta velit cupiditate laudantium ipsam quo, officiis quas temporibus explicabo corporis nisi ex, necessitatibus voluptatibus suscipit quibusdam fugiat? Sunt dolorum delectus autem veniam sed mollitia? Iure enim, quidem officiis repudiandae adipisci corporis et. Laudantium sint hic illo repudiandae expedita magni placeat obcaecati voluptates, rem voluptas aspernatur culpa nesciunt ipsam illum officiis reprehenderit cumque ea neque. Nemo molestiae aut explicabo sequi, excepturi porro rerum ea ut quisquam harum corrupti dicta earum ullam fugit mollitia possimus dolore dignissimos veniam nostrum in facere. Accusamus maiores dignissimos nam corrupti ipsam molestias? Cum repellendus impedit sequi.</p>
+        <p>Somos una empresa de diseño y desarrollo web, que crea sitios web que generan tráfico, participación y conversión para marcas y startups líderes en la industria en Silicon Valley.</p>
       </div>
 
       <div className="services-three-columns">
         <div className="services-three-columns-child-one">
-          <img className="about-logo" src={aboutMarketing} />
+          {/* <img className="about-logo" src={aboutMarketing} /> */}
+          
+          <div className="design-svg">
+          <WebDesign/>
+          </div>
           <h4>Web Design</h4>
           <p>
             Páginas Web, Tiendas virtuales, Blogs, LandingPage, template.
           </p>
         </div>
         <div className="services-three-columns-child-two">
-          <img className="about-logo" src={aboutBox} />
+          {/* <img className="about-logo" src={aboutBox} /> */}
+          <div className="design-svg">
+          <DigitalMarketing/>
+          </div>
           <h4>Marketing Digital</h4>
           <p>
             Creamos estrategias para que tu marca tenga un impacto en internet.
           </p>
         </div>
         <div className="services-three-columns-child-three">
-          <img className="about-logo" src={aboutIllustrator} />
+          {/* <img className="about-logo" src={aboutIllustrator} /> */}
+          <div className="design-svg-2">
+          <Branding/>
+          </div>
           <h4>Branding / Marca</h4>
           <p>
             Diseñamos y estructuramos la identidad de tu marca sostenible en el tiempo.
@@ -65,7 +80,7 @@ export default function Services() {
         </div>
       </div>
       <br />
-      <Title message={"Technologies"} title={""} />
+      <Title message={"Tecnologías"} title={""} />
 
       <div className="services-tech">
         <div className="services-tech-container">

@@ -14,12 +14,12 @@ import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
 export default function Portfolio() {
     return (
         <>
-            <div className="portfolio-page-hero">
+            {/* <div className="portfolio-page-hero">
                 <img src={portfolioImg} alt="services" />
-            </div>
+            </div> */}
 
             <div className="portfolio-main-title">
-                <Title message={"Portflio"} title={""} />
+                <Title message={"Portafolio"} title={""} />
             </div>
 
             <br />
