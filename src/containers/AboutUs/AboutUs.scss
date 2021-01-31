@@ -5,15 +5,26 @@
 
 .wrapper {
   max-width: 1200px;
-  margin: 32px auto;
+  background-image: url('../../assets/about/about-us-background-red-darker.jpg');
+  height: 450px;
+  background-attachment: fixed;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
   display: grid;
   padding: 0 16px;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, auto);
+  
   grid-template-areas:
     "about-child-one"
-    "about-child-two"
-    "child-three";
+    "about-child-two";
+  @include mq($screen-card_special) {
+    background-image: none;
+    height: 300px;
+    
+  }
 
   .about-child-one {
     text-align: center;
@@ -26,14 +37,18 @@
     }
   }
   .about-child-two {
-    margin: 32px auto;
+    margin: 10px auto;
     h1 {
       font-weight: bold;
-      color: $dark-blue;
-      font-size: 3rem;
+      color: $light-white;
+      font-size: 2rem;
       line-height: 1.2;
-      max-width: 760px;
-      text-align: center;
+      max-width: 600px;
+      text-align: left;
+      padding-top: 24px;
+      @include mq($screen-card_special) {
+        color: $dark-blue;
+      }
     }
   }
   .child-three {
@@ -41,38 +56,50 @@
     p {
       font-size: 1.125rem;
       line-height: 1.5;
-      margin: 0 auto 48px;
+      margin: 24px auto 48px;
       max-width: 432px;
-      color: $lighter-black;
+      color: $light-white;
+      @include mq($screen-card_special) {
+        color: $lighter-black;
+      }
     }
   }
 }
 
 .about-us-info {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(2, 330px);
   margin: 0 auto;
-  margin-bottom: 100px;
-  @include mq($screen-tablet) {
+  margin-bottom: 200px;
+  padding-top: 48px;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(2, 223px);
+
+  @include mq($screen-small) {
     max-width: 1200px;
-    padding: 100px 0;
-   margin-bottom: 0;
+    padding: 40px 0;
+    margin-bottom: 32px;
+
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
+    grid-template-rows: repeat(1, 1fr);
+
     grid-template-areas: "about-child-one" "about-child-two";
   }
-  @include mq($screen-tablet) {
-    // margin-bottom: 60px;
+  @include mq($screen-card_special) {
+    margin-bottom: 60px;
+
   }
   .about-child-one {
-    display: flex;
+    display: block;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
+   
+    @include mq($screen-card_special) {
+      margin-bottom: 80px;
+    }
     h1 {
       font-weight: bold;
       color: $dark-blue;
-      font-size: 3rem;
+      font-size: 2rem;
       padding: 0 32px;
       line-height: 1.2;
       text-align: center;
@@ -90,11 +117,11 @@
     text-align: justify;
     position: relative;
     font-size: 1rem;
-    // width: 500px;
-
-
     line-height: 0.9em;
-
+    margin-top: 240px;
+     @include mq($screen-small) {
+       margin-top: 0px;
+    }
     .about-logo {
       max-width: 500px;
       height: auto;

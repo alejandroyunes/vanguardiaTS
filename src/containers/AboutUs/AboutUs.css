@@ -1,0 +1,241 @@
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+@media (max-width: 700px) {
+  .showcase-content {
+    text-align: center;
+  }
+  .showcase-content div {
+    width: 100%;
+  }
+  .showcase-content h1 {
+    font-size: 2em;
+  }
+  .showcase-content img {
+    display: none;
+  }
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 32px auto;
+  display: -ms-grid;
+  display: grid;
+  padding: 0 16px;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (auto)[1];
+      grid-template-rows: repeat(1, auto);
+      grid-template-areas: "about-child-one" "about-child-two" "child-three";
+}
+
+.wrapper .about-child-one {
+  text-align: center;
+}
+
+.wrapper .about-child-one .about-logo {
+  width: 100%;
+}
+
+.wrapper .about-child-one img {
+  max-width: 308px;
+  height: auto;
+}
+
+.wrapper .about-child-two {
+  margin: 32px auto;
+}
+
+.wrapper .about-child-two h1 {
+  font-weight: bold;
+  color: #508EBC;
+  font-size: 3rem;
+  line-height: 1.2;
+  max-width: 760px;
+  text-align: center;
+}
+
+.wrapper .child-three {
+  text-align: center;
+}
+
+.wrapper .child-three p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin: 0 auto 48px;
+  max-width: 432px;
+  color: #5f5f5f;
+}
+
+.about-us-info {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 440px) {
+  .about-us-info {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: 1fr 500px;
+        grid-template-rows: 1fr 500px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .about-us-info {
+    max-width: 1200px;
+    padding: 20px 0;
+    margin-bottom: 60px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: "about-child-one" "about-child-two";
+  }
+}
+
+.about-us-info .about-child-one {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 700px) {
+  .about-us-info .about-child-one {
+    margin-bottom: 80px;
+  }
+}
+
+.about-us-info .about-child-one h1 {
+  font-weight: bold;
+  color: #508EBC;
+  font-size: 3rem;
+  padding: 0 32px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .about-us-info .about-child-one h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (min-width: 440px) {
+  .about-us-info .about-child-one h1 {
+    padding: 0 16px;
+  }
+}
+
+.about-us-info .about-child-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  position: relative;
+  font-size: 1rem;
+  line-height: 0.9em;
+}
+
+.about-us-info .about-child-two .about-logo {
+  max-width: 500px;
+  height: auto;
+  margin: 32px auto 0;
+  padding: 0 16px;
+}
+
+.about-us-info .about-child-two img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 900px) {
+  .about-us-info .about-child-two .about-logo {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=AboutUs.css.map */

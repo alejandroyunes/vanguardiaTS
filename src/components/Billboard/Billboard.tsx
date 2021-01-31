@@ -33,7 +33,7 @@ export default function Billboard() {
         </div>
 
         <div className="main-billboard-child-two">
-          <MainAnimation />
+          <Animation />
         </div>
       </div>
     </>
