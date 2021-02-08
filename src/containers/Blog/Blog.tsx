@@ -8,11 +8,7 @@ import Title from "../../components/Title/Title";
 export default function Blog() {
     return (
         <>
-            <div className="blog-main-title">
-                <h1>
-                    Blog
-                </h1>
-            </div>
+            <Title message={"Blog"} title={""} />
 
             <div className="about-us-icons-services">
                 <div className="child-one-icons">

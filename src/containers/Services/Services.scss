@@ -18,6 +18,7 @@
 	p {
 		font-size: 1.2rem;
 		color: $lighter-black;
+		text-align: center;
 	}
 }
 
@@ -70,25 +71,38 @@
 		max-width: 340px;
 		width: 100%;
 		pointer-events: none;
+		margin: 0 auto;
+		order: 1;
 	}
 	.design-svg-2 {
 		max-width: 340px;
 		width: 100%;
 		pointer-events: none;
+		margin: 0 auto;
+		order: 1;
 	}
 
 	.services-three-columns-child-one {
 		text-align: center;
+		margin: 0 auto;
+		display: grid;
+		padding-top: 16px;
 	}
 	.services-three-columns-child-two {
 		text-align: center;
+		margin: 0 auto;
+		display: grid;
+		padding-top: 16px;
 	}
 	.services-three-columns-child-three {
 		text-align: center;
+		margin: 0 auto;
+		display: grid;
+		padding-top: 16px;
 	}
 	img {
-		max-width: 100%;
-		height: auto;
+
+		margin: 0 auto;
 	}
 }
 
@@ -98,6 +112,15 @@
 		grid-template-rows: repeat(1, auto);
 		grid-template-areas: "child-one" "child-two" "child-three";
 		grid-gap: 10px;
+		.design-svg {
+			order: 0;
+		}
+		.design-svg-2 {
+			order: 0;
+		}
+		.services-three-columns-child-one {
+			padding-top: 0;
+		}
 	}
 }
 

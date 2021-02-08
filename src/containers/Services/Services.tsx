@@ -30,17 +30,7 @@ import ApacheSvg from "../../assets/apache.svg";
 export default function Services() {
   return (
     <>
-      <div className="services-page-hero">
-        <img srcSet={` ${serviceHeroSmallImg} 700w, ${servicesHeroImg}`}
-          sizes={`(max-width: 440px) 440px, 2200px,  
-          src=${serviceHeroSmallImg} 700w,
-          src=${servicesHeroImg} 2000w,
-          
-         alt="Some text"`} />
-
-
-{/* <img src={servicesHeroImg} alt="services" /> */}
-      </div>
+      
       <Title message={"Servicios"} title={""} />
       <div className="services-main-content">
         <p>Somos una empresa de diseño y desarrollo web, que crea sitios web que generan tráfico, participación y conversión para marcas y startups líderes en la industria en Silicon Valley.</p>
