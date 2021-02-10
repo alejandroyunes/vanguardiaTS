@@ -1,6 +1,7 @@
 import React from "react";
 import "./Portfolio.scss";
 import websiteOne from '../../assets/portfolio/website-one.jpg'
+import websiteTwo from '../../assets/portfolio/website-two.jpg'
 import studioWebsite from '../../assets/portfolio/studio-website.jpg'
 
 import Title from "../../components/Title/Title";
@@ -52,7 +53,7 @@ export default function Portfolio() {
             <div className="portfolio-billboard-two">
 
                 <div className="portfolio-billboard-two-child-one">
-                    <img src={studioWebsite} />
+                    <img src={websiteTwo} />
                 </div>
                 <div className="portfolio-billboard-two-child-two">
                     <div>
