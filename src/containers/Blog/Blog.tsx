@@ -8,7 +8,7 @@ import wordPressPlugin from ".././../assets/blog/wordpress-plugins.jpg";
 import adobeFigma from ".././../assets/blog/figma-xd.jpg";
 import ReactNetlify from ".././../assets/blog/react-netlify.jpg";
 import htmlCssJs from ".././../assets/blog/htmlcssjs.jpg";
-
+import githubBitbucket from ".././../assets/blog/githubbitbucket.jpg";
 
 
 import aboutMarketing from ".././../assets/boxeagle.svg";
@@ -93,8 +93,8 @@ export default function Blog() {
                     </p>
                 </div>
                 <div className="child-three-icons">
-                    <img className="about-logo" src={aboutIllustrator} />
-                    <h4>Finding assets become mission impossible</h4>
+                    <img className="about-logo" src={githubBitbucket} />
+                    <h4>Github & Bitbucket</h4>
                     <p>
                         Collecting images are always a nightmare, especially with all the
                         procedures and when there are more than one.
