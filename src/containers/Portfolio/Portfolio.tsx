@@ -29,16 +29,14 @@ export default function Portfolio() {
             <div className="portfolio-billboard">
                 <div className="portfolio-billboard-child-one">
                     <div>
-                        <h1>Hushina Restaurant</h1>
+                        <h1>Experiencia Japonesa</h1>
                         <h2>
-                            Get rid of spam in your application. Use our API to access
-                            Akismet’s powerful spam detection. Our developer program provides
-                            valuable data and feedback during development.
+                            Study case: Página en HTML, CSS, JavaScript vanilla. Diseño original y responsive.  Licencia Premium de imagenes (uso ilimitado sin atribución)
                         </h2>
                         <div className="buttons">
                             <div className="button-one">
                                 <Button
-                                    label="view work"
+                                    label="Ver Sitio"
                                     category="primary"
                                     size="sm"
                                     icon={WorkOutlineIcon}
@@ -59,16 +57,14 @@ export default function Portfolio() {
                 </div>
                 <div className="portfolio-billboard-two-child-two">
                     <div>
-                        <h1>Vanguardia Digital Development</h1>
+                        <h1>iPhone 12</h1>
                         <h2>
-                            Get rid of spam in your application. Use our API to access
-                            Akismet’s powerful spam detection. Our developer program provides
-                            valuable data and feedback during development.
+                        Study case: Página en HTML, CSS, JavaScript vanilla. Diseño original y responsive. Licencia Premium de imagenes (uso ilimitado sin atribución)
                         </h2>
                         <div className="buttons">
                             <div className="button-one">
                                 <Button
-                                    label="view work"
+                                    label="Ver Sitio"
                                     category="primary"
                                     size="sm"
                                     icon={WorkOutlineIcon}
@@ -81,16 +77,14 @@ export default function Portfolio() {
             <div className="portfolio-billboard">
                 <div className="portfolio-billboard-child-one">
                     <div>
-                        <h1>Hushina Restaurant</h1>
+                        <h1>InfraRedes</h1>
                         <h2>
-                            Get rid of spam in your application. Use our API to access
-                            Akismet’s powerful spam detection. Our developer program provides
-                            valuable data and feedback during development.
+                        Study case: Página en HTML, CSS, JavaScript vanilla. Diseño original y responsive. Licencia Premium de imagenes (uso ilimitado sin atribución)
                         </h2>
                         <div className="buttons">
                             <div className="button-one">
                                 <Button
-                                    label="view work"
+                                    label="Ver Sitio"
                                     category="primary"
                                     size="sm"
                                     icon={WorkOutlineIcon}
@@ -111,16 +105,14 @@ export default function Portfolio() {
                 </div>
                 <div className="portfolio-billboard-two-child-two">
                     <div>
-                        <h1>Vanguardia Digital Development</h1>
+                        <h1>Dr. Puerta</h1>
                         <h2>
-                            Get rid of spam in your application. Use our API to access
-                            Akismet’s powerful spam detection. Our developer program provides
-                            valuable data and feedback during development.
+                        Página en WordPress. Diseño original y responsive. Licencia Premium de imagenes (uso ilimitado sin atribución)
                         </h2>
                         <div className="buttons">
                             <div className="button-one">
                                 <Button
-                                    label="view work"
+                                    label="Ver Sitio"
                                     category="primary"
                                     size="sm"
                                     icon={WorkOutlineIcon}
