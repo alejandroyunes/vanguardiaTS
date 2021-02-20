@@ -3,6 +3,8 @@ import "./Portfolio.scss";
 import websiteOne from '../../assets/portfolio/website-one.jpg'
 import websiteTwo from '../../assets/portfolio/website-two.jpg'
 import studioWebsite from '../../assets/portfolio/studio-website.jpg'
+import rdsWebsite from '../../assets/portfolio/rds.jpg'
+import drPuerta from '../../assets/portfolio/drpuerta.jpg'
 
 import Title from "../../components/Title/Title";
 
@@ -98,14 +100,14 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="portfolio-billboard-child-two">
-                    <img src={websiteOne} />
+                    <img src={rdsWebsite} />
                 </div>
             </div>
 
             <div className="portfolio-billboard-two">
 
                 <div className="portfolio-billboard-two-child-one">
-                    <img src={studioWebsite} />
+                    <img src={drPuerta} />
                 </div>
                 <div className="portfolio-billboard-two-child-two">
                     <div>
