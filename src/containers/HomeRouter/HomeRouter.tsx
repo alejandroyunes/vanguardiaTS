@@ -6,6 +6,7 @@ import Blog from '../Blog/Blog'
 import Portfolio from '../Portfolio/Portfolio'
 import ScrollToTop from './ScrollToTop'
 import { Route, useRouteMatch } from 'react-router-dom'
+import BlogArticle from '../BlogArticle/BlogArticle'
 
 
 const HomeRouter: FC = () => {
@@ -20,6 +21,7 @@ const HomeRouter: FC = () => {
       <Route exact path={`/services`} component={Services} />
       <Route exact path={`/portfolio`} component={Portfolio} />
       <Route exact path={`/blog`} component={Blog} />
+      <Route path="/blog-article" component={BlogArticle} />
     </div>
 
   );
