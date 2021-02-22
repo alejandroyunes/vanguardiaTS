@@ -1,130 +1,169 @@
 @import "../../sass/config";
+@import "../../sass/mixins";
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 
-  .article-author {
-    display: flex;
-    padding: 16px 0;
-    .article-author-image {
-      .avatar {
-        vertical-align: middle;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
+  @media screen and (min-width: $screen-tablet) {
+    max-width: 1140px;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: .4fr .6fr .8fr;
+    grid-template-rows: 0.6fr;
+    gap: 0px 0px;
+    grid-template-areas: "left two two";
+  }
+
+  .two {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.7fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "title title title"
+      "content content right";
+    grid-area: two;
+    // outline: 1px solid red;
+  }
+  .title {
+    grid-area: title;
+    // outline: 1px solid blue;
+    .article-title {
+      grid-column-end: 60;
+      .article-date {
+        p {
+          font-style: italic;
+          color: $dark-red;
+        }
+      }
+      .article-title {
+        margin-bottom: 16px;
+        h2 {
+          text-align: left;
+          font-size: 2rem;
+          font-weight: bold;
+          color: #508ebc;
+          line-height: 3rem;
+        }
       }
     }
-    .article-author-title {
-      display: flex;
-      align-items: center;
-      padding-left: 16px;
+  }
+  .content {
+    grid-area: content;
+    // outline: 1px solid green;
+    .article-author-description {
+      padding: 0 0 16px;
       p {
-        font-weight: bold;
+        color: #000;
         font-size: 1rem;
+      }
+    }
+    .article__summary::before {
+      content: "Quick summary ↬ ";
+      display: inline;
+      font-style: normal;
+      letter-spacing: 2px;
+      font-size: 0.75em;
+      margin: 0;
+      font-weight: 600;
+      color: #d33a2c;
+      text-transform: uppercase;
+      font-family: $font-family;
+    }
+    .article__summary {
+      color: $light-gray;
+      font-style: italic;
+      padding-bottom: 24px;
+      border-bottom: 2px solid $light-gray;
+    }
+    .article__summary-body {
+      padding: 24px 0;
+      p {
+        padding-bottom: 8px;
+        color: $light-black;
+        strong {
+          font-weight: bold;
+          color: $dark-red;
+        }
+      }
+      h2 {
+        font-size: 24px;
+        padding: 8px 0;
         color: $dark-blue;
       }
     }
   }
-  .article-author-description {
-    padding: 0 0 16px;
-    p {
-      color: #000;
-      font-size: 1rem;
-    }
-  }
-  .article-title {
-    .article-date {
-      p {
-        font-style: italic;
-        color: $dark-red;
-      }
-    }
-    .article-title {
-      margin-bottom: 16px;
-      h2 {
-        text-align: left;
-        font-size: 2rem;
-        font-weight: bold;
-        color: #508ebc;
-        line-height: 3rem;
-      }
-    }
-  }
-  .meta-box-article {
-    background: #f6f6f6;
-    padding: 1em;
-    margin: 0 0 2em;
-    list-style: none;
-    width: 100%;
-    border-radius: 11px;
-    font-size: 0.8em;
-    .meta-box-article-list li,
-    .meta-box--item {
+  .right {
+    grid-area: right;
+    // outline: 1px solid purple;
+    .meta-box-article {
+      background: #f6f6f6;
+      padding: 1em;
+      margin: 0 0 2em;
       list-style: none;
-      line-height: 1.4;
-      padding-left: calc(1em + 0.5em);
-      background-size: auto 1em;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      margin-bottom: 0.5em;
-      a {
-        background-color: transparent;
-        text-decoration-skip-ink: auto;
-        text-decoration-line: underline;
-        color: #006fc6;
+      width: 100%;
+      border-radius: 11px;
+      font-size: 0.8em;
+      .meta-box-article-list li,
+      .meta-box--item {
+        list-style: none;
+        line-height: 1.4;
+        padding-left: calc(1em + 0.5em);
+        background-size: auto 1em;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        margin-bottom: 0.5em;
+        a {
+          background-color: transparent;
+          text-decoration-skip-ink: auto;
+          text-decoration-line: underline;
+          color: #006fc6;
+        }
+        span {
+          padding-right: 4px;
+        }
       }
-      span {
-        padding-right: 4px;
+      .meta-box--published {
+        background-image: url("./Resouces/published.svg");
       }
-    }
-    .meta-box--published {
-      background-image: url("./Resouces/published.svg");
-    }
-    .meta-box--tags {
-      background-image: url("./Resouces/tags.svg");
-    }
-    .meta-box--author {
-      background-image: url('./Resouces/author.svg');
-  }
-    .meta-box--share {
-      background-image: url('./Resouces/tweets.svg');
-  }
-  }
-
-  .article__summary::before {
-    content: 'Quick summary ↬ ';
-    display: inline;
-    font-style: normal;
-    letter-spacing: 2px;
-    font-size: .75em;
-    margin: 0;
-    font-weight: 600;
-    color: #d33a2c;
-    text-transform: uppercase;
-    font-family: $font-family;
-  }
-  .article__summary{
-    color: $light-gray;
-    font-style: italic;
-    padding-bottom: 24px;
-    border-bottom: 2px solid $light-gray;
-  }
-  .article__summary-body{
-    padding: 24px 0;
-    p{
-      padding-bottom: 8px;
-      color: $light-black;
-      strong{
-        font-weight: bold;
-        color: $dark-red;
+      .meta-box--tags {
+        background-image: url("./Resouces/tags.svg");
+      }
+      .meta-box--author {
+        background-image: url("./Resouces/author.svg");
+      }
+      .meta-box--share {
+        background-image: url("./Resouces/tweets.svg");
       }
     }
-    h2 {
-      font-size: 24px;
-      padding: 8px 0;
-      color: $dark-blue;
+  }
+  .left {
+    grid-area: left;
+    // outline: 1px solid orange;
+    .article-author {
+      .article-image-title-wrapper {
+        display: flex;
+        padding: 16px 0;
+        .article-author-image {
+          .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+        }
+        .article-author-title {
+          display: flex;
+          align-items: center;
+          padding-left: 16px;
+          p {
+            font-weight: bold;
+            font-size: 1rem;
+            color: $dark-blue;
+          }
+        }
+      }
     }
   }
-  
 }
