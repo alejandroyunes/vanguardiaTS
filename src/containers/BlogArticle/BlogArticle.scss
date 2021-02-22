@@ -112,6 +112,19 @@
   }
   .article__summary-body{
     padding: 24px 0;
+    p{
+      padding-bottom: 8px;
+      color: $light-black;
+      strong{
+        font-weight: bold;
+        color: $dark-red;
+      }
+    }
+    h2 {
+      font-size: 24px;
+      padding: 8px 0;
+      color: $dark-blue;
+    }
   }
   
 }

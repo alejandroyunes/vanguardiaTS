@@ -46,9 +46,17 @@ export default function BlogArticle() {
                     The present and future of CSS are very bright indeed and if you take a pragmatic, progressive approach to your CSS, then things will continue to get better and better on your projects, too. In this article, we’ll look into masonry layout, :is selector, clamp(), ch and ex units, updated text decoration, and a few other useful CSS properties.
                     </section>
                     <section className="article__summary-body">
-                        <p><strong>CSS is great </strong>and getting better all the time. Over recent years, especially, it has evolved really fast, too. Understandably, some of the really handy powers CSS gives you might have slipped you by because of this, so in this article, I’m going to show you some really handy stuff you can do with modern CSS today, and also share some stuff that we can look forward to in the future.</p>
+                        <p><strong>CSS is great </strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur sint delectus in ullam suscipit dolores ratione voluptatem laudantium autem, voluptas aperiam, sequi debitis dicta placeat minus eum vel odit magnam!</p>
                         <h2>
-
+                            Lorem ipsum dolor sit amet consectetur.
+                        </h2>
+                        <p><strong>CSS is great </strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur sint delectus in ullam suscipit dolores ratione voluptatem laudantium autem, voluptas aperiam, sequi debitis dicta placeat minus eum vel odit magnam!</p>
+                        <h2>
+                            Lorem ipsum dolor sit amet consectetur.
+                        </h2>
+                        <p><strong>CSS is great </strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur sint delectus in ullam suscipit dolores ratione voluptatem laudantium autem, voluptas aperiam, sequi debitis dicta placeat minus eum vel odit magnam!</p>
+                        <h2>
+                            Lorem ipsum dolor sit amet consectetur.
                         </h2>
                     </section>
                 </div>
