@@ -91,4 +91,27 @@
       background-image: url('./Resouces/tweets.svg');
   }
   }
+
+  .article__summary::before {
+    content: 'Quick summary ↬ ';
+    display: inline;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: .75em;
+    margin: 0;
+    font-weight: 600;
+    color: #d33a2c;
+    text-transform: uppercase;
+    font-family: $font-family;
+  }
+  .article__summary{
+    color: $light-gray;
+    font-style: italic;
+    padding-bottom: 24px;
+    border-bottom: 2px solid $light-gray;
+  }
+  .article__summary-body{
+    padding: 24px 0;
+  }
+  
 }
