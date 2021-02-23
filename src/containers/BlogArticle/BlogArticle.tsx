@@ -9,7 +9,7 @@ export default function BlogArticle() {
         <>
 
 
-            <div className="wrapper">
+            <div className="wrapper-blog-article">
                 <div className="two">
                     <div className="title">
                         <div className="article-title">
@@ -73,23 +73,6 @@ export default function BlogArticle() {
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div className="wrapper">
-
-
             </div>
         </>
     )

@@ -1,15 +1,21 @@
 @import "../../sass/config";
 @import "../../sass/mixins";
 
-.wrapper {
+.wrapper-blog-article {
+  padding: 0 24px;
   max-width: 900px;
   margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.1f;
+  grid-template-areas:
+    "two"
+    "left";
 
   @media screen and (min-width: $screen-tablet) {
     max-width: 1140px;
     padding: 0 24px;
     display: grid;
-    grid-template-columns: .4fr .6fr .8fr;
+    grid-template-columns: 0.4fr 0.6fr 0.8fr;
     grid-template-rows: 0.6fr;
     gap: 0px 0px;
     grid-template-areas: "left two two";
@@ -17,14 +23,25 @@
 
   .two {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1.7fr;
-    gap: 0px 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
     grid-template-areas:
-      "title title title"
-      "content content right";
-    grid-area: two;
-    // outline: 1px solid red;
+      "title"
+      "right"
+      "content";
+      border-bottom: 2px solid $dark-red;
+
+    @media screen and (min-width: $screen-tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.3fr 1.7fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "title title title"
+        "content content right";
+      grid-area: two;
+      border-bottom: none;
+    }
   }
   .title {
     grid-area: title;
@@ -51,7 +68,6 @@
   }
   .content {
     grid-area: content;
-    // outline: 1px solid green;
     .article-author-description {
       padding: 0 0 16px;
       p {
@@ -81,7 +97,7 @@
       padding: 24px 0;
       p {
         padding-bottom: 8px;
-        color: $light-black;
+        // color: #000;
         strong {
           font-weight: bold;
           color: $dark-red;
@@ -95,8 +111,6 @@
     }
   }
   .right {
-    grid-area: right;
-    // outline: 1px solid purple;
     .meta-box-article {
       background: #f6f6f6;
       padding: 1em;
@@ -114,6 +128,7 @@
         background-repeat: no-repeat;
         background-position: 0 0;
         margin-bottom: 0.5em;
+        color: $light-black;
         a {
           background-color: transparent;
           text-decoration-skip-ink: auto;
@@ -137,11 +152,15 @@
         background-image: url("./Resouces/tweets.svg");
       }
     }
+    @media screen and (min-width: $screen-tablet) {
+      grid-area: right;
+      padding-left: 24px;
+      // outline: 1px solid purple;
+    }
   }
   .left {
-    grid-area: left;
-    // outline: 1px solid orange;
     .article-author {
+      padding-bottom: 48px;
       .article-image-title-wrapper {
         display: flex;
         padding: 16px 0;
@@ -164,6 +183,15 @@
           }
         }
       }
+      .article-author-description{
+        // p{
+        //   color: #000000;
+        // }
+      }
+    }
+    @media screen and (min-width: $screen-tablet) {
+      grid-area: left;
+      padding-right: 24px;
     }
   }
 }
