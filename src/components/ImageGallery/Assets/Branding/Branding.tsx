@@ -4,1355 +4,1085 @@ function Branding(props) {
   return (
     <svg
       className="animated"
-      id="freepik_stories-email-campaign"
+      id="freepik_stories-online-world"
       viewBox="0 0 500 500"
       {...props}
     >
       <style>
         {
-          "@keyframes floating{0%,to{opacity:1;transform:translateY(0)}50%{transform:translateY(-10px)}}svg#freepik_stories-email-campaign:not(.animated) .animable{opacity:0}"
+          "@keyframes zoomOut{0%{opacity:0;transform:scale(1.5)}to{opacity:1;transform:scale(1)}}@keyframes slideDown{0%{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}svg#freepik_stories-online-world:not(.animated) .animable{opacity:0}"
         }
       </style>
       <g
-        id="freepik--background-simple--inject-136"
-        className="animable animator-active"
-        style={{
-          transformOrigin: "250.746px 238.167px",
-          animation: "6s Infinite linear spin",
-          animationDelay: "0s"
-        }}
-      >
-        <path
-          d="M38.16 210.57S30.94 289 89.6 351.89s148.49 81.68 221 98.83 133.78-14.83 150-75.93-37.29-88.79-58.71-165-15.79-99.19-74.45-153.66S165.13 11.77 103.18 78 38.16 210.57 38.16 210.57z"
-          style={{
-            transformOrigin: "250.746px 238.167px"
-          }}
-          id="elnen6atvmiqm"
-          className="animable"
-          fill="#508ebc"
-        />
-        <path
-          d="M38.16 210.57S30.94 289 89.6 351.89s148.49 81.68 221 98.83 133.78-14.83 150-75.93-37.29-88.79-58.71-165-15.79-99.19-74.45-153.66S165.13 11.77 103.18 78 38.16 210.57 38.16 210.57z"
-          style={{
-            transformOrigin: "250.746px 238.167px"
-          }}
-          className="animable"
-          fill="#fff"
-          opacity={0.7}
-          id="eld45ni3lddy9"
-        />
-      </g>
-      <g
-        id="freepik--Plants--inject-136"
+        id="freepik--background-complete--inject-22"
         className="animable"
         style={{
-          transformOrigin: "249.162px 375.204px"
-        }}
-      >
-        <path
-          d="M19.09 374.66c3-.22 8.82-3.47 8.83-3.47s-3.31-3.2-3.55-3.38c-2.73-2-9.19-4.35-12.29-2.14a4.5 4.5 0 00-.57 6.68c1.77 2.03 5.05 2.49 7.58 2.31z"
-          style={{
-            transformOrigin: "19.1032px 369.737px"
-          }}
-          id="elopp4k9fvl19"
-          className="animable"
-          fill="#263238"
-        />
-        <path
-          d="M30.16 390.71c2.7-.95 7.17-5.26 7.52-5.61a79.81 79.81 0 007.87 7.18c1.61 1.29 3.27 2.55 5 3.79-.86-.45-1.62-.85-1.73-.89-3.17-1.24-10-1.77-12.43 1.18a4.5 4.5 0 001.18 6.64c2.24 1.49 5.53 1.07 7.92.22s6.32-4.45 7.34-5.42c.65.47 1.29.95 1.94 1.41 3.13 2.24 6.27 4.46 9.28 6.73 1.06.8 2.07 1.63 3.09 2.45-.76-.4-1.4-.73-1.5-.77-3.17-1.24-10-1.77-12.43 1.18a4.51 4.51 0 001.22 6.6c2.24 1.48 5.53 1.06 7.92.22s5.94-4.11 7.15-5.25c1 .87 2 1.74 3 2.64.63.62 1.28 1.18 1.88 1.84l1.81 1.92c1.1 1.25 2.25 2.54 3.29 3.8.74.87 1.42 1.7 2.11 2.55-1-.81-3.13-2.35-3.31-2.46-3-1.7-9.63-3.27-12.46-.71a4.5 4.5 0 00.2 6.7c2 1.8 5.31 1.89 7.8 1.42 2.75-.53 7.64-3.95 8.25-4.38 1.13 1.4 2.23 2.78 3.24 4.09 2.73 3.52 5 6.65 6.75 9.18l2.24-1.18c-1.86-2.56-4.28-5.78-7.22-9.4a218.3 218.3 0 00-3.71-4.46 47.49 47.49 0 003.46-4.59c2.71 1 8.28.81 9 .79.18 1.8.33 3.54.45 5.2.32 4.31.48 8.09.57 11.12l2.43-1.29c-.15-2.84-.38-6.22-.75-10-.17-1.83-.39-3.77-.64-5.77.7-.2 6.45-1.88 8.57-3.7 1.94-1.65 3.94-4.29 3.78-7a4.51 4.51 0 00-5.11-4.35c-3.75.61-6.72 6.8-7.23 10.16 0 .2-.12 2.39-.15 3.77-.1-.81-.2-1.6-.31-2.44-.23-1.66-.5-3.31-.78-5.08q-.25-1.27-.51-2.58c-.15-.87-.42-1.76-.63-2.65-.52-2.06-1.16-4.11-1.84-6.17 1.45-.19 6.59-1 8.76-2.31s4.54-3.65 4.79-6.32a4.52 4.52 0 00-4.39-5.08c-3.8 0-7.67 5.71-8.69 9-.06.21-.53 2.62-.76 3.95-.42-1.24-.83-2.47-1.3-3.7-1.34-3.56-2.82-7.12-4.27-10.68l-1.31-3.27c.52-.07 6.65-.86 9.08-2.36 2.16-1.34 4.54-3.65 4.78-6.32a4.51 4.51 0 00-4.37-5.17c-3.81 0-7.68 5.71-8.69 8.95-.08.25-.74 3.72-.87 4.61-1-2.4-1.89-4.81-2.71-7.21a80 80 0 01-2.73-9.92c.24 0 6.65-.83 9.14-2.37 2.15-1.34 4.53-3.65 4.78-6.32a4.51 4.51 0 00-4.38-5.08c-3.81 0-7.68 5.71-8.69 8.95-.08.26-.8 4-.88 4.68 0-.2-.1-.39-.14-.59a58.55 58.55 0 01-.91-10.28c0-1.9.06-3.72.18-5.49 1.21 0 6.73-.2 9.13-1.34s4.9-3.13 5.45-5.76a4.52 4.52 0 00-3.8-5.53c-3.79-.38-8.26 4.83-9.63 7.95-.07.17-.64 2-1 3.29.07-.79.12-1.62.2-2.38.29-2.87.74-5.47 1.15-7.78.24-1.31.49-2.48.73-3.58 1.18-.65 5.87-3.3 7.44-5.38s2.92-5 2.18-7.62a4.51 4.51 0 00-5.95-3.15c-3.54 1.4-5.1 8.09-4.88 11.48 0 .3.85 4.85.91 4.81h.07c-.25 1.05-.51 2.18-.77 3.43-.46 2.3-1 4.9-1.32 7.77a79.8 79.8 0 00-.71 9.31 58.79 58.79 0 00.7 10.43v.12c-.5-1-2-3.74-2.14-3.93-2-2.78-7.37-7-11-5.87a4.51 4.51 0 00-2.62 6.17c1.05 2.47 4 3.94 6.49 4.56 2.78.69 8.88-.44 9.37-.53a79.14 79.14 0 002.6 10.32c.63 2 1.32 3.94 2 5.9-.46-.85-.88-1.6-.95-1.7-2-2.78-7.37-7-11-5.87a4.51 4.51 0 00-2.62 6.17c1.05 2.48 4 3.94 6.48 4.56s7.73-.23 9.11-.48c.29.75.56 1.5.85 2.25 1.37 3.6 2.76 7.18 4 10.73.44 1.25.83 2.5 1.23 3.75-.41-.75-.77-1.38-.83-1.47-2-2.78-7.38-7-11-5.87a4.51 4.51 0 00-2.63 6.17c1.06 2.47 4 3.94 6.49 4.56s7.22-.16 8.86-.44c.37 1.29.74 2.58 1 3.85.18.87.42 1.7.56 2.58s.3 1.74.45 2.59c.22 1.66.47 3.37.65 5 .13 1.13.24 2.21.35 3.29-.43-1.25-1.31-3.68-1.41-3.88a17.59 17.59 0 00-6-6.44 5.69 5.69 0 00-.52-.85 4.51 4.51 0 00-6.66-.81c-2.8 2.58-1.85 9.38-.43 12.47.09.18 1.22 2.05 2 3.22-.54-.62-1-1.23-1.61-1.86-1.1-1.26-2.24-2.49-3.45-3.81l-1.85-1.88c-.6-.63-1.32-1.23-2-1.86a90.3 90.3 0 00-4.93-4.12c1.1-1 5-4.45 6-6.77s1.77-5.54.5-7.91a4.5 4.5 0 00-6.45-1.87c-3.16 2.13-3.26 9-2.32 12.27.06.2 1 2.47 1.54 3.7-1-.79-2-1.59-3.12-2.36-3.08-2.23-6.28-4.39-9.45-6.55l-2.9-2c.4-.34 5.07-4.38 6.27-7 1.06-2.31 1.77-5.54.5-7.91a4.49 4.49 0 00-6.41-1.79c-3.16 2.12-3.26 9-2.31 12.26.07.24 1.43 3.51 1.81 4.32-2.12-1.48-4.22-3-6.24-4.52a79.82 79.82 0 01-7.76-6.76c.18-.16 5.09-4.36 6.31-7 1.06-2.3 1.78-5.54.51-7.91a4.51 4.51 0 00-6.46-1.81c-3.16 2.13-3.26 9-2.31 12.26.07.26 1.54 3.77 1.85 4.38l-.44-.41a57.56 57.56 0 01-6.43-8.07c-1.07-1.58-2-3.14-2.88-4.68 1-.69 5.5-3.89 6.87-6.16s2.37-5.31 1.37-7.8a4.51 4.51 0 00-6.22-2.52c-3.37 1.77-4.22 8.59-3.64 11.94 0 .18.55 2 1 3.31-.38-.7-.79-1.42-1.14-2.1-1.34-2.55-2.41-5-3.34-7.11-.51-1.23-1-2.35-1.36-3.4.62-1.18 3.07-6 3.23-8.58s-.42-5.83-2.42-7.58a4.51 4.51 0 00-6.68.63c-2.18 3.12.21 9.56 2.27 12.27.18.24 3.38 3.57 3.41 3.51v-.07c.37 1 .78 2.11 1.24 3.29.89 2.17 1.91 4.62 3.19 7.21a79.58 79.58 0 004.57 8.16 59 59 0 006.33 8.31l.09.09c-1-.56-3.73-2-4-2.1-3.17-1.24-10-1.77-12.42 1.18a4.5 4.5 0 001.21 6.59c2.27 1.51 5.55 1.07 7.95.22z"
-          style={{
-            transformOrigin: "62.8525px 375.204px"
-          }}
-          id="elivqbo90v4c"
-          className="animable"
-          fill="#263238"
-        />
-        <path
-          d="M79.6 344.46c.07 0-1-4.5-1.1-4.78-1.15-3.2-5.26-8.7-9.07-8.57a4.52 4.52 0 00-4.16 5.26c.37 2.67 2.84 4.87 5.06 6.11 2.6 1.46 9.26 1.98 9.27 1.98z"
-          style={{
-            transformOrigin: "72.4053px 337.784px"
-          }}
-          id="elz3pymzbni5e"
-          className="animable"
-          fill="#263238"
-        />
-        <path
-          d="M479.23 374.66c-3-.22-8.82-3.47-8.82-3.47s3.31-3.2 3.54-3.38c2.73-2 9.2-4.35 12.3-2.14a4.5 4.5 0 01.56 6.68c-1.81 2.03-5.05 2.49-7.58 2.31z"
-          style={{
-            transformOrigin: "479.224px 369.737px"
-          }}
-          id="elkfqz1cpezel"
-          className="animable"
-          fill="#263238"
-        />
-        <path
-          d="M468.17 390.71c-2.7-.95-7.17-5.26-7.53-5.61a78.69 78.69 0 01-7.87 7.18 157.52 157.52 0 01-4.95 3.79c.85-.45 1.62-.85 1.73-.89 3.17-1.24 10-1.77 12.42 1.18a4.5 4.5 0 01-1.22 6.59c-2.24 1.49-5.52 1.07-7.92.22s-6.32-4.45-7.33-5.42l-1.95 1.41c-3.13 2.24-6.26 4.46-9.27 6.73-1.06.8-2.08 1.63-3.1 2.45.76-.4 1.4-.73 1.51-.77 3.16-1.24 10-1.77 12.42 1.18a4.51 4.51 0 01-1.22 6.6c-2.24 1.48-5.53 1.06-7.92.22s-5.94-4.11-7.15-5.25c-1 .87-2 1.74-3 2.64-.64.62-1.29 1.18-1.89 1.84s-1.21 1.28-1.8 1.92a162.82 162.82 0 00-3.3 3.8c-.73.87-1.42 1.7-2.11 2.55 1.05-.81 3.13-2.35 3.32-2.46 2.94-1.7 9.63-3.27 12.45-.71a4.5 4.5 0 01-.2 6.7c-2 1.8-5.3 1.89-7.8 1.42-2.74-.53-7.63-3.95-8.24-4.38-1.14 1.4-2.23 2.78-3.25 4.09-2.72 3.52-5 6.65-6.75 9.18l-2.25-1.18c1.86-2.56 4.29-5.78 7.22-9.4 1.15-1.43 2.41-2.93 3.72-4.46a48.72 48.72 0 01-3.47-4.59c-2.71 1-8.28.81-9 .79-.17 1.8-.33 3.54-.45 5.2-.32 4.31-.48 8.09-.56 11.12l-2.44-1.29c.15-2.84.39-6.22.75-10 .18-1.83.4-3.77.64-5.77-.7-.2-6.44-1.88-8.57-3.7-1.93-1.65-3.93-4.29-3.77-7a4.5 4.5 0 015.1-4.35c3.76.61 6.72 6.8 7.23 10.16 0 .2.12 2.39.15 3.77.11-.81.2-1.6.32-2.44.22-1.66.49-3.31.78-5.08.16-.85.33-1.71.5-2.58s.42-1.76.63-2.65c.53-2.06 1.16-4.11 1.84-6.17-1.45-.19-6.59-1-8.76-2.31s-4.54-3.65-4.78-6.32a4.51 4.51 0 014.38-5.08c3.81 0 7.68 5.71 8.69 9 .07.21.53 2.62.76 3.95.42-1.24.84-2.47 1.3-3.7 1.35-3.56 2.82-7.12 4.27-10.68.45-1.09.88-2.18 1.31-3.27-.51-.07-6.65-.86-9.08-2.36-2.15-1.34-4.53-3.65-4.78-6.32a4.51 4.51 0 014.38-5.08c3.81 0 7.68 5.71 8.7 8.95.07.25.74 3.72.86 4.61 1-2.4 1.89-4.81 2.72-7.21a79.88 79.88 0 002.74-9.92c-.24 0-6.64-.83-9.13-2.37-2.16-1.34-4.54-3.65-4.79-6.32a4.52 4.52 0 014.39-5.08c3.81 0 7.67 5.71 8.69 8.95.08.26.79 4 .87 4.68 0-.2.11-.39.14-.59a57.61 57.61 0 00.91-10.28c0-1.9-.06-3.72-.18-5.49-1.21 0-6.73-.2-9.12-1.34s-4.91-3.13-5.45-5.76a4.51 4.51 0 013.8-5.53c3.79-.38 8.26 4.83 9.62 7.95.08.17.64 2 1 3.29-.07-.79-.12-1.62-.2-2.38-.29-2.87-.73-5.47-1.15-7.78-.24-1.31-.49-2.48-.73-3.58-1.17-.65-5.86-3.3-7.43-5.38s-2.92-5-2.19-7.62a4.51 4.51 0 015.92-3.15c3.54 1.4 5.1 8.09 4.88 11.48 0 .3-.85 4.85-.91 4.81h-.07c.25 1.05.52 2.18.78 3.43.46 2.3 1 4.9 1.32 7.77a79.89 79.89 0 01.7 9.31 58.76 58.76 0 01-.69 10.43v.12c.5-1 2-3.74 2.14-3.93 2-2.78 7.37-7 11-5.87a4.5 4.5 0 012.62 6.17c-1.05 2.47-4 3.94-6.48 4.56-2.78.69-8.89-.44-9.38-.53a79.14 79.14 0 01-2.6 10.32c-.63 2-1.32 3.94-2 5.9.46-.85.88-1.6.95-1.7 2-2.78 7.38-7 11-5.87a4.51 4.51 0 012.63 6.17c-1.06 2.48-4 3.94-6.49 4.56s-7.73-.23-9.11-.48l-.84 2.25c-1.38 3.6-2.77 7.18-4 10.73-.44 1.25-.83 2.5-1.22 3.75.41-.75.76-1.38.82-1.47 2-2.78 7.38-7 11-5.87a4.51 4.51 0 012.62 6.17c-1.06 2.47-4 3.94-6.49 4.56s-7.22-.16-8.86-.44c-.36 1.29-.73 2.58-1 3.85-.18.87-.42 1.7-.55 2.58s-.3 1.74-.45 2.59c-.23 1.66-.47 3.37-.65 5-.14 1.13-.25 2.21-.36 3.29.43-1.25 1.32-3.68 1.41-3.88A17.54 17.54 0 01410 407a4.41 4.41 0 01.52-.85 4.5 4.5 0 016.65-.81c2.8 2.58 1.86 9.38.43 12.47-.09.18-1.22 2.05-2 3.22.54-.62 1.06-1.23 1.62-1.86 1.1-1.26 2.23-2.49 3.45-3.81l1.84-1.88c.61-.63 1.33-1.23 2-1.86a86.89 86.89 0 014.94-4.12c-1.1-1-5-4.45-6-6.77s-1.78-5.54-.51-7.91a4.51 4.51 0 016.46-1.82c3.16 2.13 3.25 9 2.31 12.27-.06.2-1 2.47-1.54 3.7 1-.79 2.05-1.59 3.12-2.36 3.09-2.23 6.28-4.39 9.46-6.55l2.89-2c-.39-.34-5.07-4.38-6.27-7-1.06-2.31-1.77-5.54-.5-7.91a4.5 4.5 0 016.46-1.81c3.15 2.12 3.25 9 2.31 12.26-.07.24-1.43 3.51-1.82 4.32 2.13-1.48 4.23-3 6.24-4.52a78.65 78.65 0 007.76-6.76c-.18-.16-5.08-4.36-6.31-7-1.06-2.3-1.77-5.54-.5-7.91a4.5 4.5 0 016.45-1.81c3.16 2.13 3.26 9 2.31 12.26-.07.26-1.53 3.77-1.84 4.38l.44-.41a58.21 58.21 0 006.42-8.07c1.07-1.58 2-3.14 2.88-4.68-1-.69-5.5-3.89-6.86-6.16s-2.37-5.31-1.37-7.8a4.51 4.51 0 016.22-2.52c3.37 1.77 4.22 8.59 3.64 11.94 0 .18-.56 2-1 3.31.38-.7.79-1.42 1.15-2.1 1.34-2.55 2.4-5 3.33-7.11.52-1.23 1-2.35 1.37-3.4-.63-1.18-3.07-6-3.24-8.58s.35-5.81 2.38-7.56a4.51 4.51 0 016.68.63c2.18 3.12-.21 9.56-2.26 12.27-.18.24-3.39 3.57-3.42 3.51v-.07c-.36 1-.77 2.11-1.24 3.29-.88 2.17-1.9 4.62-3.19 7.21a79.58 79.58 0 01-4.55 8.16 57.49 57.49 0 01-6.33 8.31l-.09.09c1-.56 3.73-2 4-2.1 3.16-1.24 10-1.77 12.42 1.18a4.5 4.5 0 01-1.22 6.59c-2.24 1.51-5.53 1.07-7.92.22z"
-          style={{
-            transformOrigin: "435.448px 375.204px"
-          }}
-          id="elckug6cnqayc"
-          className="animable"
-          fill="#263238"
-        />
-        <path
-          d="M418.73 344.46c-.07 0 1-4.5 1.09-4.78 1.15-3.2 5.27-8.7 9.07-8.57a4.51 4.51 0 014.16 5.26c-.36 2.67-2.84 4.87-5.05 6.11-2.6 1.46-9.27 1.98-9.27 1.98z"
-          style={{
-            transformOrigin: "425.921px 337.784px"
-          }}
-          id="ellhbnga8lui"
-          className="animable"
-          fill="#263238"
-        />
-      </g>
-      <g
-        id="freepik--Icons--inject-136"
-        className="animable"
-        style={{
-          transformOrigin: "253.86px 166.68px",
-          animation: "1.5s Infinite linear floating",
+          transformOrigin: "250px 228.23px",
+          animation: "1s 1 forwards cubic-bezier(.36,-.01,.5,1.38) zoomOut",
           animationDelay: "0s"
         }}
       >
         <path
           style={{
-            transformOrigin: "92.645px 200.875px"
+            transformOrigin: "250px 382.525px"
           }}
-          id="elnw5u7dpzlh"
+          id="elm4sp0ia1nqj"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M92.23 200.6L93.06 201.15"
+          fill="#ebebeb"
+          d="M0 382.4H500V382.65H0z"
         />
         <path
           style={{
-            transformOrigin: "171.355px 252.055px"
+            transformOrigin: "63.065px 392.045px"
           }}
-          id="elxm4tgkurkoj"
+          id="el2u7usf5lu36"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          strokeDasharray="1.99755,1.99755"
-          d="M94.74 202.24L247.97 301.87"
+          fill="#ebebeb"
+          d="M52.46 391.92H73.67V392.17H52.46z"
         />
         <path
           style={{
-            transformOrigin: "249.225px 302.545px"
+            transformOrigin: "213.625px 389.335px"
           }}
-          id="elp1wsxuul65f"
+          id="elhweabpslh2h"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M248.81 302.42L249.64 302.96 249.1 302.13"
+          fill="#ebebeb"
+          d="M171.14 389.21H256.11V389.46H171.14z"
         />
         <path
           style={{
-            transformOrigin: "182.3px 199.41px"
+            transformOrigin: "86.725px 401.335px"
           }}
-          id="elmwx2084i4r"
+          id="elo7nmoi34zpm"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          strokeDasharray="1.98424,1.98424"
-          d="M248.02 300.46L116.58 98.36"
+          fill="#ebebeb"
+          d="M67.67 401.21H105.78V401.46H67.67z"
         />
         <path
           style={{
-            transformOrigin: "115.76px 97.11px"
+            transformOrigin: "428.305px 399.655px"
           }}
-          id="elr6wtv7pwss"
+          id="eltr3yvff629"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M116.03 97.53L115.49 96.69"
+          fill="#ebebeb"
+          d="M406.71 399.53H449.9V399.78H406.71z"
         />
         <path
           style={{
-            transformOrigin: "406.645px 200.875px"
+            transformOrigin: "397.455px 399.655px"
           }}
-          id="elykwltxkwr7"
+          id="eluj4myhkc9uf"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M407.06 200.6L406.23 201.15"
+          fill="#ebebeb"
+          d="M391.47 399.53H403.44000000000005V399.78H391.47z"
         />
         <path
           style={{
-            transformOrigin: "327.935px 252.055px"
+            transformOrigin: "359.39px 395.435px"
           }}
-          id="elmxj37wgspw"
+          id="elvssxdg6uh1s"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          strokeDasharray="1.99755,1.99755"
-          d="M404.55 202.24L251.32 301.87"
+          fill="#ebebeb"
+          d="M347.89 395.31H370.89V395.56H347.89z"
         />
         <path
           style={{
-            transformOrigin: "250.06px 302.545px"
+            transformOrigin: "312.11px 395.435px"
           }}
-          id="elyczjo01i6"
+          id="el9obpuuzbdor"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M250.48 302.42L249.64 302.96 250.19 302.13"
+          fill="#ebebeb"
+          d="M287.89 395.31H336.33V395.56H287.89z"
+        />
+        <path
+          d="M237 337.8H43.91a5.71 5.71 0 01-5.7-5.71V60.66a5.71 5.71 0 015.7-5.66H237a5.71 5.71 0 015.71 5.71v271.38a5.71 5.71 0 01-5.71 5.71zM43.91 55.2a5.46 5.46 0 00-5.45 5.46v271.43a5.46 5.46 0 005.45 5.46H237a5.47 5.47 0 005.46-5.46V60.66A5.47 5.47 0 00237 55.2z"
+          style={{
+            transformOrigin: "140.46px 196.4px"
+          }}
+          id="els6u93v5x8sa"
+          className="animable"
+          fill="#ebebeb"
+        />
+        <path
+          d="M453.31 337.8h-193.1a5.72 5.72 0 01-5.71-5.71V60.66a5.72 5.72 0 015.71-5.66h193.1a5.71 5.71 0 015.69 5.66v271.43a5.71 5.71 0 01-5.69 5.71zM260.21 55.2a5.47 5.47 0 00-5.46 5.46v271.43a5.47 5.47 0 005.46 5.46h193.1a5.47 5.47 0 005.46-5.46V60.66a5.47 5.47 0 00-5.46-5.46z"
+          style={{
+            transformOrigin: "356.75px 196.4px"
+          }}
+          id="el37g2vejn0s3"
+          className="animable"
+          fill="#ebebeb"
         />
         <path
           style={{
-            transformOrigin: "316.99px 199.41px"
+            transformOrigin: "428.32px 303.245px"
           }}
-          id="elh34arv7bipe"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          strokeDasharray="1.98424,1.98424"
-          d="M251.27 300.46L382.71 98.36"
+          fill="#f0f0f0"
+          transform="rotate(180)"
+          id="el2sdb9uy0f5v"
+          d="M416.32 229.22H440.32V377.27H416.32z"
         />
         <path
           style={{
-            transformOrigin: "383.525px 97.11px"
+            transformOrigin: "361.385px 379.835px"
           }}
-          id="eluenocxpquz9"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M383.25 97.53L383.8 96.69"
+          fill="#f0f0f0"
+          transform="rotate(180)"
+          id="elcbnlyvsjlt6"
+          d="M284.9 377.28H437.87V382.39H284.9z"
         />
         <path
           style={{
-            transformOrigin: "249.64px 66.17px"
+            transformOrigin: "349.555px 303.245px"
           }}
-          id="elr2egl4qn6g"
+          id="eln5354fk8n7g"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M249.64 65.67L249.64 66.67"
+          fill="#f5f5f5"
+          d="M282.79 229.22H416.32000000000005V377.27H282.79z"
         />
         <path
           style={{
-            transformOrigin: "249.64px 184.82px"
+            transformOrigin: "349.555px 319.54px"
           }}
-          id="ely906pay50r"
+          id="el9me52poer4j"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          strokeDasharray="2.01104,2.01104"
-          d="M249.64 68.68L249.64 300.96"
+          fill="#f0f0f0"
+          d="M287.11 306.32H412V332.76H287.11z"
         />
         <path
           style={{
-            transformOrigin: "249.64px 302.46px"
+            transformOrigin: "349.555px 354.14px"
           }}
-          id="el6ysulsoi7n3"
+          id="elhbgr9biheh9"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M249.64 301.96L249.64 302.96"
+          fill="#f0f0f0"
+          d="M287.11 340.92H412V367.36H287.11z"
+        />
+        <rect
+          x={297.62}
+          y={304.69}
+          width={103.87}
+          height={3.63}
+          rx={1.18}
+          style={{
+            transformOrigin: "349.555px 306.505px"
+          }}
+          className="animable"
+          fill="#f5f5f5"
+          transform="rotate(180)"
+          id="eltmpt1ayv67"
+        />
+        <rect
+          x={297.62}
+          y={339.3}
+          width={103.87}
+          height={3.63}
+          rx={1.18}
+          style={{
+            transformOrigin: "349.555px 341.115px"
+          }}
+          className="animable"
+          fill="#f5f5f5"
+          transform="rotate(180)"
+          id="elfcs8ko92wu"
+        />
+        <path
+          style={{
+            transformOrigin: "349.555px 250.61px"
+          }}
+          id="eli5njiheyca"
+          className="animable"
+          fill="#f0f0f0"
+          d="M287.11 237.39H412V263.83H287.11z"
+        />
+        <path
+          style={{
+            transformOrigin: "349.555px 284.93px"
+          }}
+          id="elxr43l6nc6mc"
+          className="animable"
+          fill="#f0f0f0"
+          d="M287.11 271.71H412V298.15H287.11z"
+        />
+        <rect
+          x={297.62}
+          y={235.77}
+          width={103.87}
+          height={3.63}
+          rx={1.18}
+          style={{
+            transformOrigin: "349.555px 237.585px"
+          }}
+          className="animable"
+          fill="#f5f5f5"
+          transform="rotate(180)"
+          id="elq68z6v2140q"
+        />
+        <rect
+          x={297.62}
+          y={270.09}
+          width={103.87}
+          height={3.63}
+          rx={1.18}
+          style={{
+            transformOrigin: "349.555px 271.905px"
+          }}
+          className="animable"
+          fill="#f5f5f5"
+          transform="rotate(180)"
+          id="elgyh9i8p42b"
+        />
+        <path
+          d="M366.3 201a9.57 9.57 0 11-10.3-8.8 9.57 9.57 0 0110.3 8.8z"
+          style={{
+            transformOrigin: "356.759px 201.74px"
+          }}
+          id="elrrjlo2rql4f"
+          className="animable"
+          fill="#e0e0e0"
+        />
+        <path
+          d="M350 207.3a7.16 7.16 0 11-7.72-6.55 7.16 7.16 0 017.72 6.55z"
+          style={{
+            transformOrigin: "342.864px 207.886px"
+          }}
+          id="el31wfrz038xd"
+          className="animable"
+          fill="#e0e0e0"
         />
         <circle
-          cx={251.51}
-          cy={61.15}
-          r={30.75}
+          cx={328.22}
+          cy={207.2}
+          r={9.3}
           style={{
-            transformOrigin: "251.51px 61.15px"
+            transformOrigin: "328.22px 207.2px"
           }}
-          id="elq4gezkd1wc"
           className="animable"
-          fill="#263238"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          strokeWidth="2px"
+          fill="#e0e0e0"
+          transform="rotate(-49.7)"
+          id="el58zkn2zjrws"
         />
         <path
-          d="M251.51 61.15l25.88-16.6a30.82 30.82 0 00-16.3-12.62z"
+          d="M375 207.3a7.16 7.16 0 11-7.72-6.55 7.15 7.15 0 017.72 6.55z"
           style={{
-            transformOrigin: "264.45px 46.54px"
+            transformOrigin: "367.864px 207.886px"
           }}
-          id="elwks0dc2awe"
+          id="elt1q965luxhi"
+          className="animable"
+          fill="#e0e0e0"
+        />
+        <path
+          d="M327.17 207.3a7.16 7.16 0 11-7.72-6.55 7.16 7.16 0 017.72 6.55z"
+          style={{
+            transformOrigin: "320.034px 207.886px"
+          }}
+          id="ele53evbvyzxj"
+          className="animable"
+          fill="#e0e0e0"
+        />
+        <path
+          d="M380.47 205.28a5.07 5.07 0 11-5.47-4.64 5.06 5.06 0 015.47 4.64z"
+          style={{
+            transformOrigin: "375.417px 205.692px"
+          }}
+          id="elitxqlidef1"
+          className="animable"
+          fill="#e0e0e0"
+        />
+        <path
+          d="M394.79 205.68a7.16 7.16 0 11-7.73-6.55 7.17 7.17 0 017.73 6.55z"
+          style={{
+            transformOrigin: "387.654px 206.266px"
+          }}
+          id="el2r3xns9lgc5"
+          className="animable"
+          fill="#e0e0e0"
+        />
+        <path
+          d="M403 207.36s-1.23 21.86-48.32 21.86-48.32-21.86-48.32-21.86z"
+          style={{
+            transformOrigin: "354.68px 218.29px"
+          }}
+          id="ellnipuwozt8o"
+          className="animable"
+          fill="#f0f0f0"
+        />
+        <path
+          style={{
+            transformOrigin: "152.955px 283.365px"
+          }}
+          id="eloai2440a2k"
+          className="animable"
+          fill="#f0f0f0"
+          d="M94 184.3L219.75 184.3 211.91 382.43 86.16 382.43 94 184.3z"
+        />
+        <path
+          style={{
+            transformOrigin: "151.13px 283.365px"
+          }}
+          id="eldnis4xp1qgm"
+          className="animable"
+          fill="#f5f5f5"
+          d="M92.18 184.3L217.93 184.3 210.09 382.43 84.33 382.43 92.18 184.3z"
+        />
+        <path
+          d="M122 220.62c15.47-22.45 54.42-11.3 59.76 11.31s-11 75.65-43.58 68.83-45.03-38.31-16.18-80.14z"
+          style={{
+            transformOrigin: "144.296px 254.864px"
+          }}
+          id="el8ya59zrze85"
+          className="animable"
+          fill="#fafafa"
+        />
+        <path
+          d="M177.29 346.28c-7.94 7.44-22.18-.23-22.33-9.5s10.73-28.57 22.86-23.12 14.28 18.77-.53 32.62z"
+          style={{
+            transformOrigin: "171.313px 330.99px"
+          }}
+          id="eluga0rkte9e8"
+          className="animable"
+          fill="#fafafa"
+        />
+        <path
+          style={{
+            transformOrigin: "253.52px 109.97px"
+          }}
+          className="animable"
+          fill="#e6e6e6"
+          transform="rotate(180)"
+          id="el9xezrsrcow"
+          d="M86.42 70.15H420.62V149.79000000000002H86.42z"
+        />
+        <path
+          style={{
+            transformOrigin: "250.795px 109.97px"
+          }}
+          className="animable"
+          fill="#f0f0f0"
+          transform="rotate(180)"
+          id="elwjyhz9kjkq"
+          d="M82.71 70.15H418.88V149.79000000000002H82.71z"
+        />
+        <path
+          style={{
+            transformOrigin: "253.52px 150.71px"
+          }}
+          className="animable"
+          fill="#e6e6e6"
+          transform="rotate(180)"
+          id="el5lwbmhenwl8"
+          d="M86.42 149.8H420.62V151.62H86.42z"
+        />
+        <path
+          style={{
+            transformOrigin: "244.615px 150.71px"
+          }}
+          className="animable"
+          fill="#f0f0f0"
+          transform="rotate(180)"
+          id="el5ua8ylq40ij"
+          d="M76.53 149.8H412.70000000000005V151.62H76.53z"
+        />
+        <path
+          style={{
+            transformOrigin: "250.795px 109.98px"
+          }}
+          className="animable"
+          fill="#fafafa"
+          transform="rotate(90)"
+          id="elj0qd775ci3g"
+          d="M216.17 -52.91H285.41999999999996V272.87H216.17z"
+        />
+        <path
+          style={{
+            transformOrigin: "189.825px 109.975px"
+          }}
+          id="el674snuhai8e"
+          className="animable"
+          fill="#fff"
+          d="M208.34 144.6L193.88 75.35 171.31 75.35 185.77 144.6 208.34 144.6z"
+        />
+        <path
+          style={{
+            transformOrigin: "345.99px 109.975px"
+          }}
+          id="elvi6q4r129o8"
+          className="animable"
+          fill="#fff"
+          d="M364.5 144.6L350.05 75.35 327.48 75.35 341.94 144.6 364.5 144.6z"
+        />
+        <path
+          d="M411.28 139.43a.37.37 0 00.37-.37V78.73a.38.38 0 00-.37-.37.37.37 0 00-.37.37v60.33a.36.36 0 00.37.37z"
+          style={{
+            transformOrigin: "411.28px 108.895px"
+          }}
+          id="el4meomm1dg57"
+          className="animable"
+          fill="#f0f0f0"
+        />
+        <path
+          style={{
+            transformOrigin: "169.3px 109.975px"
+          }}
+          id="el8bsu0vlfl4e"
+          className="animable"
+          fill="#fff"
+          d="M180.93 144.6L166.47 75.35 157.67 75.35 172.13 144.6 180.93 144.6z"
+        />
+        <path
+          style={{
+            transformOrigin: "88.235px 109.98px"
+          }}
+          className="animable"
+          fill="#e6e6e6"
+          transform="rotate(90)"
+          id="el0we2rpub7lzh"
+          d="M53.61 109.65H122.86V110.31H53.61z"
+        />
+        <path
+          style={{
+            transformOrigin: "248.815px 80.275px"
+          }}
+          className="animable"
+          fill="#ebebeb"
+          opacity={0.6}
+          id="el9oi6iize3m"
+          d="M81.48 83.18L415.68 83.18 416.15 77.37 81.96 77.37 81.48 83.18z"
+        />
+        <path
+          style={{
+            transformOrigin: "248.815px 83.555px"
+          }}
+          className="animable"
+          fill="#ebebeb"
+          opacity={0.6}
+          id="el3rz7mr9sxry"
+          d="M81.48 86.46L415.68 86.46 416.15 80.65 81.96 80.65 81.48 86.46z"
+        />
+        <path
+          style={{
+            transformOrigin: "248.815px 86.835px"
+          }}
+          className="animable"
+          fill="#ebebeb"
+          opacity={0.6}
+          id="elpzmpm9ohykl"
+          d="M81.48 89.74L415.68 89.74 416.15 83.93 81.96 83.93 81.48 89.74z"
+        />
+        <path
+          style={{
+            transformOrigin: "248.815px 90.115px"
+          }}
+          className="animable"
+          fill="#ebebeb"
+          opacity={0.6}
+          id="els67y758c9g"
+          d="M81.48 93.02L415.68 93.02 416.15 87.21 81.96 87.21 81.48 93.02z"
+        />
+        <path
+          style={{
+            transformOrigin: "248.815px 93.395px"
+          }}
+          className="animable"
+          fill="#ebebeb"
+          opacity={0.6}
+          id="elkbyxptb7u5s"
+          d="M81.48 96.3L415.68 96.3 416.15 90.49 81.96 90.49 81.48 96.3z"
+        />
+        <path
+          style={{
+            transformOrigin: "248.815px 96.675px"
+          }}
+          className="animable"
+          fill="#ebebeb"
+          opacity={0.6}
+          id="elqy0rvzt9j9q"
+          d="M81.48 99.58L415.68 99.58 416.15 93.77 81.96 93.77 81.48 99.58z"
+        />
+      </g>
+      <g
+        id="freepik--Shadow--inject-22"
+        className="animable"
+        style={{
+          transformOrigin: "250px 416.24px",
+          animation: "1s 1 forwards cubic-bezier(.36,-.01,.5,1.38) slideDown",
+          animationDelay: "0s"
+        }}
+      >
+        <ellipse
+          id="freepik--path--inject-22"
+          cx={250}
+          cy={416.24}
+          rx={193.89}
+          ry={11.32}
+          style={{
+            transformOrigin: "250px 416.24px"
+          }}
+          className="animable"
+          fill="#f5f5f5"
+        />
+      </g>
+      <g
+        id="freepik--online-world--inject-22"
+        className="animable"
+        style={{
+          transformOrigin: "303.112px 263.84px",
+          animation: "1s 1 forwards cubic-bezier(.36,-.01,.5,1.38) zoomOut",
+          animationDelay: "0s"
+        }}
+      >
+        <path
+          d="M364.14 416.24H234.88a13.94 13.94 0 01-14-14.62l11.75-275.56a15.44 15.44 0 0115.24-14.62h129.26a13.93 13.93 0 0114 14.62l-11.75 275.56a15.45 15.45 0 01-15.24 14.62z"
+          style={{
+            transformOrigin: "306.005px 263.84px"
+          }}
+          id="el5mnitvd1qm"
           className="animable"
           fill="#508ebc"
-          stroke="#263238"
-          strokeMiterlimit={10}
         />
         <path
-          d="M251.51 61.15L266 88.26a30.75 30.75 0 0011.35-43.71z"
+          d="M385.62 221.17h-.89a3.13 3.13 0 01-3.14-3.28l2.21-51.8a3.47 3.47 0 013.42-3.28h.89a3.12 3.12 0 013.13 3.28l-2.2 51.8a3.47 3.47 0 01-3.42 3.28z"
           style={{
-            transformOrigin: "266.866px 66.405px"
+            transformOrigin: "386.415px 191.99px"
           }}
-          id="elxxb4cx4ri9h"
+          id="elql5vqv01cwq"
           className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeMiterlimit={10}
+          fill="#508ebc"
         />
-        <circle
-          cx={378.67}
-          cy={96.5}
-          r={30.74}
+        <path
+          d="M229.46 182.79h-2.25a2.46 2.46 0 01-2.48-2.59l.63-14.79a2.74 2.74 0 012.7-2.6h2.25a2.48 2.48 0 012.49 2.6l-.63 14.79a2.74 2.74 0 01-2.71 2.59z"
           style={{
-            transformOrigin: "378.67px 96.5px"
+            transformOrigin: "228.765px 172.8px"
           }}
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          transform="rotate(-45)"
-          id="elxbobe8cqs7s"
-        />
-        <circle
-          cx={378.67}
-          cy={96.5}
-          r={26.65}
-          style={{
-            transformOrigin: "378.67px 96.5px"
-          }}
-          id="elt4fv3lwh1rt"
+          id="el3nknmv9uoia"
           className="animable"
           fill="#263238"
         />
         <path
+          d="M228.34 209.21h-2.26a2.47 2.47 0 01-2.48-2.59l.63-14.8a2.74 2.74 0 012.7-2.59h2.26a2.47 2.47 0 012.48 2.59l-.63 14.8a2.74 2.74 0 01-2.7 2.59z"
           style={{
-            transformOrigin: "381.095px 96.495px"
+            transformOrigin: "227.635px 199.22px"
           }}
-          id="elsdbyw6cl84p"
-          className="animable"
-          fill="#fff"
-          d="M394 96.5L368.19 81.59 368.19 111.4 394 96.5z"
-        />
-        <circle
-          cx={422.72}
-          cy={196.79}
-          r={32.08}
-          style={{
-            transformOrigin: "422.72px 196.79px"
-          }}
+          id="elxjviue8vim"
           className="animable"
           fill="#263238"
-          transform="rotate(-76.53)"
-          id="elf5sghdw4el6"
-        />
-        <circle
-          cx={422.72}
-          cy={196.79}
-          r={22.91}
-          style={{
-            transformOrigin: "422.72px 196.79px"
-          }}
-          className="animable"
-          fill="#fff"
-          transform="rotate(-76.58)"
-          id="elbwo1l77fh3w"
-        />
-        <circle
-          cx={422.72}
-          cy={196.79}
-          r={13.75}
-          style={{
-            transformOrigin: "422.72px 196.79px"
-          }}
-          className="animable"
-          fill="#263238"
-          transform="rotate(-76.64)"
-          id="eldblhx0r4evg"
-        />
-        <circle
-          cx={422.72}
-          cy={196.79}
-          r={7.4}
-          style={{
-            transformOrigin: "422.72px 196.79px"
-          }}
-          className="animable"
-          fill="#fff"
-          transform="rotate(-76.67)"
-          id="elfgksn9w3rk"
         />
         <path
-          d="M463.6 181.4l-4.08-1.59 1.78-.87a.85.85 0 10-.74-1.53l-1.29.63 2.05-4.44-7.61 3.4-1.11 4.27L422.35 196a.85.85 0 00-.39 1.14.83.83 0 001.13.39l30.35-14.78 3.31 1.87z"
+          d="M360.66 416.24H231.4a13.92 13.92 0 01-14-14.62l11.74-275.56a15.44 15.44 0 0115.24-14.62h129.27a13.93 13.93 0 0114 14.62L375.9 401.62a15.44 15.44 0 01-15.24 14.62z"
           style={{
-            transformOrigin: "442.736px 185.61px"
+            transformOrigin: "302.525px 263.84px"
           }}
-          id="elzku3snhxto"
+          id="eldw3lbrqu02q"
           className="animable"
           fill="#263238"
         />
-        <circle
-          cx={118.17}
-          cy={95.16}
-          r={32.07}
+        <path
+          d="M360.66 416.24H231.4a13.92 13.92 0 01-14-14.62l11.74-275.56a15.44 15.44 0 0115.24-14.62h129.27a13.93 13.93 0 0114 14.62L375.9 401.62a15.44 15.44 0 01-15.24 14.62z"
           style={{
-            transformOrigin: "118.17px 95.16px"
+            transformOrigin: "302.525px 263.84px"
           }}
-          id="elte6kts62yn7"
+          className="animable"
+          fill="#508ebc"
+          opacity={0.6}
+          id="elwzxfpjr3nc"
+        />
+        <path
+          d="M306.66 397.65a10.37 10.37 0 01-10.26 9.84 9.34 9.34 0 01-9.41-9.84 10.35 10.35 0 0110.25-9.83 9.35 9.35 0 019.42 9.83z"
+          style={{
+            transformOrigin: "296.824px 397.655px"
+          }}
+          className="animable"
+          fill="#508ebc"
+          opacity={0.5}
+          id="el8te0oh9b1yw"
+        />
+        <path
+          d="M369.93 380.46H225.17a3.22 3.22 0 01-3.24-3.39L232 141a3.56 3.56 0 013.53-3.39h144.75a3.22 3.22 0 013.25 3.39l-10.06 236.07a3.57 3.57 0 01-3.54 3.39z"
+          style={{
+            transformOrigin: "302.73px 259.035px"
+          }}
           className="animable"
           fill="#fff"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          strokeWidth="2px"
+          opacity={0.8}
+          id="el09cgff5q4ibl"
+        />
+        <path
+          d="M280.33 124.4a4.2 4.2 0 014.15-4 3.78 3.78 0 013.81 4 4.19 4.19 0 01-4.15 4 3.78 3.78 0 01-3.81-4z"
+          style={{
+            transformOrigin: "284.31px 124.4px"
+          }}
+          className="animable"
+          fill="#508ebc"
+          opacity={0.5}
+          id="el4rirca2uoyf"
+        />
+        <path
+          d="M298.24 120.41h33.1a3.8 3.8 0 013.81 4 4.2 4.2 0 01-4.15 4h-33.1a3.79 3.79 0 01-3.81-4 4.21 4.21 0 014.15-4z"
+          style={{
+            transformOrigin: "314.62px 124.41px"
+          }}
+          className="animable"
+          fill="#508ebc"
+          opacity={0.5}
+          id="ele1gm3m6vtvo"
         />
         <ellipse
-          cx={118.17}
-          cy={95.16}
-          rx={23.26}
-          ry={32.07}
+          cx={301.7}
+          cy={272.14}
+          rx={62.62}
+          ry={60}
           style={{
-            transformOrigin: "118.17px 95.16px"
+            transformOrigin: "301.7px 272.14px"
           }}
-          id="el7z19l0ef4gv"
           className="animable"
           fill="#fff"
-          stroke="#263238"
-          strokeMiterlimit={10}
-        />
-        <ellipse
-          cx={118.17}
-          cy={95.16}
-          rx={9.9}
-          ry={32.07}
-          style={{
-            transformOrigin: "118.17px 95.16px"
-          }}
-          id="el027lm4qb3sy7"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeMiterlimit={10}
+          transform="rotate(-44.39)"
+          id="ele1kg89oowd"
         />
         <path
           style={{
-            transformOrigin: "118.455px 68.07px"
+            transformOrigin: "316.445px 259.72px"
           }}
-          id="elt9qegcdwweh"
+          id="elklw0yehv4lr"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M101.18 68.07L135.73 68.07"
+          fill="#508ebc"
+          d="M312.23 262.25L313.18 262.25 315.36 261.15 317.06 261.15 318.52 261.83 320.12 261.83 320.73 261.48 320.77 260.49 319.89 260.08 318.65 258.79 318.7 257.55 317.71 257.55 316.87 258.36 315.76 257.19 314.47 257.19 312.36 260.68 312.82 261.52 312.12 261.98 312.23 262.25z"
         />
         <path
           style={{
-            transformOrigin: "118.145px 80.64px"
+            transformOrigin: "326.36px 261.31px"
           }}
-          id="el2lghynac41i"
+          id="elz2jqb46e8p"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M89.56 80.64L146.73 80.64"
+          fill="#508ebc"
+          d="M325.04 263.19L324.99 264.4 326.06 265.53 328.27 265.53 328.36 263.22 327.87 263.22 327.96 261.05 327.05 260.1 327.11 258.6 328.06 258.6 328.12 257.28 326.74 257.09 324.41 259.33 324.36 260.57 325.64 261.92 325.61 262.64 325.04 263.19z"
         />
         <path
+          d="M249.05 296l-4-4.18.13-3.08 3.32-3.18.07-1.59-1.68-1.76h-3.32l.07-1.7-3.14-1.51a58.6 58.6 0 0010.08 29.14l1.28-7.46-2.88-3z"
           style={{
-            transformOrigin: "118.22px 93.2px"
+            transformOrigin: "246.18px 293.57px"
           }}
-          id="ele8iyi75razh"
+          id="el17p7csgce8l"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M86.26 93.2L150.18 93.2"
+          fill="#508ebc"
         />
         <path
+          d="M362.94 273l-3.32 1.48h-1.17l-1.24 1.19v1.06l1.66 1.73-.09 2.15-2.59 1.65v-.65l-1.85-1.94h-1.13l-.11 2.45 2 2.73-.07 1.55.5.52h-.71l-1.4-1.8.05-1.32-.94-1.21.12-2.81-.6-2.81h-.34l-.64.62h-.59l.08-1.82-1.32-1.38v-1H349l-.76.73h-1.54l-4.17 4-.1 2.26-1.24 2.17-.82-.37-1.24-3.05-.69-3.93-1.35-.52-2.24-3.48h-5.12l-.46-.53h-2l-1.52-1.05-.42-1.36h-1l-.47.35.93 2.57 1.61 2 1.73-1.66h.45l.25.75 1.56 1.38-1.2 1.41-.21.85-3.11 2.27-5.4 1.78-.29-3.06-1.83-2.34-1-2.78-2-2.77v.65l1.79 6.82 3.26 5.08 3.6-.56-.1 2.21-1.9 2.89-5.22 4.77-.1 2.35.9 4.07-3.33 3.59-.11 2.48-3.1 3.81v.86l-4.14 2.35h-1.95l-.6-1.06L302 299l.1-2.38.52-.73.09-2.15-2.18-5.16.06-1.37.5-.32v-1.3l-.37-.62h-1.92l-.89-1.19h-2.43l-3.21.57h-3.88l-3.22-5.35.23-5.37 7.05-8.66 4.32-1.19h4.66l.32 2.3 4.67 2 1.08-1h2.5l.75.78h4.4l1.45-2.51.06-1.19-.33-.35h-.49l-.36.34h-.77l-.38-.39h-.67l-.4.39h-.52l-.42-.45-.94-1 .08-2H310l-.66.34.24 1.56-.64.28v.75l-.46-.24-1.13-2.39v-1.13l-1.48-1-1.79-1.87h-.74v.87l1 .85.08.66 2.23 1.7-.22.47-.1-.47h-.57l.09.73-1.08 1.11-.33.8-.94-1h1.2l.53-.5v-.94l-3-2.34-.25-.81h-1.05l-1.09.83H299l-.61-.28-1 .62v.62l-1.63 1.57v.81l-1.31 1.37h-1.25l-.52.33h-.63l-.28-.45-1.4-.28.08-1.85.86-.82V259h3.89l.22-2.39-1.63-1.54 6.32-4.16 1.65-.69.1-2.19.88-.85-.12 2.8 3.29-.45h2.88l.09-2.14.68-.65.42.44h.57l.07-1.72h2.21l.82-.78H310l-.74-.77.09-1.9 2.1-2v-1H310l-3.8 3.64-.2 5.15-1.75.65-1-2.59-2.26.89-.85-.89.1-2.43 6.52-7.69 7.13-2.1L320 237l-1.14 1.09h-3.76l3 3.16 3.48-2 12.26-3.8 13.74-5.79a58.48 58.48 0 00-43.32-18.75 62.7 62.7 0 00-27.47 6.36l2.85-.3 9 2.65-5 15-6.65 2.7-4.51 2.21-1.63 5.18-3.61-1.35-2.51-5.61.72-1.72-2-8.53-1.46-.31a65.83 65.83 0 00-7.09 7.37l3.32 3-1.84 5.14-4.17-2.75.91-1.88-.54-.56a64.5 64.5 0 00-7.11 12.44l2 1.19 2.48-2.37.25-6.07 8 3.59 4.18 5.23-1.89 1.81h-3.8l1.06 3.53-11 10.36 1.28 3.2-.78.75-2.34-2.45h-4.23c-.11 1.14-.2 2.3-.25 3.46s-.06 2.53 0 3.78h.16l1.27-1.21h1.86l-1 1-.11 2.59h2.26l.72 2.8h1.81l1.77 1.86 1.92-1.88 11.37 4.26 1.23 2.75 4.17 2 2.64.16 2.86 2.48-2.78 4.42-1.56 5.07-4.17 1.62-9.1 10.77a58 58 0 0031.09 17.6l.92-.44 8.64-.61 5.86-.49 1.88-1 4.84.17 3.61 1-.86.32 1.43.71a65.07 65.07 0 0046.53-41.92l-1.2-2.22 2.42-1.58a61.61 61.61 0 002.03-13.19zm-32.55-44.7l5.26-1.86H338l-6.93 3.07-1.48 2.49 1.42 1.74-1.85-.24-1-1.66zm-17.45-6.25l-1.59.71-3.31-1.1zm-6.35 0l3.53 1.56 1.73 1.13-2 .32-.43-1.13-1.12-.28-1.53 2.63-2.27-2.88-.28-1zm-56.26 53.53l-1-.23-4.1-1.67.91-.39 4.26 1.46zm2.78 1.07h-2.18l.61-1.07 2.43.25zm39.74-29.83l1.18-.57 1 2.05 1.84 3.53-3.67 1.46.77-3.52-1.3-1.28zm-2.26 2.69h2l-.46 2.26h-1.82zm-4.35-8.63l-.88.27-1.61-.33-.34-.93.4-.44 3.33-.77 1.67.77-.33.62-1.77.23zm36.56 60.27l-1.71 3.05h-1.16l-.49-.51.1-2.24.59-.57-.36-.38.1-2 2.28-1.17.91-1.4.24 1.54zm33.47-9.69h-1.18l-2.74-4-1.71-2.63 1.41.12 4.29 4.82z"
           style={{
-            transformOrigin: "117.985px 105.77px"
+            transformOrigin: "301.664px 271.579px"
           }}
-          id="elqxfl7cn6kji"
+          id="elvnpik2zmdqq"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M87.67 105.77L148.3 105.77"
+          fill="#508ebc"
         />
         <path
+          d="M324.35 309.19l-6.24 21.27a60.11 60.11 0 007.87-3.1z"
           style={{
-            transformOrigin: "118.455px 118.33px"
+            transformOrigin: "322.045px 319.825px"
           }}
-          id="eld600kdlx7y8"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M96.31 118.33L140.6 118.33"
-        />
-        <circle
-          cx={76.19}
-          cy={196.79}
-          r={32.07}
-          style={{
-            transformOrigin: "76.19px 196.79px"
-          }}
-          id="elp48f08z4q8"
           className="animable"
           fill="#263238"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          strokeWidth="2px"
+          opacity={0.3}
+          id="elvrcivcazmv7"
         />
         <path
+          d="M292.13 167.57c.36-8.6 7.15-15.57 15.16-15.57s14.2 7 13.84 15.57c-.67 15.68-15.54 24.42-15.54 24.42s-14.13-8.74-13.46-24.42z"
           style={{
-            transformOrigin: "75.245px 198.645px"
+            transformOrigin: "306.626px 171.995px"
           }}
-          id="eluyi4jhkvymo"
+          className="animable"
+          fill="#508ebc"
+          opacity={0.9}
+          id="elu9z3tdrgj3"
+        />
+        <path
+          d="M355.15 341.36l-30.8-32.18-2 45.5 10.88-10.43 3.2 8.6a3.65 3.65 0 004.85 2 3.93 3.93 0 002.26-4.94l-3.2-8.6z"
+          style={{
+            transformOrigin: "338.75px 332.167px"
+          }}
+          id="elow6pabkcko"
           className="animable"
           fill="#fff"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          strokeWidth="2px"
-          d="M53.98 181.63H96.50999999999999V215.66H53.98z"
-        />
-        <path
-          style={{
-            transformOrigin: "75.245px 188.54px"
-          }}
-          id="el0wfmahngvgj"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          strokeWidth="2px"
-          d="M51.32 181.63H99.17V195.45H51.32z"
-        />
-        <path
-          d="M75.2 181.29s-10-11.71-11.71-11.15-6.13 8.36-3.62 9.2 15.33 1.95 15.33 1.95z"
-          style={{
-            transformOrigin: "67.1581px 175.705px"
-          }}
-          id="elhcd0dey9yew"
-          className="animable"
-          fill="#508ebc"
-        />
-        <path
-          d="M75.29 181.29s10-11.71 11.71-11.15 6.14 8.36 3.63 9.2-15.34 1.95-15.34 1.95z"
-          style={{
-            transformOrigin: "83.3363px 175.705px"
-          }}
-          id="el3as0i5s3r9s"
-          className="animable"
-          fill="#508ebc"
-        />
-        <path
-          style={{
-            transformOrigin: "75.205px 193.84px"
-          }}
-          id="elntkah93xwrk"
-          className="animable"
-          fill="#508ebc"
-          d="M78.27 205.55L75.26 200.32 72.14 205.55 72.14 182.13 78.27 182.13 78.27 205.55z"
         />
       </g>
       <g
-        id="freepik--Mail--inject-136"
+        id="freepik--Character--inject-22"
         className="animable"
         style={{
-          transformOrigin: "251.48px 329.69px"
+          transformOrigin: "182.915px 254.253px",
+          animation: "1s 1 forwards cubic-bezier(.36,-.01,.5,1.38) fadeIn",
+          animationDelay: "0s"
         }}
       >
         <path
+          d="M158.24 151.3c-1.85 5.11-3.72 10.32-5.5 15.47-.91 2.58-1.77 5.16-2.6 7.73s-1.6 5.13-2.23 7.61c-.32 1.23-.59 2.45-.76 3.52-.09.54-.12 1-.16 1.36s0 1 0 1.52a48.89 48.89 0 001.24 7.37c1.21 5.14 2.77 10.45 4.31 15.68l-5.34 2.51a94 94 0 01-7.91-15.36 47.84 47.84 0 01-2.67-8.83 22.74 22.74 0 01-.33-2.63 19.59 19.59 0 01.06-2.8c.15-1.7.39-3.22.66-4.7a157.22 157.22 0 014.45-16.75c1.72-5.4 3.57-10.67 5.66-16z"
           style={{
-            transformOrigin: "251.48px 305.28px"
+            transformOrigin: "147.253px 180.535px"
           }}
-          id="elrn5yk2ggseq"
+          id="elkjqup58i2c"
+          className="animable"
+          fill="#b55b52"
+        />
+        <path
+          d="M150.9 209l4.45 5.74-8.2 3.88s-2.34-3.78-.93-7.32z"
+          style={{
+            transformOrigin: "150.559px 213.81px"
+          }}
+          id="elxobbmtzfnko"
+          className="animable"
+          fill="#b55b52"
+        />
+        <path
+          style={{
+            transformOrigin: "152.61px 219.075px"
+          }}
+          id="elga4ydvk7q9j"
+          className="animable"
+          fill="#b55b52"
+          d="M158.07 219.69L152.09 223.42 147.15 218.61 155.35 214.73 158.07 219.69z"
+        />
+        <path
+          d="M186.67 113.65c-.07.63.2 1.17.62 1.22s.8-.43.87-1.06-.21-1.17-.62-1.22-.8.41-.87 1.06z"
+          style={{
+            transformOrigin: "187.415px 113.73px"
+          }}
+          id="elp4ula3ka8u9"
           className="animable"
           fill="#263238"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M90.39 285.14L249.53 195.57 412.57 285.14 412.57 414.99 92.35 414.99 90.39 285.14z"
         />
         <path
+          d="M186.82 114.82a22.61 22.61 0 002.41 5.71 3.65 3.65 0 01-3.07.24z"
           style={{
-            transformOrigin: "251.49px 325.66px"
+            transformOrigin: "187.695px 117.91px"
           }}
-          id="elo4zhry5m1ca"
+          id="elp0c8c8wl43j"
           className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M132.38 219.73H370.6V431.59000000000003H132.38z"
+          fill="#a02724"
         />
         <path
+          d="M184.75 109.9a.36.36 0 01-.21-.17.37.37 0 01.14-.51 3.72 3.72 0 013.39-.21.39.39 0 01.16.51.38.38 0 01-.5.16 2.94 2.94 0 00-2.69.19.37.37 0 01-.29.03z"
           style={{
-            transformOrigin: "250.02px 256.83px"
+            transformOrigin: "186.379px 109.308px"
           }}
-          id="elux9xncb7at"
+          id="elk34eios53p"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M159.71 256.83L340.33 256.83"
+          fill="#263238"
         />
         <path
+          d="M166.47 118.31c1.13 5.74 2.25 16.27-1.77 20.1 0 0 1.58 5.83 12.25 5.83 11.74 0 5.61-5.83 5.61-5.83-6.41-1.53-6.24-6.28-5.13-10.75z"
           style={{
-            transformOrigin: "250.02px 275.38px"
+            transformOrigin: "174.43px 131.275px"
           }}
-          id="el4yy3u5af673"
+          id="elqswxy0qmuw"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M159.71 275.38L340.33 275.38"
+          fill="#b55b52"
         />
         <path
+          d="M161.31 141.37c-1.06-.7.32-4.37 1.38-5 2.81-1.7 15.27-2.27 20.46 1a5.14 5.14 0 011 4.31z"
           style={{
-            transformOrigin: "250.02px 293.93px"
+            transformOrigin: "172.6px 138.341px"
           }}
-          id="elrme5s3l1djm"
+          id="el6ydartvv6vi"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M159.71 293.93L340.33 293.93"
+          fill="#263238"
         />
         <path
+          d="M132.31 407.62a2.48 2.48 0 001.94-.21.75.75 0 00.14-.87.83.83 0 00-.5-.52c-1.09-.45-3.47.66-3.57.71a.18.18 0 00-.11.17.2.2 0 00.11.17 9.91 9.91 0 001.99.55zm1.21-1.32l.22.06a.54.54 0 01.3.31c.12.33 0 .44 0 .47-.4.38-2 .13-3.11-.26a6.21 6.21 0 012.59-.58z"
           style={{
-            transformOrigin: "250.02px 312.48px"
+            transformOrigin: "132.34px 406.821px"
           }}
-          id="el8zwbf44avre"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M159.71 312.48L340.33 312.48"
-        />
-        <path
-          style={{
-            transformOrigin: "250.02px 331.03px"
-          }}
-          id="elr34vmnoxnp"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M159.71 331.03L340.33 331.03"
-        />
-        <path
-          style={{
-            transformOrigin: "250.02px 349.58px"
-          }}
-          id="eltlezdu39njp"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M159.71 349.58L340.33 349.58"
-        />
-        <path
-          style={{
-            transformOrigin: "251.48px 374.475px"
-          }}
-          id="elkokngryrsn"
+          id="elmiot8tafhf"
           className="animable"
           fill="#508ebc"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M412.57 463.81L90.39 463.81 90.39 285.14 251.49 394.49 412.57 285.14 412.57 463.81z"
         />
         <path
+          d="M130.37 407.08h.09c.87-.3 2.7-1.74 2.68-2.63a.6.6 0 00-.51-.58 1 1 0 00-.82.11c-1 .58-1.57 2.79-1.59 2.88a.17.17 0 00.05.18.19.19 0 00.1.04zm2.08-2.88h.08c.23.06.24.18.24.22 0 .53-1.19 1.65-2.09 2.12a4.45 4.45 0 011.32-2.27.62.62 0 01.45-.07z"
           style={{
-            transformOrigin: "148.96px 414.205px"
+            transformOrigin: "131.676px 405.454px"
           }}
-          id="elamk87kbo1z5"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M90.39 463.81L207.53 364.6"
-        />
-        <path
-          style={{
-            transformOrigin: "353.925px 414.125px"
-          }}
-          id="elpl3bveu6sne"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M412.06 463.81L295.79 364.44"
-        />
-      </g>
-      <g
-        id="freepik--Character--inject-136"
-        className="animable"
-        style={{
-          transformOrigin: "251.168px 289.706px"
-        }}
-      >
-        <path
-          d="M286.33 160.67s-1.21 5.66.41 7.48 7.68 8.29 7.68 9.3-2 30.13-2 30.13l-9.3-6.67-5.66 17.39s14.15 6.07 20.83 7.28 7.88-.61 7.88-5.86-5.26-45.5-5.26-45.5 1.62-9.3 1.62-10.92.61-2.43-.81-3.24-12.94-2-12.94-2-2.45.99-2.45 2.61z"
-          style={{
-            transformOrigin: "291.815px 192px"
-          }}
-          id="el4dr3d884zaa"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          style={{
-            transformOrigin: "280.385px 211.15px"
-          }}
-          id="elbkolo73t3is"
-          className="animable"
-          fill="#263238"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M283.33 203.36L280.26 218.94 277.44 218.3 283.33 203.36z"
-        />
-        <path
-          d="M306 165.21l-22.91-3.08v-5.71a1 1 0 012 0v4l19.15 2.58.33-4.62a1 1 0 111.95.14z"
-          style={{
-            transformOrigin: "294.825px 160.315px"
-          }}
-          id="eljbnm7ohibx"
-          className="animable"
-          fill="#263238"
-        />
-        <path
-          style={{
-            transformOrigin: "295.03px 161.275px"
-          }}
-          id="elp2m7295hjs"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M288.36 163.3L300.89 164.51 301.7 160.06 288.76 158.04 288.36 163.3z"
-        />
-        <path
-          d="M286.13 163.91s0-5.06.61-5.46 9.3.2 9.3 1.41 0 1.82-1 1.82-3 .2-3 .2 4.65 4.25 3.23 8.09"
-          style={{
-            transformOrigin: "291.085px 164.148px"
-          }}
-          id="eleh9mtp66rf5"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          style={{
-            transformOrigin: "291.995px 212.03px"
-          }}
-          id="el7bctj3rjfn"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M292.4 207.58L291.59 216.48"
-        />
-        <path
-          d="M189.71 203.7s-28.58 22.3-27.84 24.71 21.94 22.68 28.95 27.65 10.88 7.2 10.88 7.2l4.42 2.76s-1.84 3-.73 3.51 5.16 2.58 5.71 1.47 3.51-9.4 3.14-11.43-11.07-3.69-11.8-4.43-18.26-28-18.26-28l13.65-10.69z"
-          style={{
-            transformOrigin: "188.064px 237.511px"
-          }}
-          id="eljilyldrp7o"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          style={{
-            transformOrigin: "193.525px 211.475px"
-          }}
-          id="eljb5yl4dm4h"
-          className="animable"
-          fill="#263238"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M189.22 204.44L194.41 218.51 197.83 216.42 189.22 204.44z"
-        />
-        <path
-          d="M206.12 266s1.3 2.77 3.51 3"
-          style={{
-            transformOrigin: "207.875px 267.5px"
-          }}
-          id="el9toq1rcypn"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          style={{
-            transformOrigin: "182.335px 223.885px"
-          }}
-          id="eltegazs0qy9t"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M184.18 227.11L180.49 220.66"
-        />
-        <path
-          style={{
-            transformOrigin: "215.72px 436.77px"
-          }}
-          id="elk0hqzhs0dp"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M208.71 429.02L208.41 445.41 221.84 445.7 223.03 427.84 208.71 429.02z"
-        />
-        <path
-          style={{
-            transformOrigin: "215.885px 430.48px"
-          }}
-          id="elvg1zp9e6r9s"
-          className="animable"
-          fill="#263238"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M208.76 428.13L208.76 432.18 222.69 432.83 223.01 428.62 208.76 428.13z"
-        />
-        <path
-          d="M215.05 441.13s-1.77-6.94-4.43-7.09-4 1.92-5 3.84-7.53 8.41-9.75 10-7.08 3.69-7.82 8.41 2.06 6.65 4 7.09 10.63.59 15.8 0 19.26.81 20.08 0 1.92-3.4 1.18-5.17a24 24 0 00-2.07-3.69s1.48-4.28.59-6.64-2.66-5.32-2.36-6.65 3.54-4.13 1.33-4.28-5.76 2.51-8 3.25a19.41 19.41 0 01-3.55.93z"
-          style={{
-            transformOrigin: "208.641px 448.9px"
-          }}
-          id="el4ziqv9818bh"
-          className="animable"
-          fill="#263238"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M224.5 455.15c-2.07.3-10 4.13-15.06 5.32s-9.44 1.32-11.81.14-4.43-4.72-6.2-6.94-3.24 3.4-3.24 3.4l-.25.11c-.3 4.11 2.28 5.82 4.08 6.24s10.63.59 15.8 0 19.26.81 20.08 0 1.92-3.4 1.18-5.17a24 24 0 00-2.07-3.69c-.88-.15-.44.3-2.51.59z"
-          style={{
-            transformOrigin: "208.62px 458.476px"
-          }}
-          id="elgvzk7t4paqe"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M203 442s4-.88 9 4l-2.65 2.21s-5.17-4-8.42-4z"
-          style={{
-            transformOrigin: "206.465px 445.074px"
-          }}
-          id="el2zwu76h19m"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M199.26 445s4-.89 9 4l-2.65 2.22s-5.17-4-8.42-4z"
-          style={{
-            transformOrigin: "202.725px 448.078px"
-          }}
-          id="el8fzvf96xfnp"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          style={{
-            transformOrigin: "212.985px 442.825px"
-          }}
-          id="eleg4rcrcpcp"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M210.92 444.52L215.05 441.13"
-        />
-        <path
-          d="M205.61 451.17s1 2.21-.74 3.54-13.44-.89-13.29-2.51 5.61-5 5.61-5a22.59 22.59 0 018.42 3.97z"
-          style={{
-            transformOrigin: "198.737px 451.158px"
-          }}
-          id="el93lvw6ucwl"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          style={{
-            transformOrigin: "286.405px 436.77px"
-          }}
-          id="elqdrofdn0cr9"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M293.42 429.02L293.71 445.41 280.28 445.7 279.1 427.84 293.42 429.02z"
-        />
-        <path
-          style={{
-            transformOrigin: "286.325px 431.37px"
-          }}
-          id="eloxf28n5ddxh"
-          className="animable"
-          fill="#263238"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M279.36 430.88L279.36 433.31 293.61 433.15 293.45 429.59 279.04 429.43 279.36 430.88z"
-        />
-        <path
-          d="M287.07 441.13s1.77-6.94 4.43-7.09 4 1.92 5 3.84 7.53 8.41 9.74 10 7.09 3.69 7.82 8.41-2.06 6.65-4 7.09-10.63.59-15.8 0-19.26.81-20.07 0-1.92-3.4-1.19-5.17a24 24 0 012.07-3.69s-1.48-4.28-.59-6.64 2.66-5.32 2.36-6.65-3.54-4.13-1.33-4.28 5.76 2.51 8 3.25a19.23 19.23 0 003.56.93z"
-          style={{
-            transformOrigin: "293.471px 448.9px"
-          }}
-          id="elnga1uad7xc"
-          className="animable"
-          fill="#263238"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M277.62 455.15c2.07.3 10 4.13 15.06 5.32s9.45 1.32 11.81.14 4.43-4.72 6.2-6.94 3.25 3.4 3.25 3.4l.24.11c.3 4.11-2.28 5.82-4.08 6.24s-10.63.59-15.8 0-19.26.81-20.07 0-1.92-3.4-1.19-5.17a24 24 0 012.07-3.69c.89-.15.44.3 2.51.59z"
-          style={{
-            transformOrigin: "293.503px 458.476px"
-          }}
-          id="elok4rb09g128"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M299.17 442s-4-.88-9 4l2.66 2.21s5.16-4 8.41-4z"
-          style={{
-            transformOrigin: "295.705px 445.074px"
-          }}
-          id="el2eawyzd5d5q"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M302.86 445s-4-.89-9 4l2.66 2.22s5.16-4 8.41-4z"
-          style={{
-            transformOrigin: "299.395px 448.078px"
-          }}
-          id="elj9gxb3glopj"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          style={{
-            transformOrigin: "289.135px 442.825px"
-          }}
-          id="elcdisl0kfuy8"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M291.2 444.52L287.07 441.13"
-        />
-        <path
-          d="M296.52 451.17s-1 2.21.73 3.54 13.44-.89 13.29-2.51-5.61-5-5.61-5a22.51 22.51 0 00-8.41 3.97z"
-          style={{
-            transformOrigin: "303.387px 451.158px"
-          }}
-          id="elzien49593e"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M214.88 256s-7.81 31.89-10.74 58.91-7.49 115.53-7.49 115.53h35.8s10.74-89.83 12.37-105.77 1.62-26 1.62-26l20.18 131.81h42.63s-16.27-83.64-22.78-122-15.62-53.37-15.62-53.37z"
-          style={{
-            transformOrigin: "252.95px 342.795px"
-          }}
-          id="elesug8ir4o5f"
-          className="animable"
-          fill="#b0b0b0"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M245.47 258.31c-.31.93-8.79 13.67-6.19 14.64s7.49 1 7.49-1.62v-10.42s.65 14.65 3.58 14 6.83 0 5.86-3.26-8.46-13.65-8.46-13.65-1.31-2.62-2.28.31z"
-          style={{
-            transformOrigin: "247.573px 265.927px"
-          }}
-          id="elx4iomya3jfd"
-          className="animable"
-          fill="#b0b0b0"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M246.81 259.38s7.38 10.48 6.67 11.43-1.67 1.9-2.38.48-4.29-11.91-4.29-11.91z"
-          style={{
-            transformOrigin: "250.169px 265.696px"
-          }}
-          id="elsfo2zdzjot"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-        />
-        <path
-          d="M246.57 258.19s-5.48 11.67-4.76 12.14a1.9 1.9 0 002.85-1.19c.48-1.66 1.91-10.95 1.91-10.95z"
-          style={{
-            transformOrigin: "244.157px 264.402px"
-          }}
-          id="el8mshwyg10c7"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-        />
-        <path
-          d="M268.81 291.45c.3 1.65.56 3.21.74 4.61"
-          style={{
-            transformOrigin: "269.18px 293.755px"
-          }}
-          id="elto8ji1ghie"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M261.09 259.29s4.06 14.5 6.67 26.81"
-          style={{
-            transformOrigin: "264.425px 272.695px"
-          }}
-          id="el88fw2zssrxa"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M258.16 259.29s2.6 18.22 3.9 23.1"
-          style={{
-            transformOrigin: "260.11px 270.84px"
-          }}
-          id="el80fekepcgvb"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M222.74 284.52c-.14 1.26-.26 2.41-.38 3.4"
-          style={{
-            transformOrigin: "222.55px 286.22px"
-          }}
-          id="elgwnckoisyzp"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M225.29 259.29s-1.08 11.13-2 20.33"
-          style={{
-            transformOrigin: "224.29px 269.455px"
-          }}
-          id="el0mfs1vvi926"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          style={{
-            transformOrigin: "222.035px 267.75px"
-          }}
-          id="el840qwqzjs8"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M222.69 259.94L221.38 275.56"
-        />
-        <path
-          d="M245.49 126.5s12.13 1.21 9.3 7.48-5.66 7.48-6.27 7.48-5.46-7.48-5.46-7.48z"
-          style={{
-            transformOrigin: "249.139px 133.98px"
-          }}
-          id="eldi4g1xpaa1w"
-          className="animable"
-          fill="#263238"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M244.07 132.36s4.65 2.63 6.07 7.48 5.05 6.27 6.07 6.07 2.42 2.83 1.21 4.85l-1.21 2s1 13.75-.21 15.57-8.69.81-8.69.81-1.62 6.47-.2 10.52 5.66 6.06 7.28 6.06 5.05-2 9.7.41 20.22 14.15 20.22 14.15L276 223l-8.9-4.65 6.27 38.62-60.66 1.42s.61-27.5-1-32.56a59.39 59.39 0 00-4.25-9.7l-7.68 6.06-10.72-18.6s15.77-15.77 22-17.19 13.75.41 16.18-2.63.4-17.39.4-17.39-5.86-2-9.3-12.33 8.29-21 8.29-21 5.31-5.54 17.44-.69z"
-          style={{
-            transformOrigin: "236.685px 194.38px"
-          }}
-          id="el19rwknnllup"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          style={{
-            transformOrigin: "244.575px 170.765px"
-          }}
-          id="elye7qnnotc3i"
-          className="animable"
-          fill="#263238"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M247.31 169.16L241.84 168.24 246.23 173.29 247.31 169.16z"
-        />
-        <path
-          d="M244.74 143.31s0-3.84 3.44-3.84"
-          style={{
-            transformOrigin: "246.46px 141.39px"
-          }}
-          id="elckhkqrydjvr"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2px"
-        />
-        <path
-          d="M253.78 157.23l-7.08-3.44s-.6 7.28 2 7.08 5.08-3.64 5.08-3.64z"
-          style={{
-            transformOrigin: "250.21px 157.332px"
-          }}
-          id="elx2w0m19swn"
-          className="animable"
-          fill="#263238"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M246.85 147.06s2.28-2.47 4.18-.38"
-          style={{
-            transformOrigin: "248.94px 146.45px"
-          }}
-          id="elmikgg0kcwca"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M246.65 156.1l6.36 2.07a11.19 11.19 0 00.77-.94l-7.08-3.43s-.08 1.03-.05 2.3z"
-          style={{
-            transformOrigin: "250.212px 155.985px"
-          }}
-          id="elc0gprop84qb"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M207.07 141.06s-4.45-9.1-10.72-8.09-11.12 7.88-9.1 17.59c0 0 1 2.63 1.82 4.85 0 0-7.88-2.42-12.13 2.83s-1 10.72 3.84 13.35 7.69 2.43 7.69 2.43-10.72 3.23-6.88 7.28 15.57 1.41 13.14-2-4.24-3-4.24-3 9.7-3.64 8.69-6.27-5.86-4.65-5.86-4.65 9.3 3.24 14.36.2.6-16 .6-16z"
-          style={{
-            transformOrigin: "192.533px 158.12px"
-          }}
-          id="elwvwzsbni28"
-          className="animable"
-          fill="#263238"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M247.71 122.05s1.62 5.66-1.21 10.51-8.9 13.15-9.71 22.45 1.82 20.83 3.44 24.67-2 4.65-4.65 4.45-3.64-1.82-3.64-5.46-.81-10.11-.81-10.11-10.31-1-15.16-3.85-11.93-12.53-8.9-23.65 11.12-14.36 16-16.38 11.53-1.82 16.18-2.83 8.26-2.23 8.46.2z"
-          style={{
-            transformOrigin: "227.256px 152.396px"
-          }}
-          id="eldmipdmkuwb"
-          className="animable"
-          fill="#263238"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M233 150.36l-1.82 7.28s-3.84-1.82-4.45-5.06 4-4.85 7.28-2"
-          style={{
-            transformOrigin: "230.343px 153.372px"
-          }}
-          id="elol00v0v62za"
-          className="animable"
-          fill="#fff"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          style={{
-            transformOrigin: "290.685px 161.985px"
-          }}
-          id="el8sbys2kg4v"
-          className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M292 161.88L289.37 162.09"
-        />
-        <path
-          style={{
-            transformOrigin: "305.74px 140.54px"
-          }}
-          id="elp4fso4wsumr"
+          id="elvf9t9vhrdw"
           className="animable"
           fill="#508ebc"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M273.08 156.04L340.48 165.47 331.32 115.61 271 144.66 273.08 156.04z"
         />
         <path
+          d="M185.59 408.62c1 0 2-.14 2.31-.59a.71.71 0 000-.81.93.93 0 00-.59-.44c-1.3-.35-4 1.21-4.16 1.28a.17.17 0 00-.09.19.17.17 0 00.14.15 13.77 13.77 0 002.39.22zm1.25-1.52a1.37 1.37 0 01.36 0 .55.55 0 01.36.26c.13.23.08.35 0 .41-.37.51-2.35.52-3.81.32a8.29 8.29 0 013.09-.99z"
           style={{
-            transformOrigin: "267.03px 151.24px"
+            transformOrigin: "185.541px 407.674px"
           }}
+          id="el5alz3aue1b"
           className="animable"
           fill="#508ebc"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          transform="rotate(-10.36)"
-          id="elo9p0j2n751"
-          d="M261.94 145.48H272.12V157H261.94z"
         />
         <path
-          d="M284.31 200.3s-15.57-11.73-20.22-14.15-8-.46-9.63-.41a22.64 22.64 0 01-19.46 9.71c-13.3-.17-17-7.57-17.8-9.73a32.45 32.45 0 00-6.06.63c-6.27 1.42-22 17.19-22 17.19l10.72 18.6 7.68-6.06a59.39 59.39 0 014.25 9.7c1.62 5.06 1 32.56 1 32.56l60.66-1.42-6.27-38.62L276 223z"
+          d="M183.22 408.41h.08c.94-.43 2.82-2.12 2.68-3 0-.21-.18-.47-.7-.52a1.36 1.36 0 00-1 .32c-1 .82-1.21 2.93-1.22 3a.21.21 0 00.08.17.21.21 0 00.08.03zm1.92-3.19h.11c.33 0 .35.16.36.21.09.53-1.19 1.86-2.16 2.45a4.36 4.36 0 011-2.43 1 1 0 01.69-.23z"
           style={{
-            transformOrigin: "236.725px 221.642px"
+            transformOrigin: "184.524px 406.647px"
           }}
-          id="elwmnm7xo9wd"
+          id="eltk7gtb55ls"
+          className="animable"
+          fill="#508ebc"
+        />
+        <path
+          style={{
+            transformOrigin: "178.9px 399.125px"
+          }}
+          id="eltpa20vw5ai"
+          className="animable"
+          fill="#b55b52"
+          d="M174.58 408.22L182.44 408.22 183.22 390.03 175.37 390.03 174.58 408.22z"
+        />
+        <path
+          style={{
+            transformOrigin: "128.305px 397.42px"
+          }}
+          id="eliyl225lxjso"
+          className="animable"
+          fill="#b55b52"
+          d="M121.6 405.43L129.44 406.71 135.01 389.41 127.16 388.13 121.6 405.43z"
+        />
+        <path
+          d="M130 405.9l-8.71-1.43a.68.68 0 00-.75.42l-2.66 6.63a1.16 1.16 0 00.9 1.57c3 .44 4.56.51 8.38 1.14 2.36.39 8.36 1.79 11.65 2s3.93-3 2.6-3.4c-5.95-1.71-8.61-4.21-10.24-6.24a1.89 1.89 0 00-1.17-.69z"
+          style={{
+            transformOrigin: "129.93px 410.35px"
+          }}
+          id="el0elgsxq2msp5"
           className="animable"
           fill="#263238"
-          stroke="#263238"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <circle
-          cx={241.61}
-          cy={220.65}
-          r={18.66}
-          style={{
-            transformOrigin: "241.61px 220.65px"
-          }}
-          className="animable"
-          fill="none"
-          stroke="#fff"
-          strokeMiterlimit={10}
-          transform="rotate(-13.39)"
-          id="elruyvrq6ewc"
         />
         <path
+          d="M182.39 407.31h-8.58a.68.68 0 00-.67.54l-1.55 7a1.14 1.14 0 001.13 1.39c3.09-.05 7.56-.23 11.45-.23 4.55 0 6.47.25 11.8.25 3.22 0 4.12-3.26 2.77-3.56-6.15-1.34-9.15-1.48-14.46-4.76a3.71 3.71 0 00-1.89-.63z"
           style={{
-            transformOrigin: "241.945px 217.455px"
+            transformOrigin: "185.454px 411.785px"
           }}
-          id="eltylr0t71oyf"
+          id="elyu736oe14d"
+          className="animable"
+          fill="#263238"
+        />
+        <path
+          d="M150.64 140.19c-7.17 2.36-11.47 21.63-11.47 21.63l15.75 9.85a32.32 32.32 0 006.47-15.18c1.61-10.04-3.39-18.72-10.75-16.3z"
+          style={{
+            transformOrigin: "150.431px 155.725px"
+          }}
+          id="elvbyb28vm13"
           className="animable"
           fill="#508ebc"
-          d="M253.01 212.2L230.88 212.2 241.79 222.71 253.01 212.2z"
+        />
+        <g
+          style={{
+            transformOrigin: "150.431px 155.725px"
+          }}
+          className="animable"
+          opacity={0.4}
+          id="elye7dqcgcnk"
+        >
+          <path
+            d="M150.64 140.19c-7.17 2.36-11.47 21.63-11.47 21.63l15.75 9.85a32.32 32.32 0 006.47-15.18c1.61-10.04-3.39-18.72-10.75-16.3z"
+            style={{
+              transformOrigin: "150.431px 155.725px"
+            }}
+            id="elo62ppqs0ggf"
+            className="animable"
+            fill="#fff"
+          />
+        </g>
+        <path
+          d="M154.94 160.39a23.1 23.1 0 00-3.46 9.13l3.44 2.15a31.49 31.49 0 006-12.94z"
+          style={{
+            transformOrigin: "156.2px 165.2px"
+          }}
+          className="animable"
+          opacity={0.2}
+          id="elrkf2yuv2yb"
         />
         <path
+          d="M194.64 140.59s8.36 9.44.46 67.88h-42c-.29-6.45 3.76-37.9-2.46-68.28a109 109 0 0114.06-1.78 154.11 154.11 0 0117.86 0 79.16 79.16 0 0112.08 2.18z"
           style={{
-            transformOrigin: "250.07px 220.18px"
+            transformOrigin: "174.568px 173.311px"
           }}
-          id="ely2qlj9bqrf9"
+          id="elq5t1tznp088"
           className="animable"
           fill="#508ebc"
-          d="M246.22 220.39L253.92 227.19 253.92 213.17 246.22 220.39z"
+        />
+        <g
+          style={{
+            transformOrigin: "174.568px 173.311px"
+          }}
+          className="animable"
+          opacity={0.4}
+          id="el0dgnry4o4s6"
+        >
+          <path
+            d="M194.64 140.59s8.36 9.44.46 67.88h-42c-.29-6.45 3.76-37.9-2.46-68.28a109 109 0 0114.06-1.78 154.11 154.11 0 0117.86 0 79.16 79.16 0 0112.08 2.18z"
+            style={{
+              transformOrigin: "174.568px 173.311px"
+            }}
+            id="ele1i12r00bjf"
+            className="animable"
+            fill="#fff"
+          />
+        </g>
+        <path
+          d="M198.31 158.45l-.16-.14-9.55 2.29c-.54 6.46 6.1 14.17 9.52 17.7a182.54 182.54 0 00.19-19.85z"
+          style={{
+            transformOrigin: "193.531px 168.305px"
+          }}
+          className="animable"
+          opacity={0.2}
+          id="elglvrk5ooyyj"
         />
         <path
           style={{
-            transformOrigin: "233.54px 219.86px"
+            transformOrigin: "179.09px 394.725px"
           }}
-          id="elx4i8a3hedcn"
+          className="animable"
+          opacity={0.2}
+          id="el2auubgo7x38"
+          d="M183.22 390.04L182.82 399.41 174.96 399.41 175.36 390.04 183.22 390.04z"
+        />
+        <path
+          style={{
+            transformOrigin: "129.65px 393.23px"
+          }}
+          className="animable"
+          opacity={0.2}
+          id="elj7ghpkuk0ro"
+          d="M127.16 388.13L135.01 389.42 132.13 398.33 124.29 397.05 127.16 388.13z"
+        />
+        <path
+          d="M165.81 110c-.37 7.78-1 12.32 2.48 16.72 5.21 6.62 15.15 4.13 17.84-3.39 2.43-6.76 2.64-18.36-4.59-22.27a10.63 10.63 0 00-15.73 8.94z"
+          style={{
+            transformOrigin: "176.583px 115.153px"
+          }}
+          id="elr6jw8xlbtmm"
+          className="animable"
+          fill="#b55b52"
+        />
+        <path
+          d="M180.27 116.83c-3.16 4.84-1.39 6.45-3.16 8.67s-13.62 5.39-13.73-.22a13.05 13.05 0 00-4.83-10.5 6.11 6.11 0 011.39-9.73c4.22-2.33-1.79-3.47.79-7.22 3.84-5.56 9.09-7.39 13.48-3.55s11.51 6 16.62 1.11 4.22 14.18-8.5 13.31c5.47 5.47-3.67 2.8-2.06 8.13z"
+          style={{
+            transformOrigin: "175.237px 110.335px"
+          }}
+          id="elye147o2gqy"
+          className="animable"
+          fill="#263238"
+        />
+        <path
+          d="M162.61 103.12c-2.07 1.45-5.1-3.37-4.38-6-2.62 3-2 7.92 3.36 8s1.02-2 1.02-2z"
+          style={{
+            transformOrigin: "160.499px 101.121px"
+          }}
+          id="elp9ifkbo33zm"
+          className="animable"
+          fill="#263238"
+        />
+        <path
+          d="M177.74 113.16a8.79 8.79 0 001.23 5.52c1.35 2.17 3.32 1.33 4-.87.64-2 .71-5.51-1.16-6.91s-3.81-.05-4.07 2.26z"
+          style={{
+            transformOrigin: "180.533px 115.138px"
+          }}
+          id="el00dy7ztfdgqj"
+          className="animable"
+          fill="#b55b52"
+        />
+        <path
+          d="M180.2 208.47s-8.91 60-13.8 82.49C161 315.58 136.22 397 136.22 397l-14-3s16.17-66.38 20.67-100.8c3.45-26.44 10.26-84.73 10.26-84.73z"
+          style={{
+            transformOrigin: "151.21px 302.735px"
+          }}
+          id="elbejcgyq3hrb"
+          className="animable"
+          fill="#263238"
+        />
+        <path
+          d="M139.59 392.35c.06 0-2.62 5.08-2.62 5.08L121.15 394l1.34-4.76z"
+          style={{
+            transformOrigin: "130.37px 393.335px"
+          }}
+          id="elpyj6m5zi637"
           className="animable"
           fill="#508ebc"
-          d="M237.44 220.37L229.64 212.85 229.64 226.87 237.44 220.37z"
         />
         <path
+          d="M174.57 229.85c-10.3 2-9.21 40.45-8 60.21 3-14 7.32-40.85 10.29-59.93a3.53 3.53 0 00-2.29-.28z"
           style={{
-            transformOrigin: "241.595px 224.685px"
+            transformOrigin: "171.337px 259.916px"
           }}
-          id="elgtuph8jiqlr"
+          className="animable"
+          opacity={0.3}
+          id="elltqp8aso7ci"
+        />
+        <path
+          d="M195.1 208.47s3.27 58.71 2.41 82.66c-.89 24.87-11.77 106.47-11.77 106.47h-13.3s1.69-80.11 1.1-104.57c-.65-26.67-8.64-84.56-8.64-84.56z"
+          style={{
+            transformOrigin: "181.277px 303.035px"
+          }}
+          id="elge0cwhi4xm5"
+          className="animable"
+          fill="#263238"
+        />
+        <path
+          d="M188.3 392.3c.06 0-.75 5.52-.75 5.52h-16.18l-.44-4.93z"
+          style={{
+            transformOrigin: "179.617px 395.06px"
+          }}
+          id="el6yak8glascb"
           className="animable"
           fill="#508ebc"
-          d="M245.24 221.3L241.78 224.55 238.41 221.3 230.29 228.07 252.9 228.07 245.24 221.3z"
         />
-      </g>
-      <g
-        id="freepik--Floor--inject-136"
-        className="animable"
-        style={{
-          transformOrigin: "250.47px 463.81px"
-        }}
-      >
+        <path
+          d="M198.91 148.55c2.25 5.22 4.7 10.6 7.24 15.77a137.36 137.36 0 008.24 14.87c.75 1.14 1.52 2.23 2.31 3.25l.6.74c.2.23.26.33.46.54.34.38.81.8 1.27 1.23 1.92 1.74 4.26 3.45 6.58 5.16 4.68 3.39 9.59 6.75 14.4 10.16l-2.71 5.24a138.12 138.12 0 01-16.64-7.45 72.38 72.38 0 01-8.14-4.93 26.51 26.51 0 01-2.12-1.69c-.34-.3-.78-.74-1.09-1.05l-.87-.95a63.878 63.878 0 01-3.13-3.82 122.06 122.06 0 01-9.76-15.93c-1.4-2.72-2.77-5.44-4-8.22S189 156 187.88 153z"
+          style={{
+            transformOrigin: "213.945px 177.03px"
+          }}
+          id="el5i1r659rttu"
+          className="animable"
+          fill="#b55b52"
+        />
+        <path
+          d="M183.18 148.44c-6.06 9 8.13 25.33 8.13 25.33l15.87-11a67 67 0 00-5.39-16.12c-5.17-10.87-13.99-5.04-18.61 1.79z"
+          style={{
+            transformOrigin: "194.427px 157.194px"
+          }}
+          id="elviqxhhp804t"
+          className="animable"
+          fill="#508ebc"
+        />
+        <g
+          style={{
+            transformOrigin: "194.427px 157.194px"
+          }}
+          className="animable"
+          opacity={0.4}
+          id="eledsp7drr2xg"
+        >
+          <path
+            d="M183.18 148.44c-6.06 9 8.13 25.33 8.13 25.33l15.87-11a67 67 0 00-5.39-16.12c-5.17-10.87-13.99-5.04-18.61 1.79z"
+            style={{
+              transformOrigin: "194.427px 157.194px"
+            }}
+            id="el3uwlrjk6o7t"
+            className="animable"
+            fill="#fff"
+          />
+        </g>
+        <path
+          d="M235.24 199.22l9.76 1.38-2.55 8.2s-6.93 0-9-5.34z"
+          style={{
+            transformOrigin: "239.225px 204.01px"
+          }}
+          id="elq9pfbl85zem"
+          className="animable"
+          fill="#b55b52"
+        />
         <path
           style={{
-            transformOrigin: "250.47px 463.81px"
+            transformOrigin: "245.225px 205.27px"
           }}
-          id="elbhcirgktw7j"
+          id="elzljfqhdvzhc"
           className="animable"
-          fill="none"
-          stroke="#263238"
-          strokeMiterlimit={10}
-          d="M30.31 463.81L470.63 463.81"
+          fill="#b55b52"
+          d="M248.03 203.22L245.92 209.94 242.42 208.8 244.97 200.6 248.03 203.22z"
         />
       </g>
       <defs>

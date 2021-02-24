@@ -1,8 +1,8 @@
 import React from "react";
 import "./Portfolio.scss";
-import websiteOne from '../../assets/portfolio/website-one.jpg'
-import websiteTwo from '../../assets/portfolio/website-two.jpg'
-import studioWebsite from '../../assets/portfolio/studio-website.jpg'
+import portfolioRestaurant from '../../assets/portfolio/portfolio-restaurant.jpg'
+import iphoneCase from '../../assets/portfolio/iphone-case.jpg'
+import studioWebsite from '../../assets/portfolio/website-one-two.jpg'
 import rdsWebsite from '../../assets/portfolio/rds.jpg'
 import drPuerta from '../../assets/portfolio/drpuerta.jpg'
 import forVegans from '../../assets/portfolio/forvegans.jpg'
@@ -47,14 +47,14 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="portfolio-billboard-child-two">
-                    <img src={websiteOne} />
+                    <img src={portfolioRestaurant} />
                 </div>
             </div>
 
             <div className="portfolio-billboard-two">
 
                 <div className="portfolio-billboard-two-child-one">
-                    <img src={websiteTwo} />
+                    <img src={iphoneCase} />
                 </div>
                 <div className="portfolio-billboard-two-child-two">
                     <div>
