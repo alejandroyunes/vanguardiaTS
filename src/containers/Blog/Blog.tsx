@@ -10,10 +10,6 @@ import ReactNetlify from ".././../assets/blog/react-netlify.jpg";
 import htmlCssJs from ".././../assets/blog/htmlcssjs.jpg";
 import githubBitbucket from ".././../assets/blog/githubbitbucket.jpg";
 
-
-import aboutMarketing from ".././../assets/boxeagle.svg";
-import aboutBox from ".././../assets/boxeagle.svg";
-import aboutIllustrator from ".././../assets/illustraeagle.svg";
 import Title from "../../components/Title/Title";
 
 export default function Blog() {
@@ -23,7 +19,7 @@ export default function Blog() {
 
             <div className="about-us-icons-services">
                 <div className="child-one-icons">
-                    <img className="about-logo" src={linuxWindows} />
+                    <img className="about-logo" src={linuxWindows} alt=""/>
                     <h4>¿Cómo instalar Linux y Windows en el mismo disco?</h4>
                     <p>
                         Collecting images are always a nightmare, especially with all the
@@ -31,7 +27,7 @@ export default function Blog() {
                     </p>
                 </div>
                 <div className="child-two-icons">
-                    <img className="about-logo" src={wordPress} />
+                    <img className="about-logo" src={wordPress} alt=""/>
                     <h4>¿Cómo tener un sitio web en 20 minutos?</h4>
                     <p>
                         Collecting images are always a nightmare, especially with all the
@@ -39,7 +35,7 @@ export default function Blog() {
                     </p>
                 </div>
                 <div className="child-three-icons">
-                    <img className="about-logo" src={css} />
+                    <img className="about-logo" src={css} alt=""/>
                     <h4>¿Cósas que puedes hacer con CSS hoy?</h4>
                     <p>
                         Collecting images are always a nightmare, especially with all the
@@ -50,7 +46,7 @@ export default function Blog() {
 
             <div className="about-us-icons-services">
                 <div className="child-one-icons">
-                    <img className="about-logo" src={react} />
+                    <img className="about-logo" src={react} alt=""/>
                     <h4>¿Cómo instalar React?</h4>
                     <p>
                         Collecting images are always a nightmare, especially with all the
@@ -58,7 +54,7 @@ export default function Blog() {
                     </p>
                 </div>
                 <div className="child-two-icons">
-                    <img className="about-logo" src={wordPressPlugin} />
+                    <img className="about-logo" src={wordPressPlugin} alt=""/>
                     <h4>¿Cuáles son los mejores plug-ins para un sitio en WordPress?</h4>
                     <p>
                         Collecting images are always a nightmare, especially with all the
@@ -66,7 +62,7 @@ export default function Blog() {
                     </p>
                 </div>
                 <div className="child-three-icons">
-                    <img className="about-logo" src={adobeFigma} />
+                    <img className="about-logo" src={adobeFigma} alt=""/>
                     <h4>¿Cuáles son los mejores programas para diseñar?</h4>
                     <p>
                         Collecting images are always a nightmare, especially with all the
@@ -77,7 +73,7 @@ export default function Blog() {
 
             <div className="about-us-icons-services">
                 <div className="child-one-icons">
-                    <img className="about-logo" src={ReactNetlify} />
+                    <img className="about-logo" src={ReactNetlify} alt=""/>
                     <h4>¿Cómo instalar tu proyecto de React en un servidor veloz y seguro?</h4>
                     <p>
                         Collecting images are always a nightmare, especially with all the
@@ -85,7 +81,7 @@ export default function Blog() {
                     </p>
                 </div>
                 <div className="child-two-icons">
-                    <img className="about-logo" src={htmlCssJs} />
+                    <img className="about-logo" src={htmlCssJs} alt=""/>
                     <h4>¿Mejores recursos para aprender a programar?</h4>
                     <p>
                         Collecting images are always a nightmare, especially with all the
@@ -93,7 +89,7 @@ export default function Blog() {
                     </p>
                 </div>
                 <div className="child-three-icons">
-                    <img className="about-logo" src={githubBitbucket} />
+                    <img className="about-logo" src={githubBitbucket} alt=""/>
                     <h4>Github & Bitbucket</h4>
                     <p>
                         Collecting images are always a nightmare, especially with all the

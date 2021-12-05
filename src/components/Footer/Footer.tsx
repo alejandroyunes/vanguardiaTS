@@ -7,12 +7,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
-
-
 import WeatherSpinner from './WeatherIcons/WeatherSpinner/WeatherSpinner'
-
-
-
 import Thunder from './WeatherIcons/Thunder/Thunder'
 import DrizzleDay from './WeatherIcons/Drizzle/Day/DrizzleDay'
 import DrizzleNight from './WeatherIcons/Drizzle/Night/DrizzleNight'
@@ -33,7 +28,7 @@ const Footer: FC = () => {
   const [description, setDescription] = useState('');
   const [main, setMain] = useState('');
   const [time, setTime] = useState(0);
-
+console.log(description)
   useEffect(() => {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=Medellín,co&APPID=' + key + '&units=metric')
       .then(res => res.json())
@@ -47,12 +42,11 @@ const Footer: FC = () => {
     let today = new Date();
     let time = today.getHours();
     setTime(time)
-    console.log(time)
-  })
+  }, [])
 
   return (
     <>
-      <div className="footer ">
+      <div className="footer">
         <div className="section__grid footer__grid">
           <div className="footer-child-one">
             <h1>Nuestra Oficina</h1>

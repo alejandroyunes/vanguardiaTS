@@ -3,7 +3,6 @@ import ResponsiveDesignIcon from "./Assets/responsive-design-icon.svg";
 import MobileDesignIcon from "./Assets/mobile-design-icon.svg";
 import Rocket from "./Assets/rocket.svg";
 import './Cards.scss'
-import Title from '../Title/Title'
 import Card from '../Card/Card'
 import Carousel from '../Carousel/Carousel'
 

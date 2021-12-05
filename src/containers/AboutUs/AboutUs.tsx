@@ -1,11 +1,6 @@
 import React from "react";
 import "./AboutUs.scss";
-import aboutLogo from ".././../assets/ff.png";
-import aboutMarketing from ".././../assets/deskeagle.svg";
-import aboutBox from ".././../assets/boxeagle.svg";
-import aboutIllustrator from ".././../assets/illustraeagle.svg";
 import linkedin from ".././../assets/team.png";
-import Title from "../../components/Title/Title";
 export default function AboutUs() {
   return (
     <>
@@ -29,7 +24,7 @@ export default function AboutUs() {
           <h1>Estudio de diseño y desarrollo web que entrega un trabajo superlativo para startups, agencias o cualquier ser humano.</h1>
         </div>
         <div className="about-child-two">
-          <img className="about-logo" src={linkedin} />
+          <img className="about-logo" src={linkedin}  alt=""/>
         </div>
       </div>
     </>

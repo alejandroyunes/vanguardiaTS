@@ -2,18 +2,11 @@ import React from "react";
 import "./Portfolio.scss";
 import portfolioRestaurant from '../../assets/portfolio/portfolio-restaurant.jpg'
 import iphoneCase from '../../assets/portfolio/iphone-case.jpg'
-import studioWebsite from '../../assets/portfolio/website-one-two.jpg'
 import rdsWebsite from '../../assets/portfolio/rds.jpg'
 import drPuerta from '../../assets/portfolio/drpuerta.jpg'
 import forVegans from '../../assets/portfolio/forvegans.jpg'
-
 import Title from "../../components/Title/Title";
-
-
 import Button from "../../components/Button/Button";
-import Animation from "../../assets/development.png";
-import portfolioImg from '../../assets/portfolio/portfolio-hero-desktop-two.jpg'
-
 import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
 export default function Portfolio() {
     return (
@@ -47,14 +40,14 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="portfolio-billboard-child-two">
-                    <img src={portfolioRestaurant} />
+                    <img src={portfolioRestaurant} alt=""/>
                 </div>
             </div>
 
             <div className="portfolio-billboard-two">
 
                 <div className="portfolio-billboard-two-child-one">
-                    <img src={iphoneCase} />
+                    <img src={iphoneCase} alt=""/>
                 </div>
                 <div className="portfolio-billboard-two-child-two">
                     <div>
@@ -95,14 +88,14 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="portfolio-billboard-child-two">
-                    <img src={rdsWebsite} />
+                    <img src={rdsWebsite} alt=""/>
                 </div>
             </div>
 
             <div className="portfolio-billboard-two">
 
                 <div className="portfolio-billboard-two-child-one">
-                    <img src={drPuerta} />
+                    <img src={drPuerta} alt=""/>
                 </div>
                 <div className="portfolio-billboard-two-child-two">
                     <div>
@@ -143,7 +136,7 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="portfolio-billboard-child-two">
-                    <img src={forVegans} />
+                    <img src={forVegans} alt=""/>
                 </div>
             </div>
 

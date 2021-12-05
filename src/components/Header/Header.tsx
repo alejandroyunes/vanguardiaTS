@@ -68,7 +68,7 @@ function Header() {
       case "/portfolio":
         return setActiveMenu("portfolio-nav");
     }
-  });
+  }, [location.pathname]);
 
 
   return (
@@ -76,11 +76,11 @@ function Header() {
       <div className="header">
         <header className={header}>
           <div className="header__logo">
-            <img src={logo} />
+            <img src={logo} alt=""/>
           </div>
 
           <div className="header__links-wrapper">
-            <div className={"hamburger-menu-mobile"}>
+            <div className="hamburger-menu-mobile">
               <div id="toggleMenu" onBlur={() => setIsMenuOpen(false)}>
                 <input
                   type="checkbox"
@@ -146,13 +146,13 @@ function Header() {
                     setActiveMenu("home-nav");
                   }}
                   className={
-                    activeMenu == "home-nav"
+                    activeMenu === "home-nav"
                       ? "header__link__item active"
                       : "header__link__item"
                   }
                 >
                   Inicio
-            </li>
+                </li>
               </Link>
 
               <Link to={{ pathname: "/about" }}>
@@ -162,13 +162,13 @@ function Header() {
                     setActiveMenu("about-nav");
                   }}
                   className={
-                    activeMenu == "about-nav"
+                    activeMenu === "about-nav"
                       ? "header__link__item active"
                       : "header__link__item"
                   }
                 >
                   Nosotros
-            </li>
+                </li>
               </Link>
               <Link to={{ pathname: "/services" }}>
                 <li
@@ -177,13 +177,13 @@ function Header() {
                     setActiveMenu("services-nav");
                   }}
                   className={
-                    activeMenu == "services-nav"
+                    activeMenu === "services-nav"
                       ? "header__link__item active"
                       : "header__link__item"
                   }
                 >
                   Servicios
-            </li>
+                </li>
               </Link>
 
 
@@ -194,13 +194,13 @@ function Header() {
                     setActiveMenu("portfolio-nav");
                   }}
                   className={
-                    activeMenu == "portfolio-nav"
+                    activeMenu === "portfolio-nav"
                       ? "header__link__item active"
                       : "header__link__item"
                   }
                 >
                   Portafolio
-            </li>
+                </li>
               </Link>
               <Link to={{ pathname: "/blog" }}>
                 <li
@@ -209,26 +209,26 @@ function Header() {
                     setActiveMenu("blog-nav");
                   }}
                   className={
-                    activeMenu == "blog-nav"
+                    activeMenu === "blog-nav"
                       ? "header__link__item active"
                       : "header__link__item"
                   }
                 >
                   Blog
-            </li>
+                </li>
               </Link>
 
               <li
                 id="contact-nav"
                 onClick={() => { scrollBottom() }}
                 className={
-                  activeMenu == "contact-nav"
+                  activeMenu === "contact-nav"
                     ? "header__link__item active"
                     : "header__link__item"
                 }
               >
                 Contacto
-            </li>
+              </li>
 
             </ul>
           </div>

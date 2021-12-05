@@ -1,8 +1,5 @@
 import React from "react";
 import "./Services.scss";
-import aboutMarketing from ".././../assets/deskeagle.svg";
-import aboutBox from ".././../assets/boxeagle.svg";
-import aboutIllustrator from ".././../assets/illustraeagle.svg";
 import Title from "../../components/Title/Title";
 
 
@@ -11,12 +8,6 @@ import DigitalMarketing from '../../components/ImageGallery/Assets/DigitalMarket
 
 import Branding from '../../components/ImageGallery/Assets/Branding/Branding'
 
-import servicesHeroImg from "../../assets/services/services-hero-desktop.jpg";
-import serviceHeroSmallImg from "../../assets/services/services-hero-mobile-small.jpg"
-
-import serviceHeroSmallerImg from "../../assets/services/services-hero-mobile-smaller.jpg"
-
-import servicesImgMobile from "../../assets/services/services-hero-mobile.jpg";
 import HtmlSvg from "../../assets/html.svg";
 import CssSvg from "../../assets/css.svg";
 import JsSvg from "../../assets/javascript.svg";
@@ -75,31 +66,31 @@ export default function Services() {
       <div className="services-tech">
         <div className="services-tech-container">
           <div className="html-svg">
-            <img src={HtmlSvg} />
+            <img src={HtmlSvg} alt=""/>
           </div>
           <div className="css-svg">
-            <img src={CssSvg} />
+            <img src={CssSvg} alt=""/>
           </div>
           <div className="js-svg">
-            <img src={JsSvg} />
+            <img src={JsSvg} alt=""/>
           </div>
           <div className="react-svg">
-            <img src={ReactSvg} />
+            <img src={ReactSvg} alt=""/>
           </div>
           <div className="node-svg">
-            <img src={NodeSvg} />
+            <img src={NodeSvg} alt=""/>
           </div>
           <div className="typescript-svg">
-            <img src={TypescriptSvg} />
+            <img src={TypescriptSvg} alt=""/>
           </div>
           <div className="apache-svg">
-            <img src={ApacheSvg} />
+            <img src={ApacheSvg} alt=""/>
           </div>
           <div className="nginx-svg">
-            <img src={NginxSvg} />
+            <img src={NginxSvg} alt=""/>
           </div>
           <div className="wordpress-svg">
-            <img src={WordpressSvg} />
+            <img src={WordpressSvg} alt=""/>
           </div>
         </div>
       </div>
@@ -108,33 +99,33 @@ export default function Services() {
         <div className="services-tech-mobile-container">
           <div className="services-tech-mobile-child-one">
             <div className="node-svg">
-              <img src={NodeSvg} />
+              <img src={NodeSvg} alt=""/>
             </div>
             <div className="typescript-svg">
-              <img src={TypescriptSvg} />
+              <img src={TypescriptSvg} alt=""/>
             </div>
             <div className="apache-svg">
-              <img src={ApacheSvg} />
+              <img src={ApacheSvg} alt=""/>
             </div>
             <div className="nginx-svg">
-              <img src={NginxSvg} />
+              <img src={NginxSvg} alt="" />
             </div>
             <div className="wordpress-svg">
-              <img src={WordpressSvg} />
+              <img src={WordpressSvg} alt=""/>
             </div>
           </div>
           <div className="services-tech-mobile-child-two">
             <div className="html-svg">
-              <img src={HtmlSvg} />
+              <img src={HtmlSvg} alt=""/>
             </div>
             <div className="css-svg">
-              <img src={CssSvg} />
+              <img src={CssSvg} alt=""/>
             </div>
             <div className="js-svg">
-              <img src={JsSvg} />
+              <img src={JsSvg} alt=""/>
             </div>
             <div className="react-svg">
-              <img src={ReactSvg} />
+              <img src={ReactSvg} alt=""/>
             </div>
           </div>
         </div>

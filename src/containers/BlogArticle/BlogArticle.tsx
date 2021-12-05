@@ -1,14 +1,9 @@
 import React from "react"
 import "./BlogArticle.scss"
-
 import avatarImg from "./Resouces/img_avatar2.png"
-
 export default function BlogArticle() {
-
     return (
         <>
-
-
             <div className="wrapper-blog-article">
                 <div className="two">
                     <div className="title">
@@ -51,7 +46,7 @@ export default function BlogArticle() {
                                     <a href="/category/workflow">Workflow</a>
                                 </li>
                                 <li className="meta-box--item meta-box--author">Saved for offline reading</li>
-                                <li className="meta-box--item meta-box--share"><section>Share on <a href="#">Twitter</a>,&nbsp;<a href="#">LinkedIn</a></section></li>
+                                <li className="meta-box--item meta-box--share"><section>Share on <a href="/">Twitter</a>,&nbsp;<a href="/">LinkedIn</a></section></li>
                             </ul>
                         </div>
                     </div>
@@ -69,7 +64,7 @@ export default function BlogArticle() {
                         <div className="article-author-description">
                             <p>
                                 Un diseñador independiente y desarrollador front-end que intenta mejorar la experiencia de todos en la Web con un enfoque en la mejora progresiva y
-                    </p>
+                            </p>
                         </div>
                     </div>
                 </div>

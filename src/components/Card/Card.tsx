@@ -23,7 +23,7 @@ const Card: FC<CardProps> = ({
     <>
       <div className="card__container">
         <div className="card__container__img">
-          <img src={image} />
+          <img src={image} alt=""/>
         </div>
         <h2>{title}</h2>
         <h3>{subtitle}</h3>

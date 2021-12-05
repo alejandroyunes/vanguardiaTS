@@ -3,13 +3,11 @@ import "./Billboard.scss";
 import Animation from "./animation";
 import Button from "../Button/Button";
 import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
-import ContactMailIcon from "@material-ui/icons/ContactMail";
-import { useHistory, useLocation } from 'react-router-dom';
-import MainAnimation from './MainAnimation/MainAnimation'
+import { useHistory  } from 'react-router-dom';
+
 
 export default function Billboard() {
   let history = useHistory();
-  let location = useLocation();
 
   return (
     <>

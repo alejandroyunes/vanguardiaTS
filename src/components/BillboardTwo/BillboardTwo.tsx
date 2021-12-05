@@ -27,7 +27,7 @@ export default function BillboardTwo() {
 
                 <div className="digital-services-child-two">
                     <a href="https://www.youtube.com/watch?v=mwtbEGNABWU&amp;t=9s" className="btn-video" data-fancybox="">
-                        {isWebpSupported() ? <img src={require('../../assets/billboard-two.webp')} /> : <img src={require('../../assets/portfolio/website-one.jpg')} />}
+                        {isWebpSupported() ? <img src={require('../../assets/billboard-two.webp')} alt=""/> : <img src={require('../../assets/portfolio/website-one.jpg')} alt="" />}
 
                         <span className="wrap-icon-play">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" fill="#AE3C43" xmlns="http://www.w3.org/2000/svg">
