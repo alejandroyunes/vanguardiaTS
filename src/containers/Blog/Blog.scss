@@ -3,37 +3,18 @@
 @import "../../sass/utilities";
 @import "../../sass/mixins";
 
-.blog-main-title {
-  margin: 60px 0;
-  h1 {
-    font-weight: bold;
-    color: $dark-blue;
-    font-size: 3rem;
-    line-height: 1.2;
-    max-width: 760px;
-    padding: 0 32px;
-    margin: 32px auto;
-    text-align: center;
-    @include mq($screen-small) {
-      padding: 0 16px;
-    }
-  }
-}
-
-.about-us-icons-services {
+.blog-wrapper {
   max-width: 1140px;
   margin: 20px auto;
   display: grid;
   grid-gap: 10px;
-
-  grid-template-areas: "child-one" "child-two" "child-three";
+  // grid-template-columns: repeat(3, 1fr);
   @include mq($screen-small) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, auto);
   }
-  @include mq($screen-tablet){
+  @include mq($screen-tablet) {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, auto);
   }
   h4 {
     font-size: 24px;
@@ -60,152 +41,13 @@
     }
   }
 
-  .child-one-icons {
+  .child-card {
     text-align: center;
   }
-  .child-two-icons {
-    text-align: center;
-  }
-  .child-three-icons {
-    text-align: center;
-  }
+
   img {
     max-width: 100%;
     height: auto;
     cursor: pointer;
-  }
-}
-
-.services-billboard {
-  max-width: 1140px;
-  margin: 50px auto 20px;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, auto);
-  grid-template-areas: "child-one child-two";
-  h1 {
-    font-weight: bold;
-    color: $dark-blue;
-    font-size: 3.8rem;
-    line-height: 1.2;
-  }
-  h2 {
-    color: $lighter-black;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding: $default-padding16 0;
-  }
-
-  .buttons {
-    display: flex;
-    margin-top: 16px;
-  }
-  .child-one-services {
-    grid-area: child-one;
-    padding-left: 24px;
-    margin: auto 0;
-  }
-  .child-two-services {
-    grid-area: child-two;
-    padding-right: 24px;
-    margin: auto 0;
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
-}
-
-@include mq($screen-tablet) {
-  .services-billboard {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "child-one";
-    margin: 0px auto;
-
-    h1 {
-      font-size: 3rem;
-      line-height: 1.2;
-    }
-    h2 {
-      padding: 16px 16px;
-      text-align: center;
-    }
-    .child-one-services {
-      grid-area: child-one;
-      padding: 0 16px;
-    }
-
-    .child-two-services {
-      display: none;
-    }
-
-    .buttons {
-      display: grid;
-      grid-gap: 10px;
-      margin-top: 16px;
-      text-align: center;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(1, 1fr);
-      grid-template-areas: "button-one";
-    }
-  }
-}
-
-.services-technologies {
-  max-width: 1140px;
-  margin: 30px auto 20px;
- 
-  .services-technologies-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .html-svg {
-      width: 100px;
-
-
-    }
-    .css-svg {
-      width: 100px;
-   
-
-    }
-    .js-svg {
-      width: 72px;
-
-
-    }
-    .react-svg {
-      width: 100px;
-      margin: auto 0;
-
-    }
-    .node-svg {
-      width: 120px;
-      margin: auto 0;
-
-    }
-    .wordpress-svg {
-      width: 80px;
-      margin: auto 0;
-
-    }
-    .typescript-svg {
-      width: 80px;
-      margin: auto 0;
-
-    }
-    .nginx-svg {
-      width: 80px;
-      margin: auto 0;
-
-    }
-    .apache-svg {
-      width: 80px;
-      margin: auto 0;
-
-    }
   }
 }

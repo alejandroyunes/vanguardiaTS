@@ -1,6 +1,8 @@
 import React from "react";
 import "./BlogArticle.scss";
 import avatarImg from "./Resouces/img_avatar2.png";
+import { blogDataProps } from "../Blog/blog-data";
+
 export default function BlogArticle() {
   return (
     <>
