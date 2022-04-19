@@ -1,30 +1,30 @@
 import React from "react";
 import "./AboutUs.scss";
-import linkedin from ".././../assets/team.png";
+import linkedin from ".././../assets/people/alejo-developer.png";
 export default function AboutUs() {
   return (
     <>
+      <div className="about-us-info">
+        <div className="about-child-one">
+          <h1>
+            Soy un desarrollador autodidacta con más de 3 años de experiencia en
+            Javascript y React. También tengo varios años de experiencia
+            profesional en el área de IT.
+          </h1>
+        </div>
+        <div className="about-child-two">
+          <img className="about-logo" src={linkedin} alt="" />
+        </div>
+      </div>
       <div className="wrapper">
-      
         <div className="about-child-two">
           <h1 className="about-main-title">
-          Somos un grupo de profesionales en las áreas de diseño y desarrollo web.
+            Diseño web y móvil personalizado. Desarrollo en librerías y de
+            última generación como React, NextJS, React Native.
           </h1>
         </div>
         <div className="child-three">
-          <p>
-          Planteamos soluciones basadas en el entendimiento estratégico y analítico de su negocio.
-          </p>
-        </div>
-      </div>
-
-   
-      <div className="about-us-info">
-        <div className="about-child-one">
-          <h1>Estudio de diseño y desarrollo web que entrega un trabajo superlativo para startups, agencias o cualquier ser humano.</h1>
-        </div>
-        <div className="about-child-two">
-          <img className="about-logo" src={linkedin}  alt=""/>
+          <p></p>
         </div>
       </div>
     </>

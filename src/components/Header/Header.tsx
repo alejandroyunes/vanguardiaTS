@@ -4,15 +4,14 @@ import "./Header.scss";
 import { toggleDarkMode } from "../../store/actions/app";
 import { AppStore } from "../../store/appStore";
 import { Link, useLocation } from "react-router-dom";
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import logo from "../../assets/logo.svg";
 
 function Header() {
   const [header, setHeader] = useState("header__main");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState("home-nav");
-  const [showScroll, setShowScroll] = useState(false)
-
+  const [showScroll, setShowScroll] = useState(false);
 
   const isDarkMode = useSelector((state: AppStore) => state.app.darkMode);
   const dispatch = useDispatch();
@@ -28,18 +27,18 @@ function Header() {
     }
 
     if (window.pageYOffset > 400) {
-      setShowScroll(true)
+      setShowScroll(true);
     } else if (window.pageYOffset <= 800) {
-      setShowScroll(false)
+      setShowScroll(false);
     }
   };
 
   const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const scrollBottom = () => {
-    window.scrollTo({ top: 3000, behavior: 'smooth' });
+    window.scrollTo({ top: 3000, behavior: "smooth" });
   };
 
   const toggleDropdown = () => {
@@ -50,7 +49,7 @@ function Header() {
     window.addEventListener("scroll", listenScrollEvent);
     return () => {
       window.removeEventListener("scroll", listenScrollEvent);
-    }
+    };
   }, []);
 
   useEffect(() => {
@@ -70,13 +69,12 @@ function Header() {
     }
   }, [location.pathname]);
 
-
   return (
     <>
       <div className="header">
         <header className={header}>
           <div className="header__logo">
-            <img src={logo} alt=""/>
+            <img src={logo} alt="" />
           </div>
 
           <div className="header__links-wrapper">
@@ -110,7 +108,6 @@ function Header() {
                   <Link to={{ pathname: "/contact" }}>
                     <li>Contacto</li>
                   </Link>
-
                 </ul>
               </div>
             </div>
@@ -118,7 +115,7 @@ function Header() {
               <div className="dark-toggle-input">
                 <input
                   type="checkbox"
-                  defaultChecked={isDarkMode}
+                  defaultChecked={!isDarkMode}
                   className="chk"
                   id="chk"
                   onChange={() => dispatch(toggleDarkMode())}
@@ -186,7 +183,6 @@ function Header() {
                 </li>
               </Link>
 
-
               <Link to={{ pathname: "/portfolio" }}>
                 <li
                   id="portfolio-nav"
@@ -220,7 +216,9 @@ function Header() {
 
               <li
                 id="contact-nav"
-                onClick={() => { scrollBottom() }}
+                onClick={() => {
+                  scrollBottom();
+                }}
                 className={
                   activeMenu === "contact-nav"
                     ? "header__link__item active"
@@ -229,21 +227,18 @@ function Header() {
               >
                 Contacto
               </li>
-
             </ul>
           </div>
-
         </header>
       </div>
 
       <div className="arrow-wrapper">
         <div
           className="arrow-circle"
-          style={{ display: showScroll ? 'flex' : 'none' }}
-          onClick={scrollTop}>
-          <ArrowUpwardIcon
-            className="scrollTop-arrow"
-          />
+          style={{ display: showScroll ? "flex" : "none" }}
+          onClick={scrollTop}
+        >
+          <ArrowUpwardIcon className="scrollTop-arrow" />
         </div>
       </div>
     </>

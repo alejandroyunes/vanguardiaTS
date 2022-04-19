@@ -7,7 +7,7 @@
   max-width: 1200px;
   margin: 32px auto;
   display: grid;
-  padding: 0 16px;
+  padding: 0 24px;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, auto);
   grid-template-areas:
@@ -18,8 +18,8 @@
     margin: 0 auto 32px;
     h1 {
       font-weight: bold;
-      color: $dark-blue;
-      font-size: 3rem;
+      color: $lighter-black;
+      font-size: 2rem;
       line-height: 1.2;
       max-width: 760px;
       text-align: center;
@@ -42,21 +42,24 @@
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, auto);
   margin: 0 auto 24px;
+
   @include mq($screen-tablet) {
     max-width: 1200px;
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, auto);
     grid-template-areas: "about-child-one" "about-child-two";
+    padding-right: 24px;
   }
 
   .about-child-one {
     display: flex;
     align-items: center;
+    padding-top: 8px;
     h1 {
       font-weight: bold;
-      color: $dark-blue;
-      font-size: 3rem;
+      color: $lighter-black;
+      font-size: 2rem;
       padding: 0 32px;
       line-height: 1.2;
       text-align: center;
@@ -78,8 +81,8 @@
       padding: 0 16px;
     }
     img {
-        width: 100%;
-        height: auto;
+      width: 100%;
+      height: auto;
     }
     @include mq($screen-tablet) {
       .about-logo {
