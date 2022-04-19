@@ -92,7 +92,7 @@ export default function Portfolio() {
                   icon={WorkOutlineIcon}
                   onClick={() =>
                     window.open(
-                      "https://gentle-bonbon-985a86.netlify.app/",
+                      "https://capable-creponne-253cb7.netlify.app/",
                       "_blank"
                     )
                   }
@@ -126,7 +126,7 @@ export default function Portfolio() {
                   icon={WorkOutlineIcon}
                   onClick={() =>
                     window.open(
-                      "https://https://capable-creponne-253cb7.netlify.app/.com",
+                      "https://gentle-bonbon-985a86.netlify.app/",
                       "_blank"
                     )
                   }
