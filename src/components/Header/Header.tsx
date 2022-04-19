@@ -94,7 +94,7 @@ function Header() {
                     <li>Inicio</li>
                   </Link>
                   <Link to={{ pathname: "/about" }}>
-                    <li>Nosotros</li>
+                    <li>Sobre Mi</li>
                   </Link>
                   <Link to={{ pathname: "/services" }}>
                     <li>Servicios</li>
@@ -164,7 +164,7 @@ function Header() {
                       : "header__link__item"
                   }
                 >
-                  Nosotros
+                  Sobre Mi
                 </li>
               </Link>
               <Link to={{ pathname: "/services" }}>
