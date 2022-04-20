@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./BlogArticle.scss";
-import avatarImg from "./Resouces/img_avatar2.png";
+import avatarImg from "../../assets/people/alejo-developer.png";
 import { blogDataProps } from "../Blog/blog-data";
 import { useLocation } from "react-router-dom";
 
