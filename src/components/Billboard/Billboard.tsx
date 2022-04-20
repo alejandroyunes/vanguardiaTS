@@ -3,8 +3,7 @@ import "./Billboard.scss";
 import Animation from "./animation";
 import Button from "../Button/Button";
 import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
-import { useHistory  } from 'react-router-dom';
-
+import { useHistory } from "react-router-dom";
 
 export default function Billboard() {
   let history = useHistory();
@@ -16,7 +15,9 @@ export default function Billboard() {
           <div>
             <h1>Construimos Experiencias Web Asombrosas</h1>
             <p>
-              Agencia digital líder con sólida experiencia en diseño y desarrollo. Creamos productos móviles y web para plataformas comerciales complejas.
+              Agencia digital líder con sólida experiencia en diseño y
+              desarrollo. Creamos productos móviles y web para plataformas
+              comerciales complejas.
             </p>
             <div className="billboard-button">
               <Button
@@ -24,7 +25,7 @@ export default function Billboard() {
                 category="primary"
                 size="sm"
                 icon={WorkOutlineIcon}
-                onClick={() => history.push('/portfolio')}
+                onClick={() => history.push("/portfolio")}
               />
             </div>
           </div>
