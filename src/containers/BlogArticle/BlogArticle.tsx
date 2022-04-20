@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./BlogArticle.scss";
 import avatarImg from "./Resouces/img_avatar2.png";
 import { blogDataProps } from "../Blog/blog-data";
-import { useParams, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 export default function BlogArticle() {
   let id = useLocation().pathname.substring(14);
@@ -32,7 +32,7 @@ export default function BlogArticle() {
             <div className="title">
               <div className="article-title">
                 <div className="article-date">
-                  <p>Febrero 1, 2021</p>
+                  <p>{e.date}</p>
                 </div>
                 <div className="article-title">
                   <h2>{e.title}</h2>
@@ -64,14 +64,15 @@ export default function BlogArticle() {
               <div className="meta-box-article">
                 <ul className="meta-box-article-list">
                   <li className="meta-box--item meta-box--published">
-                    12 min read
+                    {e.time} min read
                   </li>
                   <li className="meta-box--item meta-box--tags">
-                    <a href="/category/css">CSS</a>
-                    <span>,</span>
-                    <a href="/category/tools">Tools</a>
-                    <span>,</span>
-                    <a href="/category/workflow">Workflow</a>
+                    {e.related.map((e) => (
+                      <>
+                        <a href="/category/css">{e}</a>
+                        <span>,</span>
+                      </>
+                    ))}
                   </li>
                   <li className="meta-box--item meta-box--author">
                     Saved for offline reading
