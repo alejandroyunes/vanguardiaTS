@@ -7,7 +7,7 @@ export default function AboutUs() {
       <div className="about-us-info">
         <div className="about-child-one">
           <h1>
-            Soy un desarrollador autodidacta con más de 3 años de experiencia en
+            Soy un desarrollador autodidacta con más de 5 años de experiencia en
             Javascript y React. También tengo varios años de experiencia
             profesional en el área de IT.
           </h1>
